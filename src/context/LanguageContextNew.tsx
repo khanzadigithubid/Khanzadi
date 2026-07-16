@@ -27,8 +27,13 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     setIsLoading(true);
     try {
       const response = await fetch(`/translations/${lang}.json`);
+      console.log('🌐 Fetch response:', response.status, response.ok);
+
       if (response.ok) {
         const data = await response.json();
+        console.log('✅ Translations loaded:', Object.keys(data).length, 'root keys');
+        console.log('📝 Sample translation:', data.nav?.home, data.home?.greeting);
+
         setTranslations(data);
         setLocaleState(lang);
 
@@ -40,11 +45,14 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
           document.documentElement.setAttribute('dir', 'ltr');
           document.documentElement.setAttribute('lang', lang);
         }
+      } else {
+        console.error('❌ Failed to fetch translations:', response.status);
       }
     } catch (error) {
-      console.error('Translation loading error:', error);
+      console.error('❌ Translation loading error:', error);
     } finally {
       setIsLoading(false);
+      console.log('✅ Translation loading complete');
     }
   };
 
