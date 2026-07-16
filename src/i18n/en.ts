@@ -1,0 +1,295 @@
+export const en = {
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hello, I am Khanzadi Wazir Ali",
+    "title": "Full Stack Developer",
+    "description": "I am a web developer and ADC PAT 2 student focused on technology through cloud-applied generative AI engineering. My journey is about mastering the latest AI tools to enhance web development and drive business innovation.",
+    "cta": "Get in Touch",
+    "available": "Available for opportunities",
+    "certified": "GIAIC Certified",
+    "expert": "TypeScript Expert",
+    "webDev": "Web Development",
+    "webDevSub": "Frontend & Backend",
+    "nextjs": "Next.js",
+    "nextjsSub": "Full Stack Solutions",
+    "aiEng": "AI Engineering",
+    "aiEngSub": "Cloud Applied AI"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "A passionate developer focused on creating innovative solutions through technology and continuous learning.",
+    "profile": "Professional Profile",
+    "role": "Frontend Developer & AI Enthusiast",
+    "intro": "I am an experienced frontend developer, currently expanding my expertise by learning Next.js for both backend and frontend development. My journey in tech was significantly shaped by completing a TypeScript course at the Governor Sindh IT Initiative (GIAIC).",
+    "certified": "GIAIC Certified",
+    "expert": "TypeScript Expert",
+    "frontendDev": "Frontend Development",
+    "aiEng": "AI Engineering",
+    "downloadResume": "Download Resume",
+    "techExpertise": "Technical Expertise",
+    "techDesc": "It was here that I also embarked on learning Cloud Applied Generative AI Engineering with cutting-edge technologies. As a senior student at GIAIC, I take pride in assisting my peers in their learning journeys.",
+    "education": "Education",
+    "educationDesc": "Additionally, I am pursuing an Associate Degree Of Commerce (ADC PART 2), combining my technical expertise with business acumen to create comprehensive solutions.",
+    "goals": "Future Goals",
+    "shortTerm": "Short Term",
+    "longTerm": "Long Term",
+    "goal1": "Master advanced Next.js features",
+    "goal2": "Enhance AI implementation skills",
+    "goal3": "Lead innovative tech projects",
+    "goal4": "Contribute to open-source community"
+  },
+  "skills": {
+    "title": "Technical Expertise",
+    "subtitle": "A comprehensive showcase of technical skills organized by domain and expertise level.",
+    "technical": "TECHNICAL SKILLS",
+    "expandAll": "Expand All",
+    "collapseAll": "Collapse All",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "design": "Design",
+      "tools": "Tools",
+      "versionControl": "Version Control",
+      "marketing": "Marketing"
+    },
+    "skillsCount": "skills",
+    "items": {
+      "html": {
+        "description": "Proficient in semantic HTML5 markup with focus on accessibility and modern web standards."
+      },
+      "css": {
+        "description": "Expert in CSS3, animations, flexbox, and grid for creating responsive and visually appealing layouts."
+      },
+      "tailwind": {
+        "description": "Master of Tailwind CSS utility-first framework for rapid and consistent UI development."
+      },
+      "javascript": {
+        "description": "Strong foundation in modern JavaScript ES6+ for building interactive and dynamic web applications."
+      },
+      "react": {
+        "description": "Experienced in React.js ecosystem including hooks, context API, and component-based architecture."
+      },
+      "typescript": {
+        "description": "Skilled in TypeScript for type-safe code, enhanced IDE support, and maintainable applications."
+      },
+      "nextjs": {
+        "description": "Proficient in Next.js framework with App Router, Server Components, and full-stack capabilities."
+      },
+      "nodejs": {
+        "description": "Competent in Node.js for building scalable backend services and server-side applications."
+      },
+      "canva": {
+        "description": "Expert in Canva for creating professional graphics, social media content, and marketing materials."
+      },
+      "figma": {
+        "description": "Skilled in Figma for UI/UX design, prototyping, and collaborative design workflows."
+      },
+      "aiTools": {
+        "description": "Experienced with cutting-edge AI tools including ChatGPT, Claude, and other generative AI technologies."
+      },
+      "shopify": {
+        "description": "Proficient in Shopify development including theme customization and e-commerce solutions."
+      },
+      "git": {
+        "description": "Strong command of Git version control for code management, branching, and collaboration."
+      },
+      "github": {
+        "description": "Experienced with GitHub workflows, pull requests, actions, and open-source collaboration."
+      },
+      "seo": {
+        "description": "Knowledgeable in SEO best practices for improving search rankings and organic traffic growth."
+      },
+      "socialMedia": {
+        "description": "Skilled in social media marketing strategies, content creation, and audience engagement techniques."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Explore a curated collection of projects showcasing modern web development expertise",
+    "featured": "Featured Projects",
+    "projectsCount": "Projects",
+    "completed": "Completed with excellence",
+    "quality": "Quality Code",
+    "qualitySub": "Clean & maintainable",
+    "latest": "Latest Tech",
+    "latestSub": "Modern frameworks & tools",
+    "showMore": "Show More Projects",
+    "showLess": "Show Less",
+    "more": "more",
+    "clickToView": "Click to view",
+    "categories": {
+      "all": "All",
+      "webApps": "Web Apps",
+      "aiProjects": "AI Projects",
+      "apiIntegration": "API Integration",
+      "nextjsProjects": "Next.js Projects",
+      "uiuxProjects": "UI/UX Projects"
+    },
+    "items": {
+      "cryptoWebsite": {
+        "title": "Crypto Website",
+        "description": "A cryptocurrency website built with modern web technologies including HTML, CSS, and JavaScript, delivering a seamless and interactive user experience."
+      },
+      "oopProject": {
+        "title": "OOP Project",
+        "description": "Object-Oriented Programming project demonstrating coding best practices with clean architecture and maintainable code structure."
+      },
+      "tradingWebsite": {
+        "title": "Trading Website",
+        "description": "React-powered trading platform offering real-time data visualization and an interactive interface for trading needs."
+      },
+      "chatAI": {
+        "title": "Chat AI",
+        "description": "React-based AI chat application powered by cutting-edge artificial intelligence for seamless intelligent conversations."
+      },
+      "googleSearchApp": {
+        "title": "API Google Search App",
+        "description": "Search application utilizing Google Search API to fetch web pages, images, and news with real-time results."
+      },
+      "recipeSearchApp": {
+        "title": "API Recipe Search App",
+        "description": "Recipe search application with API integration allowing users to discover recipes from around the world by ingredients."
+      },
+      "weatherApp": {
+        "title": "API Weather App",
+        "description": "Weather application providing real-time weather data, forecasts, and alerts for any location worldwide using Weather API."
+      },
+      "jsWeatherApp": {
+        "title": "JavaScript Weather App",
+        "description": "Pure JavaScript weather application allowing users to enter their city and receive real-time temperatures and forecasts."
+      },
+      "todoList": {
+        "title": "ToDo List Application",
+        "description": "JavaScript-based task management application for adding, completing, and organizing tasks efficiently."
+      },
+      "resumeBuilder": {
+        "title": "Resume Builder",
+        "description": "Professional resume builder application developed with HTML, CSS, and TypeScript for creating, editing, and downloading resumes."
+      },
+      "nextjsBlog": {
+        "title": "Next.js 15 Blog",
+        "description": "Modern blog platform built with Next.js 15 features, offering optimized performance and seamless navigation experience."
+      },
+      "shadcnBlog": {
+        "title": "Shadcn & Radix UI Blog",
+        "description": "Blog showcasing customizable and accessible UI components built with ShadCN and Radix UI for modern web development."
+      },
+      "figmaConversion": {
+        "title": "Figma to Next.js Conversion",
+        "description": "Pixel-perfect conversion of Figma UI/UX designs into responsive websites using Next.js, Tailwind CSS, and TypeScript."
+      },
+      "foodTuckWebsite": {
+        "title": "FoodTuck Website",
+        "description": "Hackathon project converting Figma designs into a fully responsive food delivery website with Next.js and Tailwind CSS."
+      },
+      "programmingBlog": {
+        "title": "Programming Languages Blog",
+        "description": "Educational blog covering programming languages from fundamentals to advanced concepts with tutorials and best practices."
+      },
+      "serverSideRecipeApp": {
+        "title": "Server-Side Recipe App",
+        "description": "Recipe application with server-side API integration and rendering for optimal performance and SEO benefits."
+      }
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Comprehensive web solutions and digital services tailored to elevate your business presence",
+    "professional": "PROFESSIONAL SERVICES",
+    "quality": "Expert Quality",
+    "qualitySub": "Professional-grade solutions",
+    "certified": "Certified Professional",
+    "certifiedSub": "Industry-recognized expertise",
+    "innovative": "Innovative Solutions",
+    "innovativeSub": "Cutting-edge technology",
+    "webDev": "Web Development",
+    "webDevDesc": "Expert web development services to bring your ideas to life. From conceptualization to deployment, I craft robust, scalable, and secure web applications that meet your business needs.",
+    "webDevFeature1": "Custom Web Applications",
+    "webDevFeature2": "E-commerce Solutions",
+    "webDevFeature3": "API Integration",
+    "webDesign": "Web Design",
+    "webDesignDesc": "Creative web designing solutions to captivate your audience. I design visually stunning, user-friendly, and engaging websites that reflect your brand identity.",
+    "webDesignFeature1": "UI/UX Design",
+    "webDesignFeature2": "Brand Identity",
+    "webDesignFeature3": "Visual Design",
+    "responsive": "Responsive Web Design",
+    "responsiveDesc": "Responsive web design services to ensure seamless user experiences across devices. I craft mobile-friendly, tablet-friendly, and desktop-friendly websites that adapt to any screen size.",
+    "responsiveFeature1": "Mobile-First Design",
+    "responsiveFeature2": "Cross-Device Testing",
+    "responsiveFeature3": "Performance Optimization",
+    "shopify": "Shopify Development",
+    "shopifyDesc": "Expert Shopify development services to create and optimize your online store. From custom themes to app integration, I help you build a successful e-commerce presence.",
+    "shopifyFeature1": "Custom Theme Development",
+    "shopifyFeature2": "Store Setup & Configuration",
+    "shopifyFeature3": "App Integration",
+    "marketing": "Digital Marketing",
+    "marketingDesc": "Comprehensive digital marketing strategies to grow your online presence. From social media management to content creation, I help you reach and engage your target audience.",
+    "marketingFeature1": "Social Media Management",
+    "marketingFeature2": "Content Strategy",
+    "marketingFeature3": "SEO Optimization",
+    "canva": "Canva Design",
+    "canvaDesc": "Professional Canva design services for your marketing materials. From social media graphics to presentations, I create visually appealing designs that align with your brand.",
+    "canvaFeature1": "Social Media Graphics",
+    "canvaFeature2": "Marketing Materials",
+    "canvaFeature3": "Brand Templates",
+    "getStarted": "Get Started"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Let's discuss your project and create something amazing together",
+    "getInTouch": "Get in Touch",
+    "sendMessage": "Send a Message",
+    "success": "Success!",
+    "error": "Error",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "Your email",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter phone number",
+    "message": "Message",
+    "messagePlaceholder": "Your message",
+    "sendButton": "Send Message",
+    "sending": "Sending...",
+    "contactInfo": "Contact Information",
+    "location": "Location",
+    "city": "Karachi",
+    "connect": "Connect with Me",
+    "validationNameMin": "Please enter a valid name (at least 2 characters)",
+    "validationEmail": "Please enter a valid email address",
+    "validationPhone": "Please enter a valid phone number",
+    "validationMessageMin": "Please enter a message (at least 10 characters)",
+    "configError": "Configuration error. Please contact the site administrator."
+  },
+  "testimonials": {
+    "subtitle": "Client Testimonials",
+    "title": "What Clients Say",
+    "description": "Hear from the professionals and businesses I've had the privilege to work with",
+    "noTestimonials": "No testimonials available yet.",
+    "readMore": "Read more",
+    "readLess": "Read less"
+  },
+  "breadcrumbs": {
+    "home": "Home"
+  },
+  "whatsapp": {
+    "aria": "Chat on WhatsApp",
+    "tooltip": "Chat on WhatsApp",
+    "message": "Hello! I found your portfolio and would like to discuss a project."
+  },
+  "backToTop": {
+    "aria": "Back to Top",
+    "tooltip": "Back to Top"
+  },
+  "accessibility": {
+    "skipToMain": "Skip to main content"
+  }
+} as const;
