@@ -1,7 +1,7 @@
-import en from '../../public/translations/en.json';
-import ur from '../../public/translations/ur.json';
-import ar from '../../public/translations/ar.json';
-import es from '../../public/translations/es.json';
+import en from '../messages/en.json';
+import ur from '../messages/ur.json';
+import ar from '../messages/ar.json';
+import es from '../messages/es.json';
 
 export const translations = {
   en,

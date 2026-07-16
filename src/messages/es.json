@@ -9,37 +9,287 @@
   },
   "home": {
     "greeting": "Hola, soy Khanzadi Wazir Ali",
-    "title": "Desarrolladora Full Stack",
-    "description": "Soy desarrolladora web y estudiante de ADC PAT 2 enfocada en tecnología a través de ingeniería de IA generativa aplicada en la nube.",
+    "title": "Desarrollador Full Stack",
+    "description": "Soy un desarrollador web y estudiante de ADC PAT 2 enfocado en tecnología a través de ingeniería de IA generativa aplicada en la nube. Mi viaje consiste en dominar las últimas herramientas de IA para mejorar el desarrollo web e impulsar la innovación empresarial.",
     "cta": "Contáctame",
-    "available": "Disponible para oportunidades"
+    "available": "Disponible para oportunidades",
+    "certified": "Certificado GIAIC",
+    "expert": "Experto en TypeScript",
+    "webDev": "Desarrollo Web",
+    "webDevSub": "Frontend y Backend",
+    "nextjs": "Next.js",
+    "nextjsSub": "Soluciones Full Stack",
+    "aiEng": "Ingeniería de IA",
+    "aiEngSub": "IA Aplicada en la Nube"
   },
   "about": {
-    "title": "Sobre Mí",
-    "subtitle": "Perfil Profesional",
-    "heading": "Desarrolladora Frontend y Entusiasta de IA",
-    "downloadResume": "Descargar CV"
+    "title": "Acerca de Mí",
+    "subtitle": "Un desarrollador apasionado enfocado en crear soluciones innovadoras a través de la tecnología y el aprendizaje continuo.",
+    "profile": "Perfil Profesional",
+    "role": "Desarrollador Frontend y Entusiasta de IA",
+    "intro": "Soy un desarrollador frontend experimentado, actualmente ampliando mi experiencia al aprender Next.js para el desarrollo tanto frontend como backend. Mi viaje en tecnología fue significativamente moldeado al completar un curso de TypeScript en la Iniciativa de TI del Gobernador de Sindh (GIAIC).",
+    "certified": "Certificado GIAIC",
+    "expert": "Experto en TypeScript",
+    "frontendDev": "Desarrollo Frontend",
+    "aiEng": "Ingeniería de IA",
+    "downloadResume": "Descargar CV",
+    "techExpertise": "Experiencia Técnica",
+    "techDesc": "Fue aquí donde también me embarqué en el aprendizaje de Ingeniería de IA Generativa Aplicada en la Nube con tecnologías de vanguardia. Como estudiante senior en GIAIC, me enorgullece ayudar a mis compañeros en sus viajes de aprendizaje.",
+    "education": "Educación",
+    "educationDesc": "Además, estoy cursando un Grado Asociado de Comercio (ADC PART 2), combinando mi experiencia técnica con perspicacia empresarial para crear soluciones integrales.",
+    "goals": "Objetivos Futuros",
+    "shortTerm": "Corto Plazo",
+    "longTerm": "Largo Plazo",
+    "goal1": "Dominar características avanzadas de Next.js",
+    "goal2": "Mejorar habilidades de implementación de IA",
+    "goal3": "Liderar proyectos tecnológicos innovadores",
+    "goal4": "Contribuir a la comunidad de código abierto"
   },
   "skills": {
     "title": "Experiencia Técnica",
-    "subtitle": "Habilidades Técnicas"
+    "subtitle": "Una muestra integral de habilidades técnicas organizadas por dominio y nivel de experiencia.",
+    "technical": "HABILIDADES TÉCNICAS",
+    "expandAll": "Expandir Todo",
+    "collapseAll": "Contraer Todo",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "design": "Diseño",
+      "tools": "Herramientas",
+      "versionControl": "Control de Versiones",
+      "marketing": "Marketing"
+    },
+    "skillsCount": "habilidades",
+    "items": {
+      "html": {
+        "description": "Competente en marcado HTML5 semántico con enfoque en accesibilidad y estándares web modernos."
+      },
+      "css": {
+        "description": "Experto en CSS3, animaciones, flexbox y grid para crear diseños responsivos y visualmente atractivos."
+      },
+      "tailwind": {
+        "description": "Maestro del framework Tailwind CSS de utilidades para desarrollo UI rápido y consistente."
+      },
+      "javascript": {
+        "description": "Base sólida en JavaScript ES6+ moderno para construir aplicaciones web interactivas y dinámicas."
+      },
+      "react": {
+        "description": "Experimentado en el ecosistema React.js incluyendo hooks, Context API y arquitectura basada en componentes."
+      },
+      "typescript": {
+        "description": "Capacitado en TypeScript para código con seguridad de tipos, soporte IDE mejorado y aplicaciones mantenibles."
+      },
+      "nextjs": {
+        "description": "Competente en el framework Next.js con App Router, Server Components y capacidades full-stack."
+      },
+      "nodejs": {
+        "description": "Competente en Node.js para construir servicios backend escalables y aplicaciones del lado del servidor."
+      },
+      "canva": {
+        "description": "Experto en Canva para crear gráficos profesionales, contenido de redes sociales y materiales de marketing."
+      },
+      "figma": {
+        "description": "Capacitado en Figma para diseño UI/UX, prototipado y flujos de trabajo de diseño colaborativo."
+      },
+      "aiTools": {
+        "description": "Experimentado con herramientas de IA de vanguardia incluyendo ChatGPT, Claude y otras tecnologías de IA generativa."
+      },
+      "shopify": {
+        "description": "Competente en desarrollo Shopify incluyendo personalización de temas y soluciones de comercio electrónico."
+      },
+      "git": {
+        "description": "Dominio sólido del control de versiones Git para gestión de código, ramificación y colaboración."
+      },
+      "github": {
+        "description": "Experimentado con flujos de trabajo GitHub, pull requests, actions y colaboración de código abierto."
+      },
+      "seo": {
+        "description": "Conocedor de las mejores prácticas SEO para mejorar clasificaciones de búsqueda y crecimiento de tráfico orgánico."
+      },
+      "socialMedia": {
+        "description": "Capacitado en estrategias de marketing en redes sociales, creación de contenido y técnicas de engagement de audiencia."
+      }
+    }
   },
   "projects": {
     "title": "Proyectos",
-    "subtitle": "Proyectos Destacados"
+    "subtitle": "Explora una colección curada de proyectos que muestran experiencia en desarrollo web moderno",
+    "featured": "Proyectos Destacados",
+    "projectsCount": "Proyectos",
+    "completed": "Completados con excelencia",
+    "quality": "Código de Calidad",
+    "qualitySub": "Limpio y mantenible",
+    "latest": "Tecnología Reciente",
+    "latestSub": "Frameworks y herramientas modernos",
+    "showMore": "Mostrar Más Proyectos",
+    "showLess": "Mostrar Menos",
+    "more": "más",
+    "clickToView": "Haz clic para ver",
+    "categories": {
+      "all": "Todos",
+      "webApps": "Aplicaciones Web",
+      "aiProjects": "Proyectos de IA",
+      "apiIntegration": "Integración API",
+      "nextjsProjects": "Proyectos Next.js",
+      "uiuxProjects": "Proyectos UI/UX"
+    },
+    "items": {
+      "cryptoWebsite": {
+        "title": "Sitio Web de Criptomonedas",
+        "description": "Un sitio web de criptomonedas construido con tecnologías web modernas incluyendo HTML, CSS y JavaScript, ofreciendo una experiencia de usuario fluida e interactiva."
+      },
+      "oopProject": {
+        "title": "Proyecto OOP",
+        "description": "Proyecto de Programación Orientada a Objetos que demuestra las mejores prácticas de codificación con arquitectura limpia y estructura de código mantenible."
+      },
+      "tradingWebsite": {
+        "title": "Sitio Web de Trading",
+        "description": "Plataforma de trading impulsada por React que ofrece visualización de datos en tiempo real y una interfaz interactiva para necesidades de trading."
+      },
+      "chatAI": {
+        "title": "Chat AI",
+        "description": "Aplicación de chat de IA basada en React impulsada por inteligencia artificial de vanguardia para conversaciones inteligentes fluidas."
+      },
+      "googleSearchApp": {
+        "title": "App de Búsqueda Google API",
+        "description": "Aplicación de búsqueda que utiliza Google Search API para obtener páginas web, imágenes y noticias con resultados en tiempo real."
+      },
+      "recipeSearchApp": {
+        "title": "App de Búsqueda de Recetas API",
+        "description": "Aplicación de búsqueda de recetas con integración API que permite a los usuarios descubrir recetas de todo el mundo por ingredientes."
+      },
+      "weatherApp": {
+        "title": "App del Clima API",
+        "description": "Aplicación de clima que proporciona datos meteorológicos en tiempo real, pronósticos y alertas para cualquier ubicación en todo el mundo usando Weather API."
+      },
+      "jsWeatherApp": {
+        "title": "App del Clima JavaScript",
+        "description": "Aplicación de clima en JavaScript puro que permite a los usuarios ingresar su ciudad y recibir temperaturas y pronósticos en tiempo real."
+      },
+      "todoList": {
+        "title": "Aplicación de Lista de Tareas",
+        "description": "Aplicación de gestión de tareas basada en JavaScript para agregar, completar y organizar tareas de manera eficiente."
+      },
+      "resumeBuilder": {
+        "title": "Constructor de CV",
+        "description": "Aplicación profesional de constructor de CV desarrollada con HTML, CSS y TypeScript para crear, editar y descargar currículums."
+      },
+      "nextjsBlog": {
+        "title": "Blog Next.js 15",
+        "description": "Plataforma de blog moderna construida con características de Next.js 15, ofreciendo rendimiento optimizado y experiencia de navegación fluida."
+      },
+      "shadcnBlog": {
+        "title": "Blog Shadcn y Radix UI",
+        "description": "Blog que muestra componentes de UI personalizables y accesibles construidos con ShadCN y Radix UI para desarrollo web moderno."
+      },
+      "figmaConversion": {
+        "title": "Conversión Figma a Next.js",
+        "description": "Conversión perfecta de píxeles de diseños Figma UI/UX en sitios web responsivos usando Next.js, Tailwind CSS y TypeScript."
+      },
+      "foodTuckWebsite": {
+        "title": "Sitio Web FoodTuck",
+        "description": "Proyecto de hackathon que convierte diseños de Figma en un sitio web de entrega de comida totalmente responsivo con Next.js y Tailwind CSS."
+      },
+      "programmingBlog": {
+        "title": "Blog de Lenguajes de Programación",
+        "description": "Blog educativo que cubre lenguajes de programación desde fundamentos hasta conceptos avanzados con tutoriales y mejores prácticas."
+      },
+      "serverSideRecipeApp": {
+        "title": "App de Recetas del Lado del Servidor",
+        "description": "Aplicación de recetas con integración y renderizado API del lado del servidor para rendimiento óptimo y beneficios SEO."
+      }
+    }
   },
   "services": {
     "title": "Servicios",
-    "subtitle": "Servicios Profesionales"
+    "subtitle": "Soluciones web integrales y servicios digitales diseñados para elevar la presencia de su negocio",
+    "professional": "SERVICIOS PROFESIONALES",
+    "quality": "Calidad Experta",
+    "qualitySub": "Soluciones de nivel profesional",
+    "certified": "Profesional Certificado",
+    "certifiedSub": "Experiencia reconocida en la industria",
+    "innovative": "Soluciones Innovadoras",
+    "innovativeSub": "Tecnología de vanguardia",
+    "webDev": "Desarrollo Web",
+    "webDevDesc": "Servicios expertos de desarrollo web para dar vida a tus ideas. Desde la conceptualización hasta la implementación, creo aplicaciones web robustas, escalables y seguras que satisfacen las necesidades de tu negocio.",
+    "webDevFeature1": "Aplicaciones Web Personalizadas",
+    "webDevFeature2": "Soluciones de Comercio Electrónico",
+    "webDevFeature3": "Integración de API",
+    "webDesign": "Diseño Web",
+    "webDesignDesc": "Soluciones creativas de diseño web para cautivar a tu audiencia. Diseño sitios web visualmente impresionantes, fáciles de usar y atractivos que reflejan la identidad de tu marca.",
+    "webDesignFeature1": "Diseño UI/UX",
+    "webDesignFeature2": "Identidad de Marca",
+    "webDesignFeature3": "Diseño Visual",
+    "responsive": "Diseño Web Responsivo",
+    "responsiveDesc": "Servicios de diseño web responsivo para garantizar experiencias de usuario fluidas en todos los dispositivos. Creo sitios web compatibles con móviles, tabletas y escritorios que se adaptan a cualquier tamaño de pantalla.",
+    "responsiveFeature1": "Diseño Mobile-First",
+    "responsiveFeature2": "Pruebas Entre Dispositivos",
+    "responsiveFeature3": "Optimización del Rendimiento",
+    "shopify": "Desarrollo Shopify",
+    "shopifyDesc": "Servicios expertos de desarrollo Shopify para crear y optimizar tu tienda en línea. Desde temas personalizados hasta integración de aplicaciones, te ayudo a construir una presencia exitosa de comercio electrónico.",
+    "shopifyFeature1": "Desarrollo de Temas Personalizados",
+    "shopifyFeature2": "Configuración de Tienda",
+    "shopifyFeature3": "Integración de Aplicaciones",
+    "marketing": "Marketing Digital",
+    "marketingDesc": "Estrategias integrales de marketing digital para hacer crecer tu presencia en línea. Desde la gestión de redes sociales hasta la creación de contenido, te ayudo a llegar e involucrar a tu público objetivo.",
+    "marketingFeature1": "Gestión de Redes Sociales",
+    "marketingFeature2": "Estrategia de Contenido",
+    "marketingFeature3": "Optimización SEO",
+    "canva": "Diseño Canva",
+    "canvaDesc": "Servicios profesionales de diseño Canva para tus materiales de marketing. Desde gráficos de redes sociales hasta presentaciones, creo diseños visualmente atractivos que se alinean con tu marca.",
+    "canvaFeature1": "Gráficos de Redes Sociales",
+    "canvaFeature2": "Materiales de Marketing",
+    "canvaFeature3": "Plantillas de Marca",
+    "getStarted": "Comenzar"
   },
   "contact": {
     "title": "Contáctame",
-    "subtitle": "Ponte en Contacto",
+    "subtitle": "Hablemos de tu proyecto y creemos algo increíble juntos",
+    "getInTouch": "Ponte en Contacto",
+    "sendMessage": "Enviar un Mensaje",
+    "success": "¡Éxito!",
+    "error": "Error",
     "name": "Nombre",
-    "email": "Correo",
-    "phone": "Teléfono",
+    "namePlaceholder": "Tu nombre",
+    "email": "Correo Electrónico",
+    "emailPlaceholder": "Tu correo",
+    "phone": "Número de Teléfono",
+    "phonePlaceholder": "Ingresa número de teléfono",
     "message": "Mensaje",
-    "send": "Enviar Mensaje",
-    "sending": "Enviando..."
+    "messagePlaceholder": "Tu mensaje",
+    "sendButton": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "contactInfo": "Información de Contacto",
+    "location": "Ubicación",
+    "city": "Karachi",
+    "connect": "Conéctate Conmigo",
+    "validationNameMin": "Por favor ingresa un nombre válido (al menos 2 caracteres)",
+    "validationEmail": "Por favor ingresa una dirección de correo válida",
+    "validationPhone": "Por favor ingresa un número de teléfono válido",
+    "validationMessageMin": "Por favor ingresa un mensaje (al menos 10 caracteres)",
+    "configError": "Error de configuración. Por favor contacta al administrador del sitio."
+  },
+  "testimonials": {
+    "subtitle": "Testimonios de Clientes",
+    "title": "Lo Que Dicen Los Clientes",
+    "description": "Escucha de los profesionales y empresas con los que he tenido el privilegio de trabajar",
+    "noTestimonials": "Aún no hay testimonios disponibles.",
+    "readMore": "Leer más",
+    "readLess": "Leer menos"
+  },
+  "breadcrumbs": {
+    "home": "Inicio"
+  },
+  "whatsapp": {
+    "aria": "Chatear en WhatsApp",
+    "tooltip": "Chatear en WhatsApp",
+    "message": "¡Hola! Encontré tu portafolio y me gustaría discutir un proyecto."
+  },
+  "backToTop": {
+    "aria": "Volver Arriba",
+    "tooltip": "Volver Arriba"
+  },
+  "accessibility": {
+    "skipToMain": "Saltar al contenido principal"
   }
 }
