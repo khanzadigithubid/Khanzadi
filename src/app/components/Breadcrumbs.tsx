@@ -3,16 +3,18 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FaChevronRight, FaHome } from 'react-icons/fa';
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function Breadcrumbs() {
   const pathname = usePathname();
+  const { t } = useLanguage();
 
   // Generate breadcrumb items from pathname
   const generateBreadcrumbs = () => {
     const paths = pathname.split('/').filter(Boolean);
 
     const breadcrumbs: Array<{ name: string; path: string; icon: JSX.Element | null }> = [
-      { name: 'Home', path: '/', icon: <FaHome className="w-4 h-4" /> }
+      { name: t('breadcrumbs.home'), path: '/', icon: <FaHome className="w-4 h-4" /> }
     ];
 
     let currentPath = '';

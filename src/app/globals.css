@@ -14,6 +14,76 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
+  /* Light Mode - Inverted Colors */
+  .dark body {
+    background-color: #ffffff;
+    color: #1e293b;
+  }
+
+  /* Light mode for main sections */
+  .dark section {
+    background: linear-gradient(to bottom, #ffffff, #f1f5f9) !important;
+  }
+
+  /* Light mode for headers */
+  .dark header {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-bottom-color: rgba(0, 0, 0, 0.1) !important;
+  }
+
+  /* Light mode for text colors */
+  .dark .text-white {
+    color: #1e293b !important;
+  }
+
+  .dark .text-gray-300,
+  .dark .text-gray-400 {
+    color: #64748b !important;
+  }
+
+  .dark .text-gray-100,
+  .dark .text-gray-200 {
+    color: #334155 !important;
+  }
+
+  /* Light mode for cards and containers */
+  .dark .bg-gray-800,
+  .dark .bg-gray-900 {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+  }
+
+  .dark .bg-gray-700 {
+    background-color: #f8fafc !important;
+  }
+
+  /* Light mode for borders */
+  .dark .border-gray-700,
+  .dark .border-gray-600 {
+    border-color: #e2e8f0 !important;
+  }
+
+  /* Light mode for buttons */
+  .dark button:not(.text-black) {
+    color: #1e293b;
+  }
+
+  /* Light mode for gradients */
+  .dark .bg-gradient-to-b {
+    background: linear-gradient(to bottom, #ffffff, #f8fafc) !important;
+  }
+
+  /* Light mode for WhatsApp button (keep green) */
+  .dark .bg-green-500 {
+    background-color: #22c55e !important;
+  }
+
+  /* Light mode for shadows */
+  .dark .shadow-xl,
+  .dark .shadow-2xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+  }
+
   /* Mobile-optimized typography for better readability */
   @media (max-width: 640px) {
     /* Use sans-serif for headlines on mobile for better readability */
@@ -34,12 +104,6 @@
     }
   }
 
-  .dark body {
-    background-color: #ffffff;
-    color: #1e293b;
-  }
-
-  /* Smooth transitions for all elements when theme changes */
   * {
     transition-property: background-color, border-color, color, fill, stroke;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -59,6 +123,42 @@
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
+  }
+
+  /* Screen Reader Only utility class */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  /* Focus visible for better keyboard navigation */
+  .focus\:not-sr-only:focus {
+    position: absolute !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0.75rem 1.5rem !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
   }
 
   /* Animation keyframes for form messages */
@@ -176,21 +276,78 @@
     @apply opacity-100;
   }
 
-  /* Dark Mode Toast Styling */
+  /* Light Mode Toast Styling */
   .dark .Toastify__toast {
-    @apply bg-gray-900 text-white border-2 border-white/20;
+    @apply bg-white text-gray-900 border-2 border-gray-200;
   }
 
   .dark .Toastify__toast-body {
-    @apply text-white;
+    @apply text-gray-900;
   }
 
   .dark .Toastify__close-button {
-    @apply text-white opacity-70;
+    @apply text-gray-900 opacity-70;
   }
 
   .dark .Toastify__close-button:hover {
     @apply opacity-100;
+  }
+
+  /* Success Toast - Light Mode */
+  .dark .Toastify__toast--success .Toastify__toast-icon svg {
+    fill: #22c55e;
+  }
+
+  /* Error Toast - Light Mode */
+  .dark .Toastify__toast--error .Toastify__toast-icon svg {
+    fill: #ef4444;
+  }
+
+  /* Light mode for phone input */
+  .dark .phone-input {
+    background-color: #f8fafc !important;
+    border-color: #cbd5e1 !important;
+    color: #1e293b !important;
+  }
+
+  .dark .phone-input:focus {
+    border-color: #0ea5e9 !important;
+    box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2) !important;
+  }
+
+  .dark .phone-button {
+    border-right-color: rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .dark .phone-dropdown {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+  }
+
+  .dark .phone-dropdown .country {
+    color: #1e293b !important;
+  }
+
+  .dark .phone-dropdown .country:hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .dark .phone-dropdown .country.highlight {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .dark .phone-search {
+    background-color: #f8fafc !important;
+    border-color: #cbd5e1 !important;
+    color: #1e293b !important;
+  }
+
+  .dark .phone-dropdown .country .country-name {
+    color: #1e293b !important;
+  }
+
+  .dark .phone-dropdown .country .dial-code {
+    color: #64748b !important;
   }
 
   /* Toast Icon Styling */

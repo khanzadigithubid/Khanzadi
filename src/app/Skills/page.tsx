@@ -273,33 +273,33 @@ export default function Skills() {
         </div>
 
         {/* Toggle All Button */}
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <button
             onClick={toggleAllCategories}
-            className="inline-flex items-center px-8 py-3.5 bg-white text-black rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl text-base font-semibold"
+            className="inline-flex items-center px-6 py-2.5 sm:px-8 sm:py-3.5 bg-white text-black rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base font-semibold"
           >
             {allExpanded ? t('skills.collapseAll') : t('skills.expandAll')}
-            <FaChevronDown className={`ml-2 transition-transform duration-300 ${allExpanded ? 'rotate-180' : ''}`} />
+            <FaChevronDown className={`ml-1.5 sm:ml-2 w-3 h-3 sm:w-4 sm:h-4 transition-transform duration-300 ${allExpanded ? 'rotate-180' : ''}`} />
           </button>
         </div>
 
         {/* Categorized Skills */}
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           {Object.entries(skillsData).map(([category, skills]) => (
-            <div key={category} className="bg-gray-800 rounded-2xl shadow-xl overflow-hidden border border-gray-700 hover:shadow-2xl transition-all duration-300">
+            <div key={category} className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl overflow-hidden border border-gray-700 hover:shadow-2xl transition-all duration-300">
               {/* Category Header */}
               <button
                 onClick={() => toggleCategory(category)}
-                className="w-full px-8 py-5 flex items-center justify-between hover:bg-gray-750 transition-colors duration-300"
+                className="w-full px-6 py-4 sm:px-8 sm:py-5 flex items-center justify-between hover:bg-gray-750 transition-colors duration-300"
               >
-                <div className="flex items-center space-x-4">
-                  <h2 className="text-2xl sm:text-3xl font-semibold text-white">{getCategoryTranslation(category)}</h2>
-                  <span className="px-4 py-1.5 bg-gray-700 text-gray-300 rounded-full text-sm font-semibold">
+                <div className="flex items-center space-x-3 sm:space-x-4 min-w-0">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white truncate">{getCategoryTranslation(category)}</h2>
+                  <span className="px-3 py-1 sm:px-4 sm:py-1.5 bg-gray-700 text-gray-300 rounded-full text-xs sm:text-sm font-semibold flex-shrink-0">
                     {skills.length} {t('skills.skillsCount')}
                   </span>
                 </div>
                 <FaChevronDown
-                  className={`text-gray-300 text-lg transition-transform duration-300 ${expandedCategories[category] ? 'rotate-180' : ''}`}
+                  className={`text-gray-300 text-base sm:text-lg flex-shrink-0 transition-transform duration-300 ${expandedCategories[category] ? 'rotate-180' : ''}`}
                 />
               </button>
 
@@ -311,7 +311,7 @@ export default function Skills() {
                     : 'max-h-0 opacity-0 overflow-hidden'
                 }`}
               >
-                <div className="p-6 sm:p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div className="p-4 sm:p-6 md:p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
                   {skills.map((skill, index) => (
                     <SkillCard
                       key={skill.title}

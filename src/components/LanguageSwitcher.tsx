@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
+import { useClickOutside } from '../hooks/useClickOutside';
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇬🇧' },
@@ -16,16 +17,8 @@ export default function LanguageSwitcher() {
   const { locale, setLocale } = useLanguage();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+  // Use custom hook to close dropdown when clicking outside
+  useClickOutside(dropdownRef, () => setIsOpen(false));
 
   const changeLanguage = (langCode: string) => {
     setLocale(langCode);

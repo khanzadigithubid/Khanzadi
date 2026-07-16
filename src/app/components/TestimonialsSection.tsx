@@ -4,9 +4,12 @@ import { useEffect } from 'react';
 import { FaQuoteLeft, FaUsers } from 'react-icons/fa';
 import TestimonialCard from './TestimonialCard';
 import { testimonials } from '../data/testimonials';
+import { useLanguage } from '../../context/LanguageContext';
 import 'aos/dist/aos.css';
 
 export default function TestimonialsSection() {
+  const { t } = useLanguage();
+
   useEffect(() => {
     // Check if user prefers reduced motion
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -33,16 +36,16 @@ export default function TestimonialsSection() {
             <div className="flex items-center justify-center space-x-2 text-white/70">
               <FaUsers className="text-white/50 animate-pulse" />
               <span className="text-xs sm:text-sm font-medium tracking-wider uppercase">
-                Client Testimonials
+                {t('testimonials.subtitle')}
               </span>
             </div>
             <div className="w-20 sm:w-24 h-1 bg-white/20 mx-auto mt-2"></div>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">
-            What Clients Say
+            {t('testimonials.title')}
           </h2>
           <p className="text-base sm:text-lg text-white/70 max-w-2xl mx-auto leading-relaxed px-4 sm:px-0">
-            Hear from the professionals and businesses I&apos;ve had the privilege to work with
+            {t('testimonials.description')}
           </p>
         </div>
 
@@ -67,7 +70,7 @@ export default function TestimonialsSection() {
             </div>
           ) : (
             // Multiple testimonials - grid layout
-            <div className={`grid grid-cols-1 ${testimonials.length >= 2 ? 'md:grid-cols-2' : ''} ${testimonials.length >= 3 ? 'lg:grid-cols-3' : ''} gap-6 sm:gap-8`}>
+            <div className={`grid grid-cols-1 ${testimonials.length >= 2 ? 'md:grid-cols-2' : ''} ${testimonials.length >= 3 ? 'lg:grid-cols-3' : ''} gap-4 sm:gap-6 md:gap-8`}>
               {testimonials.map((testimonial, index) => (
                 <div
                   key={testimonial.id}

@@ -35,62 +35,62 @@ const Home = () => {
               </div>
 
               {/* Professional Description */}
-              <div className="space-y-6">
-                <p className="text-lg sm:text-xl leading-relaxed text-gray-300 max-w-2xl"
+              <div className="space-y-4 sm:space-y-6">
+                <p className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-300 max-w-2xl"
                    data-aos="fade-up"
                    data-aos-easing="ease-out-cubic"
                    data-aos-duration="500">
                   {t('home.description')}
                 </p>
-                <div className="flex items-center justify-center md:justify-start space-x-6 text-sm text-gray-400">
+                <div className="flex items-center justify-center md:justify-start space-x-4 sm:space-x-6 text-xs sm:text-sm text-gray-400">
                   <div className="flex items-center">
-                    <FaAward className="mr-2 text-base" />
+                    <FaAward className="mr-1.5 sm:mr-2 text-sm sm:text-base" />
                     <span>{t('home.certified')}</span>
                   </div>
                   <div className="flex items-center">
-                    <FaCode className="mr-2 text-base" />
+                    <FaCode className="mr-1.5 sm:mr-2 text-sm sm:text-base" />
                     <span>{t('home.expert')}</span>
                   </div>
                 </div>
               </div>
 
               {/* Expertise Highlights */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div className="group flex items-center space-x-3 p-4 bg-gray-800 rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700">
-                  <div className="p-2 bg-gray-700 rounded-lg group-hover:bg-gray-600 transition-colors duration-300">
-                    <FaCode className="text-gray-200 text-lg" />
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700">
+                  <div className="p-1.5 sm:p-2 bg-gray-700 rounded-lg group-hover:bg-gray-600 transition-colors duration-300">
+                    <FaCode className="text-gray-200 text-base sm:text-lg" />
                   </div>
                   <div>
-                    <span className="text-sm font-semibold text-gray-200 block">{t('home.webDev')}</span>
-                    <p className="text-xs text-gray-400">{t('home.webDevSub')}</p>
+                    <span className="text-xs sm:text-sm font-semibold text-gray-200 block">{t('home.webDev')}</span>
+                    <p className="text-[10px] sm:text-xs text-gray-400">{t('home.webDevSub')}</p>
                   </div>
                 </div>
-                <div className="group flex items-center space-x-3 p-4 bg-gray-800 rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700">
-                  <div className="p-2 bg-gray-700 rounded-lg group-hover:bg-gray-600 transition-colors duration-300">
-                    <FaLaptopCode className="text-gray-200 text-lg" />
+                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700">
+                  <div className="p-1.5 sm:p-2 bg-gray-700 rounded-lg group-hover:bg-gray-600 transition-colors duration-300">
+                    <FaLaptopCode className="text-gray-200 text-base sm:text-lg" />
                   </div>
                   <div>
-                    <span className="text-sm font-semibold text-gray-200 block">{t('home.nextjs')}</span>
-                    <p className="text-xs text-gray-400">{t('home.nextjsSub')}</p>
+                    <span className="text-xs sm:text-sm font-semibold text-gray-200 block">{t('home.nextjs')}</span>
+                    <p className="text-[10px] sm:text-xs text-gray-400">{t('home.nextjsSub')}</p>
                   </div>
                 </div>
-                <div className="group flex items-center space-x-3 p-4 bg-gray-800 rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700">
-                  <div className="p-2 bg-gray-700 rounded-lg group-hover:bg-gray-600 transition-colors duration-300">
-                    <FaRobot className="text-gray-200 text-lg" />
+                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700">
+                  <div className="p-1.5 sm:p-2 bg-gray-700 rounded-lg group-hover:bg-gray-600 transition-colors duration-300">
+                    <FaRobot className="text-gray-200 text-base sm:text-lg" />
                   </div>
                   <div>
-                    <span className="text-sm font-semibold text-gray-200 block">{t('home.aiEng')}</span>
-                    <p className="text-xs text-gray-400">{t('home.aiEngSub')}</p>
+                    <span className="text-xs sm:text-sm font-semibold text-gray-200 block">{t('home.aiEng')}</span>
+                    <p className="text-[10px] sm:text-xs text-gray-400">{t('home.aiEngSub')}</p>
                   </div>
                 </div>
               </div>
 
               {/* Professional CTA Section */}
-              <div className="space-y-6 pt-4">
-                <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
+              <div className="space-y-4 sm:space-y-6 pt-2 sm:pt-4">
+                <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-3 sm:space-y-0 sm:space-x-4 md:space-x-6">
                   <Link
                     href="/Contact"
-                    className="group inline-flex items-center px-8 py-3.5 bg-white text-black rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl text-base font-semibold"
+                    className="group inline-flex items-center px-6 py-2.5 sm:px-8 sm:py-3.5 bg-white text-black rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base font-semibold"
                   >
                     <span className="mr-2">{t('home.cta')}</span>
                     <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
@@ -98,14 +98,14 @@ const Home = () => {
                 </div>
 
                 {/* Social Links */}
-                <div className="flex justify-center md:justify-start space-x-5 pt-2">
+                <div className="flex justify-center md:justify-start space-x-3 sm:space-x-4 md:space-x-5 pt-1 sm:pt-2">
                   <Link
                     href="https://github.com/khanzadigithubid/"
                     className="group"
                     aria-label="GitHub Profile"
                   >
-                    <button className="inline-flex items-center justify-center w-12 h-12 text-black bg-white rounded-full hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg">
-                      <FaGithub size={22} className="group-hover:scale-110 transition-transform duration-300" />
+                    <button className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 text-black bg-white rounded-full hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg">
+                      <FaGithub size={20} className="sm:w-[22px] sm:h-[22px] group-hover:scale-110 transition-transform duration-300" />
                     </button>
                   </Link>
                   <Link
@@ -113,8 +113,8 @@ const Home = () => {
                     className="group"
                     aria-label="LinkedIn Profile"
                   >
-                    <button className="inline-flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition-all duration-300 shadow-md hover:shadow-lg">
-                      <FaLinkedin size={22} className="group-hover:scale-110 transition-transform duration-300" />
+                    <button className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition-all duration-300 shadow-md hover:shadow-lg">
+                      <FaLinkedin size={20} className="sm:w-[22px] sm:h-[22px] group-hover:scale-110 transition-transform duration-300" />
                     </button>
                   </Link>
                 </div>

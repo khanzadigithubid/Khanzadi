@@ -2,8 +2,79 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { FaSun, FaMoon } from 'react-icons/fa';
+import dynamic from 'next/dynamic';
 import LanguageSwitcher from '../../components/LanguageSwitcher';
 import { useLanguage } from '../../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
+
+// Theme Toggle Button Component
+function ThemeToggle() {
+  const { theme, toggleTheme } = useTheme();
+
+  return (
+    <button
+      onClick={toggleTheme}
+      className="relative p-3 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-300 border border-gray-700 hover:border-gray-600 shadow-md hover:shadow-lg group"
+      aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+    >
+      <div className="relative w-5 h-5">
+        {/* Sun Icon */}
+        <FaSun
+          className={`absolute inset-0 text-yellow-400 transition-all duration-500 ${
+            theme === 'dark'
+              ? 'opacity-0 rotate-90 scale-0'
+              : 'opacity-100 rotate-0 scale-100'
+          }`}
+        />
+        {/* Moon Icon */}
+        <FaMoon
+          className={`absolute inset-0 text-blue-300 transition-all duration-500 ${
+            theme === 'dark'
+              ? 'opacity-100 rotate-0 scale-100'
+              : 'opacity-0 -rotate-90 scale-0'
+          }`}
+        />
+      </div>
+    </button>
+  );
+}
+
+// Theme Toggle Button Mobile Component
+function ThemeToggleMobile() {
+  const { theme, toggleTheme } = useTheme();
+
+  return (
+    <button
+      onClick={toggleTheme}
+      className="relative p-4 rounded-xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 border border-gray-700 hover:border-gray-600 shadow-lg group"
+      aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+    >
+      <div className="relative w-7 h-7">
+        {/* Sun Icon */}
+        <FaSun
+          className={`absolute inset-0 text-yellow-400 transition-all duration-500 ${
+            theme === 'dark'
+              ? 'opacity-0 rotate-90 scale-0'
+              : 'opacity-100 rotate-0 scale-100'
+          }`}
+        />
+        {/* Moon Icon */}
+        <FaMoon
+          className={`absolute inset-0 text-blue-300 transition-all duration-500 ${
+            theme === 'dark'
+              ? 'opacity-100 rotate-0 scale-100'
+              : 'opacity-0 -rotate-90 scale-0'
+          }`}
+        />
+      </div>
+    </button>
+  );
+}
+
+// Dynamic imports with no SSR
+const DynamicThemeToggle = dynamic(() => Promise.resolve(ThemeToggle), { ssr: false });
+const DynamicThemeToggleMobile = dynamic(() => Promise.resolve(ThemeToggleMobile), { ssr: false });
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -49,6 +120,14 @@ export default function Header() {
           : 'bg-black border-b-2 border-white/20'
       }`}
     >
+      {/* Skip to Main Content Link - Accessibility */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-6 focus:py-3 focus:bg-white focus:text-black focus:rounded-lg focus:shadow-xl focus:font-semibold focus:outline-none focus:ring-4 focus:ring-sky-500"
+      >
+        {t('accessibility.skipToMain')}
+      </a>
+
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Desktop Navigation - Centered */}
@@ -66,8 +145,11 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Language Switcher - Desktop */}
-          <div className="hidden md:block">
+          {/* Theme Toggle & Language Switcher - Desktop */}
+          <div className="hidden md:flex items-center space-x-3">
+            {/* Theme Toggle Button */}
+            <DynamicThemeToggle />
+
             <LanguageSwitcher />
           </div>
 
@@ -126,8 +208,11 @@ export default function Header() {
               </Link>
             ))}
 
-            {/* Language Switcher - Mobile */}
-            <div className="pt-4">
+            {/* Theme Toggle & Language Switcher - Mobile */}
+            <div className="pt-8 flex flex-col items-center space-y-4">
+              {/* Theme Toggle Button - Mobile */}
+              <DynamicThemeToggleMobile />
+
               <LanguageSwitcher />
             </div>
           </nav>

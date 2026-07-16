@@ -208,38 +208,38 @@ const Project = () => {
         </div>
 
         {/* Project Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12 sm:mb-16">
-          <div className="flex items-center space-x-4 p-5 bg-gray-800 rounded-xl shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300">
-            <div className="p-3 bg-gray-700 rounded-lg">
-              <FaCode className="text-gray-200 text-xl" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-10 sm:mb-12 md:mb-16">
+          <div className="flex items-center space-x-3 sm:space-x-4 p-4 sm:p-5 bg-gray-800 rounded-lg sm:rounded-xl shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300">
+            <div className="p-2 sm:p-3 bg-gray-700 rounded-lg flex-shrink-0">
+              <FaCode className="text-gray-200 text-lg sm:text-xl" />
             </div>
-            <div>
-              <h3 className="text-base font-semibold text-white">{projects.length} {t('projects.projectsCount')}</h3>
-              <p className="text-sm text-gray-400">{t('projects.completed')}</p>
-            </div>
-          </div>
-          <div className="flex items-center space-x-4 p-5 bg-gray-800 rounded-xl shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300">
-            <div className="p-3 bg-gray-700 rounded-lg">
-              <FaStar className="text-gray-200 text-xl" />
-            </div>
-            <div>
-              <h3 className="text-base font-semibold text-white">{t('projects.quality')}</h3>
-              <p className="text-sm text-gray-400">{t('projects.qualitySub')}</p>
+            <div className="min-w-0">
+              <h3 className="text-sm sm:text-base font-semibold text-white truncate">{projects.length} {t('projects.projectsCount')}</h3>
+              <p className="text-xs sm:text-sm text-gray-400 truncate">{t('projects.completed')}</p>
             </div>
           </div>
-          <div className="flex items-center space-x-4 p-5 bg-gray-800 rounded-xl shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300">
-            <div className="p-3 bg-gray-700 rounded-lg">
-              <FaRegClock className="text-gray-200 text-xl" />
+          <div className="flex items-center space-x-3 sm:space-x-4 p-4 sm:p-5 bg-gray-800 rounded-lg sm:rounded-xl shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300">
+            <div className="p-2 sm:p-3 bg-gray-700 rounded-lg flex-shrink-0">
+              <FaStar className="text-gray-200 text-lg sm:text-xl" />
             </div>
-            <div>
-              <h3 className="text-base font-semibold text-white">{t('projects.latest')}</h3>
-              <p className="text-sm text-gray-400">{t('projects.latestSub')}</p>
+            <div className="min-w-0">
+              <h3 className="text-sm sm:text-base font-semibold text-white truncate">{t('projects.quality')}</h3>
+              <p className="text-xs sm:text-sm text-gray-400 truncate">{t('projects.qualitySub')}</p>
+            </div>
+          </div>
+          <div className="flex items-center space-x-3 sm:space-x-4 p-4 sm:p-5 bg-gray-800 rounded-lg sm:rounded-xl shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300">
+            <div className="p-2 sm:p-3 bg-gray-700 rounded-lg flex-shrink-0">
+              <FaRegClock className="text-gray-200 text-lg sm:text-xl" />
+            </div>
+            <div className="min-w-0">
+              <h3 className="text-sm sm:text-base font-semibold text-white truncate">{t('projects.latest')}</h3>
+              <p className="text-xs sm:text-sm text-gray-400 truncate">{t('projects.latestSub')}</p>
             </div>
           </div>
         </div>
 
         {/* Category Filter Tabs */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12 sm:mb-16">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 sm:mb-12 md:mb-16">
           {categories.map((category) => (
             <button
               key={category}
@@ -247,7 +247,7 @@ const Project = () => {
                 setSelectedCategory(category);
                 setShowAll(false);
               }}
-              className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${
+              className={`px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-300 ${
                 selectedCategory === category
                   ? 'bg-white text-black shadow-lg'
                   : 'bg-gray-800 text-gray-200 hover:bg-gray-750 shadow-md border border-gray-700'
@@ -259,15 +259,15 @@ const Project = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="flex flex-wrap -m-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {displayedProjects.map((project, index) => (
             <div
               key={index}
-              className="p-4 lg:w-1/4 md:w-1/2 w-full"
+              className="w-full"
               data-aos="fade-up"
               data-aos-duration={400 + (index % 4) * 50}
             >
-              <div className="flex flex-col h-full bg-gray-800 rounded-xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl border border-gray-700 hover:border-gray-600">
+              <div className="flex flex-col h-full bg-gray-800 rounded-lg sm:rounded-xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl border border-gray-700 hover:border-gray-600">
                 <div
                   className="relative h-[220px] sm:h-[240px] w-full overflow-hidden cursor-pointer group"
                   onClick={() => openLightbox(index)}
@@ -309,18 +309,18 @@ const Project = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex-1 p-4 sm:p-6 bg-gray-800">
-                  <div className="mb-2">
-                    <span className="inline-block px-2 py-1 text-[10px] sm:text-xs font-medium text-gray-300 bg-gray-700 rounded-full">
+                <div className="flex-1 p-3 sm:p-4 md:p-6 bg-gray-800">
+                  <div className="mb-1.5 sm:mb-2">
+                    <span className="inline-block px-2 py-0.5 sm:py-1 text-[10px] sm:text-xs font-medium text-gray-300 bg-gray-700 rounded-full">
                       {getCategoryTranslation(project.category)}
                     </span>
                   </div>
                   <Link href={project.link} target="_blank" rel="noopener noreferrer">
-                    <h2 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3 hover:text-gray-300 transition-colors duration-300">
+                    <h2 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-1.5 sm:mb-2 md:mb-3 hover:text-gray-300 transition-colors duration-300 line-clamp-2">
                       {getProjectTranslation(project.key, 'title')}
                     </h2>
                   </Link>
-                  <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
+                  <p className="text-gray-300 text-xs sm:text-sm leading-relaxed line-clamp-3">
                     {getProjectTranslation(project.key, 'description')}
                   </p>
                 </div>
@@ -331,13 +331,13 @@ const Project = () => {
 
         {/* Show More/Less Button */}
         {hasMore && (
-          <div className="text-center mt-8 sm:mt-12">
+          <div className="text-center mt-6 sm:mt-8 md:mt-12">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-3.5 bg-white text-black rounded-lg hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base font-medium"
+              className="inline-flex items-center px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-3.5 bg-white text-black rounded-lg hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl text-xs sm:text-sm md:text-base font-medium"
             >
               {showAll ? t('projects.showLess') : `${t('projects.showMore')} (${filteredProjects.length - 8} ${t('projects.more')})`}
-              <FaChevronDown className={`ml-2 transition-transform duration-300 ${showAll ? 'rotate-180' : ''}`} />
+              <FaChevronDown className={`ml-1.5 sm:ml-2 w-3 h-3 sm:w-4 sm:h-4 transition-transform duration-300 ${showAll ? 'rotate-180' : ''}`} />
             </button>
           </div>
         )}

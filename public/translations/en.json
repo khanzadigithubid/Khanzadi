@@ -262,6 +262,34 @@
     "contactInfo": "Contact Information",
     "location": "Location",
     "city": "Karachi",
-    "connect": "Connect with Me"
+    "connect": "Connect with Me",
+    "validationNameMin": "Please enter a valid name (at least 2 characters)",
+    "validationEmail": "Please enter a valid email address",
+    "validationPhone": "Please enter a valid phone number",
+    "validationMessageMin": "Please enter a message (at least 10 characters)",
+    "configError": "Configuration error. Please contact the site administrator."
+  },
+  "testimonials": {
+    "subtitle": "Client Testimonials",
+    "title": "What Clients Say",
+    "description": "Hear from the professionals and businesses I've had the privilege to work with",
+    "noTestimonials": "No testimonials available yet.",
+    "readMore": "Read more",
+    "readLess": "Read less"
+  },
+  "breadcrumbs": {
+    "home": "Home"
+  },
+  "whatsapp": {
+    "aria": "Chat on WhatsApp",
+    "tooltip": "Chat on WhatsApp",
+    "message": "Hello! I found your portfolio and would like to discuss a project."
+  },
+  "backToTop": {
+    "aria": "Back to Top",
+    "tooltip": "Back to Top"
+  },
+  "accessibility": {
+    "skipToMain": "Skip to main content"
   }
 }

@@ -63,36 +63,36 @@ const About = () => {
                 </div>
 
                 {/* Professional Badges */}
-                <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                  <div className="flex items-center space-x-2 px-5 py-2.5 bg-gray-800 text-gray-200 rounded-full text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">
-                    <FaAward className="text-gray-400" />
+                <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4 justify-center md:justify-start">
+                  <div className="flex items-center space-x-1.5 sm:space-x-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">
+                    <FaAward className="text-gray-400 text-xs sm:text-sm" />
                     <span>{t('about.certified')}</span>
                   </div>
-                  <div className="flex items-center space-x-2 px-5 py-2.5 bg-gray-800 text-gray-200 rounded-full text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">
-                    <FaStar className="text-gray-400" />
+                  <div className="flex items-center space-x-1.5 sm:space-x-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">
+                    <FaStar className="text-gray-400 text-xs sm:text-sm" />
                     <span>{t('about.expert')}</span>
                   </div>
-                  <div className="flex items-center space-x-2 px-5 py-2.5 bg-gray-800 text-gray-200 rounded-full text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">
-                    <FaCheckCircle className="text-gray-400" />
+                  <div className="flex items-center space-x-1.5 sm:space-x-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">
+                    <FaCheckCircle className="text-gray-400 text-xs sm:text-sm" />
                     <span>ADC PAT 2</span>
                   </div>
                 </div>
 
                 {/* Skills Tags */}
-                <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-                  <span className="px-5 py-2.5 bg-gray-800 text-gray-200 rounded-full text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">{t('about.frontendDev')}</span>
-                  <span className="px-5 py-2.5 bg-gray-800 text-gray-200 rounded-full text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">Next.js</span>
-                  <span className="px-5 py-2.5 bg-gray-800 text-gray-200 rounded-full text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">{t('about.aiEng')}</span>
+                <div className="flex flex-wrap gap-2 sm:gap-3 justify-center md:justify-start">
+                  <span className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">{t('about.frontendDev')}</span>
+                  <span className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">Next.js</span>
+                  <span className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">{t('about.aiEng')}</span>
                 </div>
 
                 {/* Download Resume Button */}
-                <div className="flex justify-center md:justify-start mt-8">
+                <div className="flex justify-center md:justify-start mt-6 sm:mt-8">
                   <a
                     href="/Khanzadi_Resume_MASTER (3).pdf"
                     download="Khanzadi_Resume_MASTER.pdf"
-                    className="inline-flex items-center space-x-2 px-8 py-3.5 bg-white text-black rounded-lg text-base font-semibold shadow-lg hover:shadow-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+                    className="inline-flex items-center space-x-2 px-6 py-2.5 sm:px-8 sm:py-3.5 bg-white text-black rounded-lg text-sm sm:text-base font-semibold shadow-lg hover:shadow-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
                   >
-                    <FaDownload className="text-lg" />
+                    <FaDownload className="text-base sm:text-lg" />
                     <span>{t('about.downloadResume')}</span>
                   </a>
                 </div>
@@ -101,63 +101,63 @@ const About = () => {
           </div>
 
           {/* Key Areas Section */}
-          <div className="grid sm:grid-cols-2 gap-8 mb-20 sm:mb-24">
-            <div className="bg-gray-800 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700" data-aos="fade-up" data-aos-duration="500">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-gray-700 rounded-lg mr-4">
-                  <FaCode className="text-gray-200 text-2xl" />
+          <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20 md:mb-24">
+            <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700" data-aos="fade-up" data-aos-duration="500">
+              <div className="flex items-center mb-4 sm:mb-6">
+                <div className="p-2 sm:p-3 bg-gray-700 rounded-lg mr-3 sm:mr-4">
+                  <FaCode className="text-gray-200 text-xl sm:text-2xl" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-semibold text-white">{t('about.techExpertise')}</h3>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">{t('about.techExpertise')}</h3>
               </div>
-              <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
+              <p className="text-gray-300 leading-relaxed text-sm sm:text-base md:text-lg">
                 {t('about.techDesc')}
               </p>
             </div>
 
-            <div className="bg-gray-800 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-gray-700 rounded-lg mr-4">
-                  <FaGraduationCap className="text-gray-200 text-2xl" />
+            <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
+              <div className="flex items-center mb-4 sm:mb-6">
+                <div className="p-2 sm:p-3 bg-gray-700 rounded-lg mr-3 sm:mr-4">
+                  <FaGraduationCap className="text-gray-200 text-xl sm:text-2xl" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-semibold text-white">{t('about.education')}</h3>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">{t('about.education')}</h3>
               </div>
-              <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
+              <p className="text-gray-300 leading-relaxed text-sm sm:text-base md:text-lg">
                 {t('about.educationDesc')}
               </p>
             </div>
           </div>
 
           {/* Goals Section */}
-          <div className="bg-gray-800 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700" data-aos="fade-up" data-aos-duration="500">
-            <div className="flex items-center mb-6">
-              <div className="p-3 bg-gray-700 rounded-lg mr-4">
-                <FaLightbulb className="text-gray-200 text-2xl" />
+          <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700" data-aos="fade-up" data-aos-duration="500">
+            <div className="flex items-center mb-4 sm:mb-6">
+              <div className="p-2 sm:p-3 bg-gray-700 rounded-lg mr-3 sm:mr-4">
+                <FaLightbulb className="text-gray-200 text-xl sm:text-2xl" />
               </div>
-              <h3 className="text-xl sm:text-2xl font-semibold text-white">{t('about.goals')}</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">{t('about.goals')}</h3>
             </div>
-            <div className="grid sm:grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <h4 className="text-lg font-semibold text-white">{t('about.shortTerm')}</h4>
-                <ul className="space-y-3 text-gray-300 text-base">
+            <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
+              <div className="space-y-3 sm:space-y-4">
+                <h4 className="text-base sm:text-lg font-semibold text-white">{t('about.shortTerm')}</h4>
+                <ul className="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-2 sm:mr-3 mt-1.5 sm:mt-2 flex-shrink-0"></span>
                     <span>{t('about.goal1')}</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-2 sm:mr-3 mt-1.5 sm:mt-2 flex-shrink-0"></span>
                     <span>{t('about.goal2')}</span>
                   </li>
                 </ul>
               </div>
-              <div className="space-y-4">
-                <h4 className="text-lg font-semibold text-white">{t('about.longTerm')}</h4>
-                <ul className="space-y-3 text-gray-300 text-base">
+              <div className="space-y-3 sm:space-y-4">
+                <h4 className="text-base sm:text-lg font-semibold text-white">{t('about.longTerm')}</h4>
+                <ul className="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-2 sm:mr-3 mt-1.5 sm:mt-2 flex-shrink-0"></span>
                     <span>{t('about.goal3')}</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-gray-400 rounded-full mr-2 sm:mr-3 mt-1.5 sm:mt-2 flex-shrink-0"></span>
                     <span>{t('about.goal4')}</span>
                   </li>
                 </ul>

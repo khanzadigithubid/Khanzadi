@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { FaQuoteLeft, FaLinkedin, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import Image from 'next/image';
+import { useLanguage } from '../../context/LanguageContext';
 
 interface TestimonialCardProps {
   name: string;
@@ -21,6 +22,7 @@ export default function TestimonialCard({
   date,
   avatarUrl
 }: TestimonialCardProps) {
+  const { t } = useLanguage();
   const [isExpanded, setIsExpanded] = useState(false);
   const shouldTruncate = content.length > 300;
   const displayContent = shouldTruncate && !isExpanded
@@ -55,12 +57,12 @@ export default function TestimonialCard({
           >
             {isExpanded ? (
               <>
-                <span>Read less</span>
+                <span>{t('testimonials.readLess')}</span>
                 <FaChevronUp className="w-3 h-3" />
               </>
             ) : (
               <>
-                <span>Read more</span>
+                <span>{t('testimonials.readMore')}</span>
                 <FaChevronDown className="w-3 h-3" />
               </>
             )}

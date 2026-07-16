@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function BackToTop() {
+  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -33,7 +35,7 @@ export default function BackToTop() {
       className={`fixed bottom-6 left-6 z-50 group transition-all duration-300 ${
         isVisible ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}
-      aria-label="Back to Top"
+      aria-label={t('backToTop.aria')}
     >
       <div className="relative">
         {/* Button */}
@@ -44,7 +46,7 @@ export default function BackToTop() {
         {/* Tooltip */}
         <div className="absolute bottom-full left-0 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
           <div className="bg-white text-black text-xs sm:text-sm px-3 py-2 rounded-lg whitespace-nowrap shadow-lg">
-            Back to Top
+            {t('backToTop.tooltip')}
           </div>
         </div>
       </div>

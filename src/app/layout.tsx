@@ -6,6 +6,7 @@ import { LanguageProvider } from '../context/LanguageContext';
 import Header from './components/Header';
 import WhatsAppButton from './components/WhatsAppButton';
 import StructuredData from './components/StructuredData';
+import ErrorBoundary from './components/ErrorBoundary';
 import NextTopLoader from 'nextjs-toploader';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -77,32 +78,34 @@ export default function RootLayout({
       <body className={inter.className}>
         <LanguageProvider>
           <ThemeProvider>
-            <NextTopLoader
-              color="#475569"
-              initialPosition={0.08}
-              crawlSpeed={200}
-              height={3}
-              crawl={true}
-              showSpinner={false}
-              easing="ease"
-              speed={200}
-              shadow="0 0 10px #475569,0 0 5px #475569"
-            />
-            <Header />
-            <main>{children}</main>
-            <WhatsAppButton />
-            <ToastContainer
-              position="top-right"
-              autoClose={5000}
-              hideProgressBar={false}
-              newestOnTop={false}
-              closeOnClick
-              rtl={false}
-              pauseOnFocusLoss
-              draggable
-              pauseOnHover
-              theme="light"
-            />
+            <ErrorBoundary>
+              <NextTopLoader
+                color="#475569"
+                initialPosition={0.08}
+                crawlSpeed={200}
+                height={3}
+                crawl={true}
+                showSpinner={false}
+                easing="ease"
+                speed={200}
+                shadow="0 0 10px #475569,0 0 5px #475569"
+              />
+              <Header />
+              <main id="main-content">{children}</main>
+              <WhatsAppButton />
+              <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+              />
+            </ErrorBoundary>
           </ThemeProvider>
         </LanguageProvider>
       </body>

@@ -1,10 +1,12 @@
 'use client';
 
 import { FaWhatsapp } from 'react-icons/fa';
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function WhatsAppButton() {
+  const { t } = useLanguage();
   const phoneNumber = '923708625821'; // +92 370 862 5821
-  const message = 'Hello! I found your portfolio and would like to discuss a project.';
+  const message = t('whatsapp.message');
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -13,7 +15,7 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 group"
-      aria-label="Chat on WhatsApp"
+      aria-label={t('whatsapp.aria')}
     >
       <div className="relative">
         {/* Animated pulse ring */}
@@ -27,7 +29,7 @@ export default function WhatsAppButton() {
         {/* Tooltip */}
         <div className="absolute bottom-full right-0 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
           <div className="bg-black dark:bg-white text-white dark:text-black text-xs sm:text-sm px-3 py-2 rounded-lg whitespace-nowrap shadow-lg">
-            Chat on WhatsApp
+            {t('whatsapp.tooltip')}
           </div>
         </div>
       </div>
