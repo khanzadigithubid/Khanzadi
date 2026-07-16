@@ -8,6 +8,10 @@ const nextConfig = {
     };
     return config;
   },
+  // Force fresh build
+  generateBuildId: async () => {
+    return 'build-' + Date.now();
+  },
 };
 
 export default nextConfig;
