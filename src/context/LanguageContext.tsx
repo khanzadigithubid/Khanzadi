@@ -24,6 +24,14 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     setLocaleState(savedLang);
     setCurrentTranslations(translations[savedLang]);
 
+    // Debug logging
+    console.log('🌐 Translation Debug:', {
+      locale: savedLang,
+      hasTranslations: !!translations[savedLang],
+      sampleKey: translations[savedLang]?.nav?.home,
+      greeting: translations[savedLang]?.home?.greeting
+    });
+
     // Set document direction
     if (savedLang === 'ur' || savedLang === 'ar') {
       document.documentElement.setAttribute('dir', 'rtl');
