@@ -1,3 +1,2 @@
-// Legacy compatibility file - now uses next-intl
-// This file maintains the old API for backwards compatibility
-export { useLanguage } from '../hooks/useLanguageCompat';
+// Re-export from new implementation for backwards compatibility
+export { LanguageProvider, useLanguage } from './LanguageContextNew';
