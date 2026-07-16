@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import {ThemeProvider} from './context/ThemeContext';
-import { LanguageProvider } from '../context/LanguageContext';
+import {NextIntlClientProvider} from 'next-intl';
+import {getMessages} from 'next-intl/server';
 import Header from './components/Header';
 import WhatsAppButton from './components/WhatsAppButton';
 import StructuredData from './components/StructuredData';
@@ -62,13 +63,17 @@ export const metadata: Metadata = {
   }
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params: {locale}
 }: Readonly<{
   children: React.ReactNode;
+  params: {locale: string};
 }>) {
+  const messages = await getMessages();
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         <StructuredData />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -76,7 +81,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body className={inter.className}>
-        <LanguageProvider>
+        <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
             <ErrorBoundary>
               <NextTopLoader
@@ -107,7 +112,7 @@ export default function RootLayout({
               />
             </ErrorBoundary>
           </ThemeProvider>
-        </LanguageProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
