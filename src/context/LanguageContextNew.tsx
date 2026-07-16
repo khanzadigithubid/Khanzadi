@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import defaultTranslations from '../../public/translations/en.json';
+import defaultTranslations from '../messages/en.json';
 
 type Translations = Record<string, any>;
 
