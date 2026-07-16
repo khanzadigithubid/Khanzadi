@@ -1,7 +1,7 @@
-import en from '../messages/en.json';
-import ur from '../messages/ur.json';
-import ar from '../messages/ar.json';
-import es from '../messages/es.json';
+import en from '../messages/en.json' assert { type: 'json' };
+import ur from '../messages/ur.json' assert { type: 'json' };
+import ar from '../messages/ar.json' assert { type: 'json' };
+import es from '../messages/es.json' assert { type: 'json' };
 
 export const translations = {
   en,
