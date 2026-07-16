@@ -1,6 +1,7 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { translations, Locale } from '../i18n/translations';
 
 type Translations = {
   [key: string]: any;
@@ -15,13 +16,13 @@ type LanguageContextType = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState('en');
-  const [translations, setTranslations] = useState<Translations>({});
+  const [locale, setLocaleState] = useState<Locale>('en');
+  const [currentTranslations, setCurrentTranslations] = useState<Translations>(translations.en);
 
   useEffect(() => {
-    const savedLang = localStorage.getItem('language') || 'en';
+    const savedLang = (localStorage.getItem('language') || 'en') as Locale;
     setLocaleState(savedLang);
-    loadTranslations(savedLang);
+    setCurrentTranslations(translations[savedLang]);
 
     // Set document direction
     if (savedLang === 'ur' || savedLang === 'ar') {
@@ -33,30 +34,19 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  const loadTranslations = async (lang: string) => {
-    try {
-      const response = await fetch(`/translations/${lang}.json`);
-      if (response.ok) {
-        const data = await response.json();
-        setTranslations(data);
-      }
-    } catch (error) {
-      console.error('Error loading translations:', error);
-    }
-  };
-
   const setLocale = (newLocale: string) => {
-    setLocaleState(newLocale);
-    localStorage.setItem('language', newLocale);
-    loadTranslations(newLocale);
+    const validLocale = newLocale as Locale;
+    setLocaleState(validLocale);
+    localStorage.setItem('language', validLocale);
+    setCurrentTranslations(translations[validLocale]);
 
     // Set document direction
-    if (newLocale === 'ur' || newLocale === 'ar') {
+    if (validLocale === 'ur' || validLocale === 'ar') {
       document.documentElement.setAttribute('dir', 'rtl');
-      document.documentElement.setAttribute('lang', newLocale);
+      document.documentElement.setAttribute('lang', validLocale);
     } else {
       document.documentElement.setAttribute('dir', 'ltr');
-      document.documentElement.setAttribute('lang', newLocale);
+      document.documentElement.setAttribute('lang', validLocale);
     }
 
     // Reload to apply changes
@@ -65,7 +55,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const t = (key: string): string => {
     const keys = key.split('.');
-    let value: any = translations;
+    let value: any = currentTranslations;
 
     for (const k of keys) {
       if (value && typeof value === 'object' && k in value) {
