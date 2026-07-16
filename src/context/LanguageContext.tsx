@@ -19,15 +19,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>('en');
   const [currentTranslations, setCurrentTranslations] = useState<Translations>(translations.en);
 
-  // Debug: Log translations on mount
-  useEffect(() => {
-    console.log('Translations loaded:', {
-      hasEn: !!translations.en,
-      enNavHome: translations.en?.nav?.home,
-      currentNavHome: currentTranslations?.nav?.home
-    });
-  }, []);
-
   useEffect(() => {
     const savedLang = (localStorage.getItem('language') || 'en') as Locale;
     setLocaleState(savedLang);
