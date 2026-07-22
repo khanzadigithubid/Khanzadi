@@ -1,4 +1,4 @@
-{
+export const ur = {
   "nav": {
     "home": "ہوم",
     "about": "میرے بارے میں",
@@ -292,4 +292,4 @@
   "accessibility": {
     "skipToMain": "مرکزی مواد پر جائیں"
   }
-}
+} as const;

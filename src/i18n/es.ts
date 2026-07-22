@@ -1,4 +1,4 @@
-{
+export const es = {
   "nav": {
     "home": "Inicio",
     "about": "Acerca de",
@@ -292,4 +292,4 @@
   "accessibility": {
     "skipToMain": "Saltar al contenido principal"
   }
-}
+} as const;

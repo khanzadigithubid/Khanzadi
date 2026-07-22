@@ -1,4 +1,4 @@
-{
+export const ar = {
   "nav": {
     "home": "الرئيسية",
     "about": "نبذة عني",
@@ -292,4 +292,4 @@
   "accessibility": {
     "skipToMain": "الانتقال إلى المحتوى الرئيسي"
   }
-}
+} as const;

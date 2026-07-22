@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import {ThemeProvider} from './context/ThemeContext';
-import { LanguageProvider } from '../context/LanguageContext';
+import { LanguageProvider } from '../context/LanguageContextNew';
 import Header from './components/Header';
 import WhatsAppButton from './components/WhatsAppButton';
 import StructuredData from './components/StructuredData';
