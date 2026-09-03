@@ -125,6 +125,8 @@
     "showLess": "Show Less",
     "more": "more",
     "clickToView": "Click to view",
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source Code",
     "categories": {
       "all": "All",
       "webApps": "Web Apps",
@@ -140,7 +142,7 @@
       },
       "oopProject": {
         "title": "OOP Project",
-        "description": "Object-Oriented Programming project demonstrating coding best practices with clean architecture and maintainable code structure."
+        "description": "An Object-Oriented Programming project built with JavaScript, demonstrating core OOP concepts including classes, inheritance, encapsulation, and polymorphism with clean, maintainable, and reusable code architecture."
       },
       "tradingWebsite": {
         "title": "Trading Website",
@@ -197,6 +199,34 @@
       "serverSideRecipeApp": {
         "title": "Server-Side Recipe App",
         "description": "Recipe application with server-side API integration and rendering for optimal performance and SEO benefits."
+      },
+      "tradingCopilot": {
+        "title": "Trading Copilot",
+        "description": "AI-powered trading copilot offering real-time market insights and intelligent assistance for informed trading decisions."
+      },
+      "aiEmployeeWorkspace": {
+        "title": "AI Employee Workspace Automation",
+        "description": "Read-only Google Workspace briefing automation powered by GitHub Actions, generating daily executive Markdown reports from Calendar, Gmail, and Drive."
+      },
+      "shopifyAutomation": {
+        "title": "Shopify Business Intelligence Automation",
+        "description": "A read-only Shopify business intelligence workflow that generates a daily Markdown report from order and inventory data. Calculates operational metrics, flags low-stock products, and optionally uses an OpenAI-compatible model for aggregate business analysis. Runs automatically through a scheduled GitHub Actions workflow with privacy-first, read-only API access."
+      },
+      "agenticAIOS": {
+        "title": "Agentic AI OS",
+        "description": "Agentic AI OS is a platform for building AI workflows in minutes. It offers AI-powered tools including an intelligent Read assistant, a Workflow Generator, and Diagram visualization to design and build agentic AI solutions with ease."
+      },
+      "photoToSketch": {
+        "title": "AI Photo to Sketch Converter",
+        "description": "AI Photo to Sketch Converter is an AI-powered web application built with Streamlit that transforms your photos into artistic pencil sketches using computer vision and image processing techniques."
+      },
+      "loopEngineering": {
+        "title": "Loop Engineering Hub",
+        "description": "The Complete Loop Engineering Hub — from manual prompting to autonomous AI agent systems. An educational repository teaching how to design automated loops that prompt AI coding agents, covering heartbeat types, the maker-checker pattern, memory spines, and observability across 12 hands-on projects. The important skill has moved from writing prompts to designing loops."
+      },
+      "worldMap": {
+        "title": "World Map",
+        "description": "World Map is an interactive Streamlit web application for data visualization and geographic exploration, allowing users to explore and interact with global map data."
       }
     }
   },

@@ -140,7 +140,7 @@
       },
       "oopProject": {
         "title": "Proyecto OOP",
-        "description": "Proyecto de Programación Orientada a Objetos que demuestra las mejores prácticas de codificación con arquitectura limpia y estructura de código mantenible."
+        "description": "Un proyecto de Programación Orientada a Objetos construido con JavaScript que demuestra conceptos OOP esenciales, incluyendo clases, herencia, encapsulación y polimorfismo, con una arquitectura de código limpia, mantenible y reutilizable."
       },
       "tradingWebsite": {
         "title": "Sitio Web de Trading",
@@ -197,8 +197,38 @@
       "serverSideRecipeApp": {
         "title": "App de Recetas del Lado del Servidor",
         "description": "Aplicación de recetas con integración y renderizado API del lado del servidor para rendimiento óptimo y beneficios SEO."
+      },
+      "tradingCopilot": {
+        "title": "Trading Copilot",
+        "description": "Copiloto de trading impulsado por IA que ofrece información de mercado en tiempo real y asistencia inteligente para decisiones de trading informadas."
+      },
+      "aiEmployeeWorkspace": {
+        "title": "Automatización de Espacio de Trabajo de Empleados IA",
+        "description": "Automatización de resúmenes de Google Workspace de solo lectura impulsada por GitHub Actions, que genera informes ejecutivos diarios en Markdown desde Calendar, Gmail y Drive."
+      },
+      "shopifyAutomation": {
+        "title": "Automatización de Inteligencia de Negocio Shopify",
+        "description": "Un flujo de trabajo de inteligencia de negocio de Shopify de solo lectura que genera un informe Markdown diario a partir de datos de pedidos e inventario. Calcula métricas operativas, señala productos con stock bajo y opcionalmente usa un modelo compatible con OpenAI para análisis agregado de negocio. Se ejecuta automáticamente mediante un flujo de trabajo programado de GitHub Actions con acceso a API de solo lectura centrado en la privacidad."
+      },
+      "agenticAIOS": {
+        "title": "Agentic AI OS",
+        "description": "Agentic AI OS es una plataforma para crear flujos de trabajo de IA en minutos. Ofrece herramientas impulsadas por IA, incluido un asistente de lectura inteligente, un generador de flujos de trabajo y visualización de diagramas para diseñar y construir soluciones de IA agénticas con facilidad."
+      },
+      "photoToSketch": {
+        "title": "Convertidor de Foto a Boceto con IA",
+        "description": "El Convertidor de Foto a Boceto con IA es una aplicación web impulsada por inteligencia artificial construida con Streamlit que transforma tus fotos en bocetos artísticos a lápiz mediante técnicas de visión por computadora y procesamiento de imágenes."
+      },
+      "loopEngineering": {
+        "title": "Centro de Ingeniería de Bucles",
+        "description": "El Centro Completo de Ingeniería de Bucles: desde la programación manual hasta sistemas autónomos de agentes de IA. Un repositorio educativo que enseña a diseñar bucles automatizados que guían a los agentes de codificación de IA, cubriendo tipos de heartbeat, el patrón maker-checker, spines de memoria y observabilidad en 12 proyectos prácticos. La habilidad importante ha pasado de escribir prompts a diseñar bucles."
+      },
+      "worldMap": {
+        "title": "Mapa Mundial",
+        "description": "Mapa Mundial es una aplicación web interactiva de Streamlit para visualización de datos y exploración geográfica, que permite a los usuarios explorar e interactuar con datos de mapas globales."
       }
-    }
+    },
+    "liveDemo": "Demo en vivo",
+    "sourceCode": "Código fuente"
   },
   "services": {
     "title": "Servicios",

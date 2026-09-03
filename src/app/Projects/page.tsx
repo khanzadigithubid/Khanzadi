@@ -15,113 +15,185 @@ const projects = [
     key: "cryptoWebsite",
     src: "/project7.jpg",
     alt: "Crypto Website",
-    link: "https://simple-website-crypto.netlify.app/",
+    demoLink: "https://simple-website-crypto.netlify.app/",
+    githubLink: "",
     category: "Web Apps"
   },
   {
     key: "oopProject",
     src: "/project2.jpg",
     alt: "OOP Project",
-    link: "https://github.com/khanzadigithubid/OOP-Project",
+    demoLink: "",
+    githubLink: "https://github.com/khanzadigithubid/OOP-Project",
     category: "Web Apps"
   },
   {
     key: "tradingWebsite",
     src: "/project3.jpg",
     alt: "Trading Website",
-    link: "https://reacts-tradingwebsite.netlify.app/",
+    demoLink: "https://reacts-tradingwebsite.netlify.app/",
+    githubLink: "",
     category: "Web Apps"
   },
   {
     key: "chatAI",
     src: "/project11.jpg",
     alt: "Chat AI",
-    link: "https://chat-ai-one-gamma.vercel.app/",
+    demoLink: "https://chat-ai-one-gamma.vercel.app/",
+    githubLink: "",
     category: "AI Projects"
   },
   {
     key: "googleSearchApp",
     src: "/project5.jpg",
     alt: "Google Search App",
-    link: "https://github.com/khanzadigithubid/API-Google-Search-App",
+    demoLink: "",
+    githubLink: "https://github.com/khanzadigithubid/API-Google-Search-App",
     category: "API Integration"
   },
   {
     key: "recipeSearchApp",
     src: "/project6.jpg",
     alt: "Recipe Search App",
-    link: "https://github.com/khanzadigithubid/API-Recipe-App",
+    demoLink: "",
+    githubLink: "https://github.com/khanzadigithubid/API-Recipe-App",
     category: "API Integration"
   },
   {
     key: "weatherApp",
     src: "/project8.jpg",
     alt: "Weather App",
-    link: "https://github.com/khanzadigithubid/API-Weather-Project",
+    demoLink: "",
+    githubLink: "https://github.com/khanzadigithubid/API-Weather-Project",
     category: "API Integration"
   },
   {
     key: "jsWeatherApp",
     src: "/project12.jpg",
     alt: "JavaScript Weather App",
-    link: "https://javascript-api-weather-app.netlify.app/",
+    demoLink: "https://javascript-api-weather-app.netlify.app/",
+    githubLink: "",
     category: "API Integration"
   },
   {
     key: "todoList",
     src: "/project10.jpg",
     alt: "ToDo List",
-    link: "https://java-script-to-do-list-alpha.vercel.app/",
+    demoLink: "https://java-script-to-do-list-alpha.vercel.app/",
+    githubLink: "",
     category: "Web Apps"
   },
   {
     key: "resumeBuilder",
     src: "/project13.jpg",
     alt: "Resume Builder",
-    link: "https://hackathon-omega-six.vercel.app/",
+    demoLink: "https://hackathon-omega-six.vercel.app/",
+    githubLink: "",
     category: "Web Apps"
   },
   {
     key: "nextjsBlog",
     src: "/project14.jpg",
     alt: "Next.js 15 Blog",
-    link: "https://nextjs-15-and-chat-bot.vercel.app/",
+    demoLink: "https://nextjs-15-and-chat-bot.vercel.app/",
+    githubLink: "",
     category: "Next.js Projects"
   },
   {
     key: "shadcnBlog",
     src: "/project15.jpg",
     alt: "Shadcn UI Blog",
-    link: "https://bm-shadcn-ui-and-radix-ui.vercel.app/",
+    demoLink: "https://bm-shadcn-ui-and-radix-ui.vercel.app/",
+    githubLink: "",
     category: "Next.js Projects"
   },
   {
     key: "figmaConversion",
     src: "/project16.jpg",
     alt: "Figma Conversion",
-    link: "https://bm-shadcn-ui-and-radix-ui.vercel.app/",
+    demoLink: "https://bm-shadcn-ui-and-radix-ui.vercel.app/",
+    githubLink: "",
     category: "UI/UX Projects"
   },
   {
     key: "foodTuckWebsite",
     src: "/project18.jpg",
     alt: "FoodTuck Website",
-    link: "https://ui-ux-hackathon-foodtuck-website.vercel.app/",
+    demoLink: "https://ui-ux-hackathon-foodtuck-website.vercel.app/",
+    githubLink: "https://github.com/khanzadigithubid/UI-UX-Hackathon",
     category: "UI/UX Projects"
   },
   {
     key: "programmingBlog",
     src: "/project19.jpg",
     alt: "Programming Blog",
-    link: "https://nextjs-blog-website-dusky.vercel.app/",
+    demoLink: "https://nextjs-blog-website-dusky.vercel.app/",
+    githubLink: "",
     category: "Next.js Projects"
   },
   {
     key: "serverSideRecipeApp",
     src: "/project20.jpg",
     alt: "Server-Side Recipe App",
-    link: "https://server-side-api-fetch.vercel.app/",
+    demoLink: "https://server-side-api-fetch.vercel.app/",
+    githubLink: "",
     category: "API Integration"
+  },
+  {
+    key: "tradingCopilot",
+    src: "/project3.jpg",
+    alt: "Trading Copilot",
+    demoLink: "https://kw-trading-copilot.vercel.app/",
+    githubLink: "https://github.com/khanzadigithubid/Trading-Copilot",
+    category: "AI Projects"
+  },
+  {
+    key: "aiEmployeeWorkspace",
+    src: "/project11.jpg",
+    alt: "AI Employee Workspace Automation",
+    demoLink: "",
+    githubLink: "https://github.com/khanzadigithubid/ai-employee-workspace-public",
+    category: "AI Projects"
+  },
+  {
+    key: "shopifyAutomation",
+    src: "/project11.jpg",
+    alt: "Shopify Business Intelligence Automation",
+    demoLink: "",
+    githubLink: "https://github.com/khanzadigithubid/shopify-business-intelligence-automation",
+    category: "AI Projects"
+  },
+  {
+    key: "agenticAIOS",
+    src: "/project11.jpg",
+    alt: "Agentic AI OS",
+    demoLink: "https://agentic-ai-os.vercel.app/",
+    githubLink: "https://github.com/khanzadigithubid/Agentic-AI-OS",
+    category: "AI Projects"
+  },
+  {
+    key: "photoToSketch",
+    src: "/project11.jpg",
+    alt: "AI Photo to Sketch Converter",
+    demoLink: "https://kw-photo-to-sketch-converter.streamlit.app/",
+    githubLink: "https://github.com/khanzadigithubid/AI-Photo-to-Sketch-Converter-",
+    category: "AI Projects"
+  },
+  {
+    key: "loopEngineering",
+    src: "/project11.jpg",
+    alt: "Loop Engineering Hub",
+    demoLink: "",
+    githubLink: "https://github.com/khanzadigithubid/Loop_Engineering_Hub",
+    category: "AI Projects"
+  },
+  {
+    key: "worldMap",
+    src: "/project11.jpg",
+    alt: "World Map",
+    demoLink: "https://kw-world-map.streamlit.app/",
+    githubLink: "https://github.com/khanzadigithubid/World-Map",
+    category: "Web Apps"
   },
 ];
 
@@ -182,7 +254,7 @@ const Project = () => {
     alt: project.alt,
     title: getProjectTranslation(project.key, 'title'),
     description: getProjectTranslation(project.key, 'description'),
-    link: project.link
+    link: project.demoLink || project.githubLink
   }));
 
   return (
@@ -288,24 +360,32 @@ const Project = () => {
                       </span>
                     </div>
                     <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 flex justify-between">
-                      <Link
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="p-1.5 sm:p-2 bg-white/90 rounded-lg hover:bg-white transition-colors duration-300"
-                      >
-                        <FaExternalLinkAlt className="text-slate-800 text-sm sm:text-base" />
-                      </Link>
-                      <Link
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="p-1.5 sm:p-2 bg-white/90 rounded-lg hover:bg-white transition-colors duration-300"
-                      >
-                        <FaGithub className="text-slate-800 text-sm sm:text-base" />
-                      </Link>
+                      {project.demoLink && (
+                        <Link
+                          href={project.demoLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          title={t('projects.liveDemo')}
+                          aria-label={`${project.alt} - ${t('projects.liveDemo')}`}
+                          className="p-1.5 sm:p-2 bg-white/90 rounded-lg hover:bg-white transition-colors duration-300"
+                        >
+                          <FaExternalLinkAlt className="text-slate-800 text-sm sm:text-base" />
+                        </Link>
+                      )}
+                      {project.githubLink && (
+                        <Link
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          title={t('projects.sourceCode')}
+                          aria-label={`${project.alt} - ${t('projects.sourceCode')}`}
+                          className="p-1.5 sm:p-2 bg-white/90 rounded-lg hover:bg-white transition-colors duration-300"
+                        >
+                          <FaGithub className="text-slate-800 text-sm sm:text-base" />
+                        </Link>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -315,7 +395,7 @@ const Project = () => {
                       {getCategoryTranslation(project.category)}
                     </span>
                   </div>
-                  <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                  <Link href={project.demoLink || project.githubLink} target="_blank" rel="noopener noreferrer">
                     <h2 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-1.5 sm:mb-2 md:mb-3 hover:text-gray-300 transition-colors duration-300 line-clamp-2">
                       {getProjectTranslation(project.key, 'title')}
                     </h2>

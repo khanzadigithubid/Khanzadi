@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Services - Khanzadi Wazir Ali',
     description: 'Comprehensive web solutions and digital services for your business',
-    url: 'https://yourportfolio.com/Services',
+    url: 'https://khanzadi.vercel.app/Services',
     siteName: 'Khanzadi Wazir Ali Portfolio',
     images: [
       {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     images: ['/services-og.jpg'],
   },
   alternates: {
-    canonical: 'https://yourportfolio.com/Services',
+    canonical: 'https://khanzadi.vercel.app/Services',
   },
 };
 

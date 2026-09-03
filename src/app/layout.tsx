@@ -14,7 +14,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://yourportfolio.com'),
+  metadataBase: new URL('https://khanzadi.vercel.app'),
   title: {
     default: 'Khanzadi Wazir Ali - Full Stack Developer & AI Engineer',
     template: '%s | Khanzadi Wazir Ali'
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://yourportfolio.com',
+    url: 'https://khanzadi.vercel.app',
     title: 'Khanzadi Wazir Ali - Full Stack Developer & AI Engineer',
     description: 'Professional portfolio showcasing web development projects, technical skills, and professional services.',
     siteName: 'Khanzadi Wazir Ali Portfolio',

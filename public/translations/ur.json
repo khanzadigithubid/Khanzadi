@@ -139,8 +139,8 @@
         "description": "HTML، CSS، اور JavaScript سمیت جدید ویب ٹیکنالوجیز کے ساتھ بنائی گئی کریپٹو کرنسی ویب سائٹ، جو بغیر کسی رکاوٹ کے اور انٹرایکٹو صارف کا تجربہ فراہم کرتی ہے۔"
       },
       "oopProject": {
-        "title": "OOP پروجیکٹ",
-        "description": "آبجیکٹ اورینٹڈ پروگرامنگ پروجیکٹ جو صاف آرکیٹیکچر اور برقرار رکھنے کے قابل کوڈ ڈھانچے کے ساتھ کوڈنگ کے بہترین طریقوں کا مظاہرہ کرتا ہے۔"
+        "title": "OOP Project",
+        "description": "JavaScript میں بنایا گیا ایک Object-Oriented Programming پراجیکٹ جو بنیادی OOP تصورات کو ظاہر کرتا ہے، جس میں classes، inheritance، encapsulation اور polymorphism شامل ہیں، صاف، برقرار رکھنے کے لائق، اور دوبارہ استعمال کے قابل کوڈ آرکیٹیکچر کے ساتھ۔"
       },
       "tradingWebsite": {
         "title": "ٹریڈنگ ویب سائٹ",
@@ -197,8 +197,38 @@
       "serverSideRecipeApp": {
         "title": "سرور سائیڈ ریسپی ایپ",
         "description": "ریسپی ایپلیکیشن جس میں بہتر کارکردگی اور SEO فوائد کے لیے سرور سائیڈ API انٹیگریشن اور رینڈرنگ ہے۔"
+      },
+      "tradingCopilot": {
+        "title": "Trading Copilot",
+        "description": "Trading Copilot AI پر مبنی تیار کردا جاتا ہے جو مارکیٹ کی معلومات ری ال ٹائم فراہم کرتا ہے اور ئاگاہ تجارتی فیصلے کی لیے داناؤب اعوانت پریش کرتا ہے."
+      },
+      "aiEmployeeWorkspace": {
+        "title": "AI Employee Workspace Automation",
+        "description": "GitHub Actions پر مبنی ریڈ اونلی Google Workspace بریفنگ آٹومیشن، جو Calendar، Gmail اور Drive سے روزانہ ایگزیکیٹو مارک ڈاؤن رپورٹس تیار کرتا ہے۔"
+      },
+      "shopifyAutomation": {
+        "title": "Shopify Business Intelligence Automation",
+        "description": "Shopify کا ایک ریڈ اونلی بشنس انٹلیجنس ورک فلاؤ جو اورڈر اور انونٹری ڈیٹا سے روزانہ مارک ڈاؤن رٹپورٹ تیار کرتا ہے۔ آپریشنل میٹرکس کا حساب کرتا ہے، کم اسٹاک پروڈکٹس کو فلاگ کرتا ہے، اور ایگریگیٹ بشنس انالائیسیس کے لیے OpenAI کے مطابق مدل استعمال کرتا ہے۔ پرائیویسی پہلے کے ساتھ ریڈ اونلی API ایکسےس کے ذریعے GitHub Actions ورک فلاؤ سے خودکار چلتا ہے۔"
+      },
+      "agenticAIOS": {
+        "title": "Agentic AI OS",
+        "description": "Agentic AI OS ایک پلیٹ فارم ہے جو مینٹوں میں AI ورک فلاؤز بنانے میں مدد کرتا ہے۔ اس میں AI سے چلنے والے اوزار شامل ہیں، جن میں ہوشمند ریڈ اسسٹنٹ، ورک فلاؤ جنریٹر، اور ڈایگرام ویزیوالائیزیشن شامل ہیں تاکہ agentic AI حلول آسانی سے پہانے جا سکیں۔"
+      },
+      "photoToSketch": {
+        "title": "AI Photo to Sketch Converter",
+        "description": "AI Photo to Sketch Converter ایک AI سے چلنے والی ویب اپلیکیشن ہے جو Streamlit سے بنی ہے، کمپیوٹر ویژن اور امیج پروسیسنگ ٹیکنیکس کا استعمال کرڤے ہوئے آپ کی فوٹوز کو فنی پینسل اسکیچز میں تبدیل کرتا ہے۔"
+      },
+      "loopEngineering": {
+        "title": "Loop Engineering Hub",
+        "description": "The Complete Loop Engineering Hub — دستی پرومپٹنگ سے خود مختار AI ایجنٹ سیسٹمز تک۔ یہ ایک تعلیمی ریپوزیٹری ہے جو سکھاتا ہے کہ خودکار loops کیسے ڈزائن کریں جو AI کوڈنگ ایجنٹس کو پرومپٹ کریں، جس میں heartbeat اقسام، maker-checker پیٹرن، میموری spines، اور امیلیشن 12 املی پراجیکٹس میں شامل ہیں۔ اہم مہارت پرومپٹ لکھنے سے بڏھ کر loops ڈزائن کرنے پر چلی گئی ہے۔"
+      },
+      "worldMap": {
+        "title": "World Map",
+        "description": "World Map ایک انٹریکٹو Streamlit ویب اپلیکیشن ہے کی ڈیٹا ویزیوالائیزیشن اور جغرافیائی دریافت کے لیے ہے، جو صارفین کو عالمی میپ ڈیٹا کو دیکھنے اور انٹریکٹ کرنے کی سہولیت دیتا ہے۔"
       }
-    }
+    },
+    "liveDemo": "لائو ڈیمو",
+    "sourceCode": "سورس کوڈ"
   },
   "services": {
     "title": "خدمات",

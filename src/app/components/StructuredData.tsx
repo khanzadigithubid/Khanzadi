@@ -3,8 +3,8 @@ export default function StructuredData() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Khanzadi Wazir Ali',
-    url: 'https://yourportfolio.com',
-    image: 'https://yourportfolio.com/About.jpg',
+    url: 'https://khanzadi.vercel.app',
+    image: 'https://khanzadi.vercel.app/About.jpg',
     sameAs: [
       'https://github.com/khanzadigithubid',
       'https://www.linkedin.com/in/khanzadi-wazir-ali-7a97832b6/',
