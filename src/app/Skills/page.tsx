@@ -1,8 +1,8 @@
 "use client";
 import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaShopify, FaSearch, FaShareAlt, FaCode, FaChevronDown, FaPalette, FaRobot } from 'react-icons/fa';
-import { SiTailwindcss, SiTypescript, SiNextdotjs, SiFigma } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaShopify, FaSearch, FaShareAlt, FaCode, FaChevronDown, FaPalette, FaRobot, FaPython, FaVuejs, FaPlug, FaBrain, FaLink, FaProjectDiagram } from 'react-icons/fa';
+import { SiTailwindcss, SiTypescript, SiNextdotjs, SiFigma, SiRedux, SiFramer, SiExpress, SiFastapi, SiPostgresql, SiMongodb, SiZapier } from 'react-icons/si';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -101,6 +101,27 @@ const skillsData = {
       colorClass: "bg-cyan-600",
       svgIcon: <FaReact size={32} className="sm:text-4xl text-white" />,
       level: "Advanced"
+    },
+    {
+      key: "vuejs",
+      title: "Vue.js",
+      colorClass: "bg-green-500",
+      svgIcon: <FaVuejs size={32} className="sm:text-4xl text-white" />,
+      level: "Intermediate"
+    },
+    {
+      key: "redux",
+      title: "Redux",
+      colorClass: "bg-purple-600",
+      svgIcon: <SiRedux size={32} className="sm:text-4xl text-white" />,
+      level: "Advanced"
+    },
+    {
+      key: "framerMotion",
+      title: "Framer Motion",
+      colorClass: "bg-pink-500",
+      svgIcon: <SiFramer size={32} className="sm:text-4xl text-white" />,
+      level: "Intermediate"
     }
   ],
   Backend: [
@@ -109,20 +130,62 @@ const skillsData = {
       title: "TypeScript",
       colorClass: "bg-blue-600",
       svgIcon: <SiTypescript size={32} className="sm:text-4xl text-white" />,
-      level: "Intermediate"
+      level: "Advanced"
     },
     {
       key: "nextjs",
       title: "Next.js",
       colorClass: "bg-slate-800",
       svgIcon: <SiNextdotjs size={32} className="sm:text-4xl text-white" />,
-      level: "Intermediate"
+      level: "Advanced"
     },
     {
       key: "nodejs",
       title: "Node.js",
       colorClass: "bg-green-600",
       svgIcon: <FaNodeJs size={32} className="sm:text-4xl text-white" />,
+      level: "Advanced"
+    },
+    {
+      key: "python",
+      title: "Python",
+      colorClass: "bg-blue-600",
+      svgIcon: <FaPython size={32} className="sm:text-4xl text-white" />,
+      level: "Advanced"
+    },
+    {
+      key: "express",
+      title: "Express.js",
+      colorClass: "bg-slate-600",
+      svgIcon: <SiExpress size={32} className="sm:text-4xl text-white" />,
+      level: "Intermediate"
+    },
+    {
+      key: "fastapi",
+      title: "FastAPI",
+      colorClass: "bg-teal-600",
+      svgIcon: <SiFastapi size={32} className="sm:text-4xl text-white" />,
+      level: "Intermediate"
+    },
+    {
+      key: "restApi",
+      title: "REST API",
+      colorClass: "bg-indigo-500",
+      svgIcon: <FaPlug size={32} className="sm:text-4xl text-white" />,
+      level: "Advanced"
+    },
+    {
+      key: "postgresql",
+      title: "PostgreSQL",
+      colorClass: "bg-cyan-700",
+      svgIcon: <SiPostgresql size={32} className="sm:text-4xl text-white" />,
+      level: "Intermediate"
+    },
+    {
+      key: "mongodb",
+      title: "MongoDB",
+      colorClass: "bg-green-600",
+      svgIcon: <SiMongodb size={32} className="sm:text-4xl text-white" />,
       level: "Intermediate"
     }
   ],
@@ -155,7 +218,37 @@ const skillsData = {
       title: "Shopify",
       colorClass: "bg-green-500",
       svgIcon: <FaShopify size={32} className="sm:text-4xl text-white" />,
-      level: "Intermediate"
+      level: "Expert"
+    }
+  ],
+  "AI & Automation": [
+    {
+      key: "openai",
+      title: "OpenAI / LLMs",
+      colorClass: "bg-emerald-600",
+      svgIcon: <FaBrain size={32} className="sm:text-4xl text-white" />,
+      level: "Advanced"
+    },
+    {
+      key: "langchain",
+      title: "LangChain / RAG",
+      colorClass: "bg-sky-600",
+      svgIcon: <FaLink size={32} className="sm:text-4xl text-white" />,
+      level: "Advanced"
+    },
+    {
+      key: "n8n",
+      title: "n8n",
+      colorClass: "bg-orange-500",
+      svgIcon: <FaProjectDiagram size={32} className="sm:text-4xl text-white" />,
+      level: "Advanced"
+    },
+    {
+      key: "zapier",
+      title: "Zapier",
+      colorClass: "bg-blue-600",
+      svgIcon: <SiZapier size={32} className="sm:text-4xl text-white" />,
+      level: "Advanced"
     }
   ],
   "Version Control": [
@@ -200,7 +293,8 @@ export default function Skills() {
     Design: false,
     Tools: false,
     "Version Control": false,
-    Marketing: false
+    Marketing: false,
+    "AI & Automation": false
   });
 
   useEffect(() => {
@@ -245,7 +339,8 @@ export default function Skills() {
       "Design": t('skills.categories.design'),
       "Tools": t('skills.categories.tools'),
       "Version Control": t('skills.categories.versionControl'),
-      "Marketing": t('skills.categories.marketing')
+      "Marketing": t('skills.categories.marketing'),
+      "AI & Automation": t('skills.categories.aiAutomation')
     };
     return categoryMap[category] || category;
   };

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FaGraduationCap, FaCode, FaLightbulb, FaAward, FaCheckCircle, FaStar, FaRegClock, FaDownload } from 'react-icons/fa';
+import { FaGraduationCap, FaCode, FaLightbulb, FaAward, FaCheckCircle, FaStar, FaRegClock, FaDownload, FaBriefcase, FaCalendarAlt, FaBuilding } from 'react-icons/fa';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -124,6 +124,63 @@ const About = () => {
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base md:text-lg">
                 {t('about.educationDesc')}
               </p>
+            </div>
+          </div>
+
+          {/* Experience Section */}
+          <div className="mb-16 sm:mb-20 md:mb-24">
+            <div className="text-center mb-10 sm:mb-14 md:mb-16">
+              <div className="inline-block mb-4">
+                <div className="flex items-center justify-center space-x-2 text-gray-400">
+                  <FaBriefcase className="text-gray-500 text-sm" />
+                  <span className="text-sm font-medium tracking-wide">{t('about.experience.title')}</span>
+                </div>
+                <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto mt-2"></div>
+              </div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white">
+                {t('about.experience.title')}
+              </h2>
+              <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mt-4">
+                {t('about.experience.subtitle')}
+              </p>
+            </div>
+
+            <div className="relative max-w-4xl mx-auto">
+              <div className="absolute left-4 sm:left-1/2 sm:-translate-x-px top-0 bottom-0 w-0.5 bg-gray-700"></div>
+              {[
+                { key: "exp1", points: 6 },
+                { key: "exp2", points: 4 },
+                { key: "exp3", points: 4 },
+                { key: "exp4", points: 4 },
+                { key: "exp5", points: 4 }
+              ].map((exp, index) => (
+                <div key={exp.key} className={`relative flex flex-col sm:flex-row mb-10 sm:mb-12 pl-12 sm:pl-0 ${index % 2 === 0 ? 'sm:justify-start' : 'sm:justify-end'}`}>
+                  <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 top-1 w-3 h-3 rounded-full bg-gray-400 border-2 border-gray-800 z-10"></div>
+                  <div className={`sm:w-[calc(50%-2rem)] bg-gray-800 rounded-xl sm:rounded-2xl shadow-lg p-5 sm:p-6 border border-gray-700 hover:shadow-xl hover:border-gray-600 transition-all duration-300`} data-aos="fade-up" data-aos-duration="500">
+                    <div className="flex items-center space-x-2 text-xs sm:text-sm text-gray-400 mb-2">
+                      <FaBuilding className="text-gray-500 flex-shrink-0" />
+                      <span className="font-semibold text-gray-300 truncate">{t(`about.experience.${exp.key}.company`)}</span>
+                    </div>
+                    <h3 className="text-base sm:text-lg font-semibold text-white mb-1">
+                      {t(`about.experience.${exp.key}.title`)}
+                    </h3>
+                    <div className="flex items-center space-x-1.5 text-xs sm:text-sm text-gray-400 mb-3">
+                      <FaCalendarAlt className="text-gray-500 flex-shrink-0" />
+                      <span>{t(`about.experience.${exp.key}.period`)}</span>
+                    </div>
+                    <ul className="space-y-1.5 sm:space-y-2">
+                      {Array.from({ length: exp.points }, (_, i) => i + 1).map((i) => (
+                        <li key={i} className="flex items-start">
+                          <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2 sm:mr-3 mt-2 flex-shrink-0"></span>
+                          <span className="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                            {t(`about.experience.${exp.key}.p${i}`)}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 

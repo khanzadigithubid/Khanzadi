@@ -10,11 +10,11 @@
   "home": {
     "greeting": "Hola, soy Khanzadi Wazir Ali",
     "title": "Desarrollador Full Stack",
-    "description": "Soy un desarrollador web y estudiante de ADC PAT 2 enfocado en tecnología a través de ingeniería de IA generativa aplicada en la nube. Mi viaje consiste en dominar las últimas herramientas de IA para mejorar el desarrollo web e impulsar la innovación empresarial.",
+    "description": "Desarrolladora Full Stack, desarrolladora Shopify e ingeniera de automatización de IA con más de 2 años de experiencia remota creando tiendas de comercio electrónico, aplicaciones web, sistemas CRM y soluciones de automatización con IA.",
     "cta": "Contáctame",
     "available": "Disponible para oportunidades",
     "certified": "Certificado GIAIC",
-    "expert": "Experto en TypeScript",
+    "expert": "Experta en Shopify e IA",
     "webDev": "Desarrollo Web",
     "webDevSub": "Frontend y Backend",
     "nextjs": "Next.js",
@@ -24,17 +24,17 @@
   },
   "about": {
     "title": "Acerca de Mí",
-    "subtitle": "Un desarrollador apasionado enfocado en crear soluciones innovadoras a través de la tecnología y el aprendizaje continuo.",
+    "subtitle": "Desarrolladora Full Stack, desarrolladora Shopify e ingeniera de automatización de IA con más de 2 años de experiencia remota.",
     "profile": "Perfil Profesional",
-    "role": "Desarrollador Frontend y Entusiasta de IA",
-    "intro": "Soy un desarrollador frontend experimentado, actualmente ampliando mi experiencia al aprender Next.js para el desarrollo tanto frontend como backend. Mi viaje en tecnología fue significativamente moldeado al completar un curso de TypeScript en la Iniciativa de TI del Gobernador de Sindh (GIAIC).",
+    "role": "Desarrolladora Full Stack y Shopify",
+    "intro": "Soy desarrolladora Full Stack, desarrolladora Shopify e ingeniera de automatización de IA con más de 2 años de experiencia remota creando tiendas de comercio electrónico, aplicaciones web, sistemas CRM y soluciones de automatización con IA. Experta en Shopify Liquid, React, Next.js, TypeScript, Python, REST APIs, integraciones IA/LLM, n8n y Zapier.",
     "certified": "Certificado GIAIC",
-    "expert": "Experto en TypeScript",
+    "expert": "Experta en Shopify e IA",
     "frontendDev": "Desarrollo Frontend",
     "aiEng": "Ingeniería de IA",
     "downloadResume": "Descargar CV",
     "techExpertise": "Experiencia Técnica",
-    "techDesc": "Fue aquí donde también me embarqué en el aprendizaje de Ingeniería de IA Generativa Aplicada en la Nube con tecnologías de vanguardia. Como estudiante senior en GIAIC, me enorgullece ayudar a mis compañeros en sus viajes de aprendizaje.",
+    "techDesc": "Creación de aplicaciones full-stack modernas con React, Next.js, TypeScript, Node.js y Tailwind CSS, integrando REST APIs, servicios externos y funciones potenciadas por IA/LLM en productos digitales escalables.",
     "education": "Educación",
     "educationDesc": "Además, estoy cursando un Grado Asociado de Comercio (ADC PART 2), combinando mi experiencia técnica con perspicacia empresarial para crear soluciones integrales.",
     "goals": "Objetivos Futuros",
@@ -43,7 +43,58 @@
     "goal1": "Dominar características avanzadas de Next.js",
     "goal2": "Mejorar habilidades de implementación de IA",
     "goal3": "Liderar proyectos tecnológicos innovadores",
-    "goal4": "Contribuir a la comunidad de código abierto"
+    "goal4": "Contribuir a la comunidad de código abierto",
+    "experience": {
+      "title": "Experiencia",
+      "subtitle": "Un historial de resultados para clientes remotos e internacionales",
+      "exp1": {
+        "title": "Desarrolladora Shopify y Estratega de E-Commerce",
+        "company": "Consultora independiente",
+        "period": "Ene 2024 - Presente · Remoto · Clientes internacionales",
+        "p1": "Diseñé y entregué 3-4 tiendas Shopify completas con desarrollo Liquid personalizado, UX mobile-first, SEO y arquitectura de producto.",
+        "p2": "Aumenté los ingresos un 40% para una marca de moda D2C mediante rediseño, CRO, ventas adicionales, ventas cruzadas, optimización del checkout y Meta Ads.",
+        "p3": "Desarrollé un chatbot de soporte con tecnología OpenAI integrado con la Shopify REST API.",
+        "p4": "Automaticé más del 80% de los tickets de soporte, reduciendo la carga de trabajo un 60%.",
+        "p5": "Realicé auditorías SEO técnicas y optimización de Core Web Vitals.",
+        "p6": "Construí flujos de marketing automatizados conectando Shopify, Klaviyo, CRM, Zapier y n8n."
+      },
+      "exp2": {
+        "title": "Desarrolladora Web",
+        "company": "Consultora independiente",
+        "period": "2024 - Presente · Remoto · Clientes internacionales",
+        "p1": "Desarrollé sitios web empresariales, portafolios y aplicaciones con React.js, Next.js, TypeScript y Tailwind CSS.",
+        "p2": "Integré REST APIs y servicios externos para añadir funcionalidad dinámica.",
+        "p3": "Construí funciones interactivas y componentes reutilizables para aplicaciones frontend escalables.",
+        "p4": "Desplegué proyectos en Vercel y gestioné el código con Git y GitHub."
+      },
+      "exp3": {
+        "title": "Desarrolladora Frontend (Prácticas)",
+        "company": "SOFTIQTECH",
+        "period": "2026 · Prácticas de 30 días",
+        "p1": "Desarrollé módulos frontend para el sistema CRM Softiq.",
+        "p2": "Trabajé en Clientes, Contactos, Tiempos, Actividades, Notas, Seguimientos, Plantillas de email, Panel de reportes y Ajustes de perfil.",
+        "p3": "Construí interfaces de ajustes de proyecto y empresa y componentes UI responsivos.",
+        "p4": "Colaboré con el equipo frontend usando Git y flujo de trabajo con ramas."
+      },
+      "exp4": {
+        "title": "Gerente de Marketing en Redes Sociales",
+        "company": "DEVVYS",
+        "period": "Oct 2025 - 2026 · Remoto · Estados Unidos",
+        "p1": "Creé y publiqué contenido de redes sociales en plataformas relevantes.",
+        "p2": "Diseñé publicaciones promocionales y contenido visual con Canva.",
+        "p3": "Gestioné la programación, planificación de contenido y participación de la audiencia.",
+        "p4": "Monitoreé el rendimiento para mejorar el contenido futuro."
+      },
+      "exp5": {
+        "title": "Gerente de Redes Sociales",
+        "company": "EYEFINITYZONE",
+        "period": "Dic 2025 - 2026 · Remoto",
+        "p1": "Creé y diseñé publicaciones para Instagram y Facebook.",
+        "p2": "Gestioné actualizaciones de página, publicación de contenido y participación.",
+        "p3": "Planifiqué contenido de marca constante en todas las plataformas.",
+        "p4": "Respondí comentarios y apoyé la gestión comunitaria diaria."
+      }
+    }
   },
   "skills": {
     "title": "Experiencia Técnica",
@@ -57,7 +108,8 @@
       "design": "Diseño",
       "tools": "Herramientas",
       "versionControl": "Control de Versiones",
-      "marketing": "Marketing"
+      "marketing": "Marketing",
+      "aiAutomation": "IA y Automatización"
     },
     "skillsCount": "habilidades",
     "items": {
@@ -92,10 +144,10 @@
         "description": "Capacitado en Figma para diseño UI/UX, prototipado y flujos de trabajo de diseño colaborativo."
       },
       "aiTools": {
-        "description": "Experimentado con herramientas de IA de vanguardia incluyendo ChatGPT, Claude y otras tecnologías de IA generativa."
+        "description": "Experiencia con herramientas avanzadas de IA: OpenAI, Gemini, Claude, LangChain y RAG."
       },
       "shopify": {
-        "description": "Competente en desarrollo Shopify incluyendo personalización de temas y soluciones de comercio electrónico."
+        "description": "Dominio de Shopify y Liquid, temas personalizados, CRO y soluciones de e-commerce con Klaviyo."
       },
       "git": {
         "description": "Dominio sólido del control de versiones Git para gestión de código, ramificación y colaboración."
@@ -104,10 +156,49 @@
         "description": "Experimentado con flujos de trabajo GitHub, pull requests, actions y colaboración de código abierto."
       },
       "seo": {
-        "description": "Conocedor de las mejores prácticas SEO para mejorar clasificaciones de búsqueda y crecimiento de tráfico orgánico."
+        "description": "Auditorías SEO técnicas, Core Web Vitals y analíticas GA4 para el crecimiento en buscadores."
       },
       "socialMedia": {
-        "description": "Capacitado en estrategias de marketing en redes sociales, creación de contenido y técnicas de engagement de audiencia."
+        "description": "Estrategia de redes sociales, Meta Ads, creación de contenido y participación de la comunidad."
+      },
+      "python": {
+        "description": "Escritura de Python en producción para automatización, APIs REST y flujos IA/LLM."
+      },
+      "redux": {
+        "description": "Gestión de estado complejo con Redux para aplicaciones React escalables."
+      },
+      "vuejs": {
+        "description": "Creación de interfaces reactivas con Vue.js y su ecosistema."
+      },
+      "framerMotion": {
+        "description": "Animaciones fluidas y microinteracciones con Framer Motion."
+      },
+      "express": {
+        "description": "APIs RESTful y lógica de servidor con Express.js."
+      },
+      "fastapi": {
+        "description": "APIs Python de alto rendimiento con FastAPI."
+      },
+      "restApi": {
+        "description": "Integración de REST APIs y servicios externos con JSON."
+      },
+      "postgresql": {
+        "description": "Bases de datos relacionales y SQL eficiente con PostgreSQL."
+      },
+      "mongodb": {
+        "description": "MongoDB para modelos de datos flexibles basados en documentos."
+      },
+      "openai": {
+        "description": "Funciones de IA con APIs de OpenAI, Gemini y Claude e ingeniería de prompts."
+      },
+      "langchain": {
+        "description": "Flujos LLM con LangChain, RAG y bases de datos vectoriales."
+      },
+      "n8n": {
+        "description": "Flujos de automatización no-code con integraciones n8n."
+      },
+      "zapier": {
+        "description": "Conexión de apps y automatización de procesos con Zapier."
       }
     }
   },
@@ -168,7 +259,7 @@
   },
   "services": {
     "title": "Servicios",
-    "subtitle": "Soluciones web integrales y servicios digitales diseñados para elevar la presencia de su negocio",
+    "subtitle": "Desarrollo web, soluciones Shopify y automatización con IA para crecer internacionalmente",
     "professional": "SERVICIOS PROFESIONALES",
     "quality": "Calidad Experta",
     "qualitySub": "Soluciones de nivel profesional",
@@ -206,7 +297,12 @@
     "canvaFeature1": "Gráficos de Redes Sociales",
     "canvaFeature2": "Materiales de Marketing",
     "canvaFeature3": "Plantillas de Marca",
-    "getStarted": "Comenzar"
+    "getStarted": "Comenzar",
+    "aiAutomation": "Automatización IA y Chatbots",
+    "aiAutomationDesc": "Automatización con IA y desarrollo de chatbots para optimizar tus operaciones. Desde chatbots conversacionales hasta flujos de trabajo, construyo sistemas inteligentes que trabajan 24/7.",
+    "aiAutomationFeature1": "Desarrollo de chatbots con IA",
+    "aiAutomationFeature2": "Automatización de flujos (n8n y Zapier)",
+    "aiAutomationFeature3": "LLM e ingeniería de prompts"
   },
   "contact": {
     "title": "Contáctame",

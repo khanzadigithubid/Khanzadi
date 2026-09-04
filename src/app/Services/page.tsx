@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import 'aos/dist/aos.css';
-import { FaCode, FaPaintBrush, FaMobileAlt, FaCheckCircle, FaArrowRight, FaShoppingCart, FaBullhorn, FaPalette, FaStar, FaAward, FaRegLightbulb, FaRocket } from 'react-icons/fa';
+import { FaCode, FaPaintBrush, FaMobileAlt, FaCheckCircle, FaArrowRight, FaShoppingCart, FaBullhorn, FaPalette, FaStar, FaAward, FaRegLightbulb, FaRocket, FaRobot } from 'react-icons/fa';
 import Link from "next/link";
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useLanguage } from '../../context/LanguageContext';
@@ -196,8 +196,37 @@ export default function Services() {
             </div>
           </div>
 
+          {/* AI Automation Card */}
+          <div className="group bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-emerald-500" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 text-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+              <FaRobot size={32} className="transform group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <div className="space-y-3 sm:space-y-5">
+              <h2 className="text-white text-lg sm:text-xl md:text-2xl font-semibold text-center">
+                {t('services.aiAutomation')}
+              </h2>
+              <p className="leading-relaxed text-gray-300 text-sm sm:text-base text-center">
+                {t('services.aiAutomationDesc')}
+              </p>
+              <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-gray-300">
+                <li className="flex items-start space-x-2 sm:space-x-3">
+                  <FaCheckCircle className="text-emerald-500 flex-shrink-0 mt-0.5 text-xs sm:text-sm" />
+                  <span>{t('services.aiAutomationFeature1')}</span>
+                </li>
+                <li className="flex items-start space-x-2 sm:space-x-3">
+                  <FaCheckCircle className="text-emerald-500 flex-shrink-0 mt-0.5 text-xs sm:text-sm" />
+                  <span>{t('services.aiAutomationFeature2')}</span>
+                </li>
+                <li className="flex items-start space-x-2 sm:space-x-3">
+                  <FaCheckCircle className="text-emerald-500 flex-shrink-0 mt-0.5 text-xs sm:text-sm" />
+                  <span>{t('services.aiAutomationFeature3')}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           {/* Digital Marketing Card */}
-          <div className="group bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-purple-500" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+          <div className="group bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-purple-500" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250">
             <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-purple-400 to-purple-600 text-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
               <FaBullhorn size={32} className="transform group-hover:scale-110 transition-transform duration-300" />
             </div>
@@ -226,7 +255,7 @@ export default function Services() {
           </div>
 
           {/* Canva Design Card */}
-          <div className="group bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-blue-500" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250">
+          <div className="group bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-blue-500" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
             <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
               <FaPalette size={32} className="transform group-hover:scale-110 transition-transform duration-300" />
             </div>
