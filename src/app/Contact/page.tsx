@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub, FaTwitter, FaSpinner, FaCheckCircle, FaExclamationCircle } from 'react-icons/fa';
 import 'react-toastify/dist/ReactToastify.css';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -351,8 +351,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <ToastContainer />
-    </section>
+      </section>
     </>
   );
 }

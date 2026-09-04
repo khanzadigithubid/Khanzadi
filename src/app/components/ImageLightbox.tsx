@@ -155,6 +155,7 @@ export default function ImageLightbox({
                 href={currentImage.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Open project in new tab"
                 className="p-3 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 group"
                 onClick={(e) => e.stopPropagation()}
               >
@@ -164,6 +165,7 @@ export default function ImageLightbox({
                 href={currentImage.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="View project on GitHub"
                 className="p-3 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 group"
                 onClick={(e) => e.stopPropagation()}
               >

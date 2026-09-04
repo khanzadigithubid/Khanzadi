@@ -99,24 +99,24 @@ const Home = () => {
 
                 {/* Social Links */}
                 <div className="flex justify-center md:justify-start space-x-3 sm:space-x-4 md:space-x-5 pt-1 sm:pt-2">
-                  <Link
+                  <a
                     href="https://github.com/khanzadigithubid/"
-                    className="group"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="GitHub Profile"
+                    className="group inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 text-black bg-white rounded-full hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg"
                   >
-                    <button className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 text-black bg-white rounded-full hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg">
-                      <FaGithub size={20} className="sm:w-[22px] sm:h-[22px] group-hover:scale-110 transition-transform duration-300" />
-                    </button>
-                  </Link>
-                  <Link
+                    <FaGithub size={20} className="sm:w-[22px] sm:h-[22px] group-hover:scale-110 transition-transform duration-300" />
+                  </a>
+                  <a
                     href="https://www.linkedin.com/in/khanzadi-wazir-ali-7a97832b6/"
-                    className="group"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="LinkedIn Profile"
+                    className="group inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition-all duration-300 shadow-md hover:shadow-lg"
                   >
-                    <button className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition-all duration-300 shadow-md hover:shadow-lg">
-                      <FaLinkedin size={20} className="sm:w-[22px] sm:h-[22px] group-hover:scale-110 transition-transform duration-300" />
-                    </button>
-                  </Link>
+                    <FaLinkedin size={20} className="sm:w-[22px] sm:h-[22px] group-hover:scale-110 transition-transform duration-300" />
+                  </a>
                 </div>
               </div>
             </div>

@@ -155,7 +155,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden absolute right-6 p-3 text-white hover:bg-white/5 transition-all duration-300 focus:outline-none rounded-xl"
+            className="md:hidden absolute right-6 p-3 text-white hover:bg-white/5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-xl"
             onClick={toggleMobileMenu}
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
