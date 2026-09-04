@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
                 {t('testimonials.subtitle')}
               </span>
             </div>
-            <div className="w-20 sm:w-24 h-1 bg-white/20 mx-auto mt-2"></div>
+            <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-indigo-400 via-purple-400 to-fuchsia-400 mx-auto mt-2"></div>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">
             {t('testimonials.title')}

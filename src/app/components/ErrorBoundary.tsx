@@ -133,7 +133,7 @@ class ErrorBoundary extends Component<Props, State> {
                 If the problem persists, please{' '}
                 <a
                   href="/Contact"
-                  className="text-sky-400 hover:text-sky-300 underline"
+                  className="text-purple-400 hover:text-purple-300 underline"
                 >
                   contact support
                 </a>

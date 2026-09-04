@@ -37,7 +37,7 @@ export default function Services() {
               <FaRocket className="text-gray-500 text-sm" />
               <span className="text-sm font-medium tracking-wide">{t('services.professional')}</span>
             </div>
-            <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto mt-2"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-fuchsia-500 mx-auto mt-2"></div>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white mb-4">
             {t('services.title')}

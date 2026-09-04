@@ -141,7 +141,7 @@ const Project = () => {
               <FaCode className="text-gray-500 text-sm" />
               <span className="text-sm font-medium tracking-wide">{t('projects.featured')}</span>
             </div>
-            <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto mt-2"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-fuchsia-500 mx-auto mt-2"></div>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white mb-4">
             {t('projects.title')}
@@ -211,7 +211,7 @@ const Project = () => {
               data-aos="fade-up"
               data-aos-duration={400 + (index % 4) * 50}
             >
-              <div className="flex flex-col h-full bg-gray-800 rounded-lg sm:rounded-xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl border border-gray-700 hover:border-gray-600">
+              <div className="flex flex-col h-full bg-gray-800 rounded-lg sm:rounded-xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-purple-900/20 border border-gray-700 hover:border-purple-500/50">
                 <div
                   className="relative h-[220px] sm:h-[240px] w-full overflow-hidden cursor-pointer group"
                   onClick={() => openLightbox(index)}
@@ -263,7 +263,7 @@ const Project = () => {
                 </div>
                 <div className="flex-1 p-3 sm:p-4 md:p-6 bg-gray-800">
                   <div className="mb-1.5 sm:mb-2">
-                    <span className="inline-block px-2 py-0.5 sm:py-1 text-[10px] sm:text-xs font-medium text-gray-300 bg-gray-700 rounded-full">
+                    <span className="inline-block px-2 py-0.5 sm:py-1 text-[10px] sm:text-xs font-medium text-purple-200 bg-purple-900/50 border border-purple-500/30 rounded-full">
                       {getCategoryTranslation(project.category)}
                     </span>
                   </div>

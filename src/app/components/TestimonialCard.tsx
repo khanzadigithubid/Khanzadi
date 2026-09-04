@@ -39,7 +39,7 @@ export default function TestimonialCard({
   };
 
   return (
-    <div className="group relative bg-gray-800 border border-gray-700 rounded-2xl p-6 sm:p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-gray-600 hover:-translate-y-1">
+    <div className="group relative bg-gray-800 border border-gray-700 rounded-2xl p-6 sm:p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-purple-500/50 hover:-translate-y-1">
       {/* Quote Icon */}
       <div className="absolute top-6 right-6 sm:top-8 sm:right-8 text-white/10 group-hover:text-white/20 transition-colors duration-300">
         <FaQuoteLeft className="w-8 h-8 sm:w-10 sm:h-10" />
@@ -71,7 +71,7 @@ export default function TestimonialCard({
       </div>
 
       {/* Divider */}
-      <div className="w-16 h-0.5 bg-white/20 mb-6 group-hover:w-24 transition-all duration-300" />
+      <div className="w-16 h-0.5 bg-gradient-to-r from-indigo-400 via-purple-400 to-fuchsia-400 mb-6 group-hover:w-24 transition-all duration-300" />
 
       {/* Author Info */}
       <div className="flex items-start justify-between gap-4">

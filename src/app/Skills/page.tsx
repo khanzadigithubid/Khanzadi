@@ -38,7 +38,7 @@ function SkillCard({
 
   return (
     <div
-      className="group relative bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-700"
+      className="group relative bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-700 hover:border-purple-500/50"
       data-aos={dataAos}
       data-aos-delay={dataAosDelay}
     >
@@ -357,7 +357,7 @@ export default function Skills() {
               <FaCode className="text-gray-500 text-sm" />
               <span className="text-sm font-medium tracking-wide">{t('skills.technical')}</span>
             </div>
-            <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto mt-2"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-fuchsia-500 mx-auto mt-2"></div>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white mb-4">
             {t('skills.title')}

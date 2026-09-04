@@ -21,7 +21,7 @@ const About = () => {
                 <FaRegClock className="text-gray-500 text-sm" />
                 <span className="text-sm font-medium tracking-wide">{t('about.profile')}</span>
               </div>
-              <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto mt-2"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-fuchsia-500 mx-auto mt-2"></div>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white mb-4">
               {t('about.title')}
@@ -35,7 +35,7 @@ const About = () => {
           <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16 mb-20 sm:mb-24">
             {/* Profile Image */}
             <div className="relative group flex-shrink-0">
-              <div className="absolute -inset-1 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-fuchsia-500 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition duration-1000"></div>
               <div className="relative">
                 <Image
                   src="/About.jpg"
@@ -102,10 +102,10 @@ const About = () => {
 
           {/* Key Areas Section */}
           <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20 md:mb-24">
-            <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700" data-aos="fade-up" data-aos-duration="500">
+            <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-purple-500/50" data-aos="fade-up" data-aos-duration="500">
               <div className="flex items-center mb-4 sm:mb-6">
-                <div className="p-2 sm:p-3 bg-gray-700 rounded-lg mr-3 sm:mr-4">
-                  <FaCode className="text-gray-200 text-xl sm:text-2xl" />
+                <div className="p-2 sm:p-3 bg-gradient-to-br from-indigo-500/20 to-fuchsia-500/20 rounded-lg mr-3 sm:mr-4">
+                  <FaCode className="text-purple-300 text-xl sm:text-2xl" />
                 </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">{t('about.techExpertise')}</h3>
               </div>
@@ -114,10 +114,10 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
+            <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-purple-500/50" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
               <div className="flex items-center mb-4 sm:mb-6">
-                <div className="p-2 sm:p-3 bg-gray-700 rounded-lg mr-3 sm:mr-4">
-                  <FaGraduationCap className="text-gray-200 text-xl sm:text-2xl" />
+                <div className="p-2 sm:p-3 bg-gradient-to-br from-indigo-500/20 to-fuchsia-500/20 rounded-lg mr-3 sm:mr-4">
+                  <FaGraduationCap className="text-purple-300 text-xl sm:text-2xl" />
                 </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">{t('about.education')}</h3>
               </div>
@@ -135,7 +135,7 @@ const About = () => {
                   <FaBriefcase className="text-gray-500 text-sm" />
                   <span className="text-sm font-medium tracking-wide">{t('about.experience.title')}</span>
                 </div>
-                <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto mt-2"></div>
+                <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-fuchsia-500 mx-auto mt-2"></div>
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white">
                 {t('about.experience.title')}
@@ -155,8 +155,8 @@ const About = () => {
                 { key: "exp5", points: 4 }
               ].map((exp, index) => (
                 <div key={exp.key} className={`relative flex flex-col sm:flex-row mb-10 sm:mb-12 pl-12 sm:pl-0 ${index % 2 === 0 ? 'sm:justify-start' : 'sm:justify-end'}`}>
-                  <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 top-1 w-3 h-3 rounded-full bg-gray-400 border-2 border-gray-800 z-10"></div>
-                  <div className={`sm:w-[calc(50%-2rem)] bg-gray-800 rounded-xl sm:rounded-2xl shadow-lg p-5 sm:p-6 border border-gray-700 hover:shadow-xl hover:border-gray-600 transition-all duration-300`} data-aos="fade-up" data-aos-duration="500">
+                  <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 top-1 w-3 h-3 rounded-full bg-indigo-400 border-2 border-black shadow-[0_0_10px_rgba(129,140,248,0.9)] z-10"></div>
+                  <div className={`sm:w-[calc(50%-2rem)] bg-gray-800 rounded-xl sm:rounded-2xl shadow-lg p-5 sm:p-6 border border-gray-700 hover:shadow-xl hover:border-purple-500/50 transition-all duration-300`} data-aos="fade-up" data-aos-duration="500">
                     <div className="flex items-center space-x-2 text-xs sm:text-sm text-gray-400 mb-2">
                       <FaBuilding className="text-gray-500 flex-shrink-0" />
                       <span className="font-semibold text-gray-300 truncate">{t(`about.experience.${exp.key}.company`)}</span>
@@ -185,10 +185,10 @@ const About = () => {
           </div>
 
           {/* Goals Section */}
-          <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700" data-aos="fade-up" data-aos-duration="500">
+          <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-purple-500/50" data-aos="fade-up" data-aos-duration="500">
             <div className="flex items-center mb-4 sm:mb-6">
-              <div className="p-2 sm:p-3 bg-gray-700 rounded-lg mr-3 sm:mr-4">
-                <FaLightbulb className="text-gray-200 text-xl sm:text-2xl" />
+              <div className="p-2 sm:p-3 bg-gradient-to-br from-indigo-500/20 to-fuchsia-500/20 rounded-lg mr-3 sm:mr-4">
+                <FaLightbulb className="text-purple-300 text-xl sm:text-2xl" />
               </div>
               <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">{t('about.goals')}</h3>
             </div>

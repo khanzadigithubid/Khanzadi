@@ -123,7 +123,7 @@ export default function Header() {
       {/* Skip to Main Content Link - Accessibility */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-6 focus:py-3 focus:bg-white focus:text-black focus:rounded-lg focus:shadow-xl focus:font-semibold focus:outline-none focus:ring-4 focus:ring-sky-500"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-6 focus:py-3 focus:bg-white focus:text-black focus:rounded-lg focus:shadow-xl focus:font-semibold focus:outline-none focus:ring-4 focus:ring-purple-500"
       >
         {t('accessibility.skipToMain')}
       </a>
@@ -140,7 +140,7 @@ export default function Header() {
               >
                 <span className="relative z-10">{item.label}</span>
                 <span className="absolute inset-0 bg-white/5 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 origin-center"></span>
-                <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-white group-hover:w-3/4 transition-all duration-300"></span>
+                <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-indigo-400 via-purple-400 to-fuchsia-400 group-hover:w-3/4 transition-all duration-300"></span>
               </Link>
             ))}
           </nav>
@@ -155,7 +155,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden absolute right-6 p-3 text-white hover:bg-white/5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 rounded-xl"
+            className="md:hidden absolute right-6 p-3 text-white hover:bg-white/5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-xl"
             onClick={toggleMobileMenu}
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
@@ -203,7 +203,7 @@ export default function Header() {
               >
                 <span className="relative">
                   {item.label}
-                  <span className="absolute -bottom-2 left-0 w-0 h-1 bg-white group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-indigo-400 via-purple-400 to-fuchsia-400 group-hover:w-full transition-all duration-300"></span>
                 </span>
               </Link>
             ))}

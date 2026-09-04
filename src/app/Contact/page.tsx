@@ -34,7 +34,7 @@ export default function Contact() {
         <p>Failed to send message through the form.</p>
         <a
           href={`mailto:${emailAddress}`}
-          className="text-sky-500 hover:text-sky-600 underline font-medium mt-2 inline-block"
+          className="text-purple-500 hover:text-purple-600 underline font-medium mt-2 inline-block"
         >
           Click here to email directly
         </a>
@@ -151,7 +151,7 @@ export default function Contact() {
               <FaEnvelope className="text-gray-500 text-sm" />
               <span className="text-sm font-medium tracking-wide">{t('contact.getInTouch')}</span>
             </div>
-            <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto mt-2"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-fuchsia-500 mx-auto mt-2"></div>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white mb-4">
             {t('contact.title')}
@@ -200,7 +200,7 @@ export default function Contact() {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-3 py-2 sm:px-4 sm:py-2.5 text-sm sm:text-base rounded-lg border-2 border-gray-600 bg-gray-700 text-white focus:border-sky-500 focus:ring-2 focus:ring-sky-900 transition-colors duration-200"
+                  className="w-full px-3 py-2 sm:px-4 sm:py-2.5 text-sm sm:text-base rounded-lg border-2 border-gray-600 bg-gray-700 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/25 transition-colors duration-200"
                   placeholder={t('contact.namePlaceholder')}
                 />
               </div>
@@ -211,7 +211,7 @@ export default function Contact() {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-3 py-2 sm:px-4 sm:py-2.5 text-sm sm:text-base rounded-lg border-2 border-gray-600 bg-gray-700 text-white focus:border-sky-500 focus:ring-2 focus:ring-sky-900 transition-colors duration-200"
+                  className="w-full px-3 py-2 sm:px-4 sm:py-2.5 text-sm sm:text-base rounded-lg border-2 border-gray-600 bg-gray-700 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/25 transition-colors duration-200"
                   placeholder={t('contact.emailPlaceholder')}
                 />
               </div>
@@ -251,17 +251,17 @@ export default function Contact() {
                   name="message"
                   required
                   rows={4}
-                  className="w-full px-3 py-2 sm:px-4 sm:py-2.5 text-sm sm:text-base rounded-lg border-2 border-gray-600 bg-gray-700 text-white focus:border-sky-500 focus:ring-2 focus:ring-sky-900 transition-colors duration-200"
+                  className="w-full px-3 py-2 sm:px-4 sm:py-2.5 text-sm sm:text-base rounded-lg border-2 border-gray-600 bg-gray-700 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/25 transition-colors duration-200"
                   placeholder={t('contact.messagePlaceholder')}
                 />
               </div>
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full bg-gradient-to-r from-sky-500 to-sky-600 text-white py-2.5 sm:py-3 md:py-3.5 rounded-lg text-sm sm:text-base font-medium transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center ${
+                className={`w-full bg-gradient-to-r from-indigo-500 via-violet-500 to-fuchsia-600 text-white py-2.5 sm:py-3 md:py-3.5 rounded-lg text-sm sm:text-base font-medium transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center ${
                   isSubmitting
                     ? 'opacity-70 cursor-not-allowed'
-                    : 'hover:from-sky-400 hover:to-sky-500'
+                    : 'hover:from-indigo-400 hover:to-fuchsia-500'
                 }`}
               >
                 {isSubmitting ? (
@@ -297,13 +297,13 @@ export default function Contact() {
               <div className="space-y-4 sm:space-y-5 md:space-y-6">
                 <div className="flex items-center space-x-3 sm:space-x-4">
                   <div className="p-2 sm:p-2.5 md:p-3 bg-gray-700 rounded-lg flex-shrink-0">
-                    <FaEnvelope className="text-sky-400 w-4 h-4 sm:w-5 sm:h-5 md:text-lg" />
+                    <FaEnvelope className="text-purple-400 w-4 h-4 sm:w-5 sm:h-5 md:text-lg" />
                   </div>
                   <div className="min-w-0">
                     <p className="text-xs sm:text-sm font-medium text-gray-400">{t('contact.email')}</p>
                     <a
                       href="mailto:khanzadiwazirali9@gmail.com"
-                      className="text-xs sm:text-sm md:text-base text-white hover:text-sky-400 transition-colors duration-200 break-all"
+                      className="text-xs sm:text-sm md:text-base text-white hover:text-purple-400 transition-colors duration-200 break-all"
                     >
                       khanzadiwazirali9@gmail.com
                     </a>
@@ -311,7 +311,7 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center space-x-3 sm:space-x-4">
                   <div className="p-2 sm:p-2.5 md:p-3 bg-gray-700 rounded-lg flex-shrink-0">
-                    <FaMapMarkerAlt className="text-sky-400 w-4 h-4 sm:w-5 sm:h-5 md:text-lg" />
+                    <FaMapMarkerAlt className="text-purple-400 w-4 h-4 sm:w-5 sm:h-5 md:text-lg" />
                   </div>
                   <div className="min-w-0">
                     <p className="text-xs sm:text-sm font-medium text-gray-400">{t('contact.location')}</p>

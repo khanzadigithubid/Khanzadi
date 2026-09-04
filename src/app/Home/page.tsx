@@ -22,15 +22,15 @@ const Home = () => {
                     <FaRegClock className="text-gray-500 text-sm" />
                     <span className="text-sm font-medium tracking-wide">{t('home.available')}</span>
                   </div>
-                  <div className="w-20 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mt-2"></div>
+                  <div className="w-20 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-fuchsia-500 mt-2"></div>
                 </div>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white leading-tight">
                   <span className="block mb-3 text-gray-200">{t('home.greeting')}</span>
                 </h1>
                 <div className="flex items-center justify-center md:justify-start space-x-3 text-gray-300">
                   <span className="h-1 w-12 bg-gray-600"></span>
-                  <span className="text-lg sm:text-xl font-medium">{t('home.title')}</span>
-                  <span className="px-3 py-1 bg-gray-800 rounded-full text-sm font-medium">ADC PAT 2</span>
+                  <span className="text-lg sm:text-xl font-medium text-gradient">{t('home.title')}</span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-indigo-500/20 to-fuchsia-500/20 border border-indigo-400/30 text-indigo-200 rounded-full text-sm font-medium">ADC PAT 2</span>
                 </div>
               </div>
 
@@ -56,7 +56,7 @@ const Home = () => {
 
               {/* Expertise Highlights */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700">
+                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700 hover:border-purple-500/40">
                   <div className="p-1.5 sm:p-2 bg-gray-700 rounded-lg group-hover:bg-gray-600 transition-colors duration-300">
                     <FaCode className="text-gray-200 text-base sm:text-lg" />
                   </div>
@@ -65,7 +65,7 @@ const Home = () => {
                     <p className="text-[10px] sm:text-xs text-gray-400">{t('home.webDevSub')}</p>
                   </div>
                 </div>
-                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700">
+                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700 hover:border-purple-500/40">
                   <div className="p-1.5 sm:p-2 bg-gray-700 rounded-lg group-hover:bg-gray-600 transition-colors duration-300">
                     <FaLaptopCode className="text-gray-200 text-base sm:text-lg" />
                   </div>
@@ -74,7 +74,7 @@ const Home = () => {
                     <p className="text-[10px] sm:text-xs text-gray-400">{t('home.nextjsSub')}</p>
                   </div>
                 </div>
-                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700">
+                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700 hover:border-purple-500/40">
                   <div className="p-1.5 sm:p-2 bg-gray-700 rounded-lg group-hover:bg-gray-600 transition-colors duration-300">
                     <FaRobot className="text-gray-200 text-base sm:text-lg" />
                   </div>
@@ -90,7 +90,7 @@ const Home = () => {
                 <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-3 sm:space-y-0 sm:space-x-4 md:space-x-6">
                   <Link
                     href="/Contact"
-                    className="group inline-flex items-center px-6 py-2.5 sm:px-8 sm:py-3.5 bg-white text-black rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base font-semibold"
+                    className="group inline-flex items-center px-6 py-2.5 sm:px-8 sm:py-3.5 bg-white text-black rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-purple-500/20 text-sm sm:text-base font-semibold"
                   >
                     <span className="mr-2">{t('home.cta')}</span>
                     <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
@@ -125,7 +125,7 @@ const Home = () => {
           {/* Profile Image Section */}
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6" data-aos="fade-left" data-aos-duration="500">
             <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-gray-600 to-gray-800 rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-fuchsia-500 rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition duration-1000"></div>
               <div className="relative">
                 <Image
                   src="/About.jpg"

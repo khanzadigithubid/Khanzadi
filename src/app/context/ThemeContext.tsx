@@ -52,8 +52,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     } else {
       document.documentElement.classList.remove('dark');
     }
-
-    console.log('Theme toggled to:', newTheme); // Debug log
   };
 
   // Prevent flash of wrong theme

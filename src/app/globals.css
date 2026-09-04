@@ -5,6 +5,40 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #6366f1, #a855f7, #d946ef);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #818cf8, #c084fc, #e879f9);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #a855f7 #000000;
+  }
+
+  ::selection {
+    background: rgba(168, 85, 247, 0.45);
+    color: #ffffff;
+  }
+
+  [class~="dark"] {
+    color-scheme: light;
   }
 
   body {
@@ -175,6 +209,13 @@
 }
 
 @layer utilities {
+  .text-gradient {
+    background-image: linear-gradient(to right, #818cf8, #a78bfa, #e879f9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
   .text-balance {
     text-wrap: balance;
   }
