@@ -115,7 +115,7 @@ export default function LanguageSwitcher() {
               }`}
             >
               <FlagIcon code={lang.code} />
-              <span className="flex-1 text-left text-white text-base font-medium">{lang.name}</span>
+              <span className="flex-1 text-left text-white keep-white text-base font-medium">{lang.name}</span>
               {locale === lang.code && (
                 <span className="text-green-400 text-sm font-bold">✓</span>
               )}

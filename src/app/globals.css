@@ -53,13 +53,35 @@
   body {
     @apply antialiased font-sans;
     background-color: #000000;
+    background-image:
+      radial-gradient(900px 480px at 12% -10%, rgba(99, 102, 241, 0.12), transparent 60%),
+      radial-gradient(760px 420px at 88% 8%, rgba(168, 85, 247, 0.10), transparent 60%),
+      radial-gradient(1000px 560px at 50% 112%, rgba(236, 72, 153, 0.08), transparent 60%);
     color: #f1f5f9;
     transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Editorial serif headings across the whole site (desktop >= 641px);
+     the mobile media rule below switches headings back to sans-serif.
+     RTL (Urdu/Arabic) headings keep their script font. */
+  @media (min-width: 641px) {
+    html:not([dir="rtl"]) h1,
+    html:not([dir="rtl"]) h2,
+    html:not([dir="rtl"]) h3,
+    html:not([dir="rtl"]) h4,
+    html:not([dir="rtl"]) h5,
+    html:not([dir="rtl"]) h6 {
+      font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    }
   }
 
   /* Light Mode - Inverted Colors */
   .dark body {
     background-color: #ffffff;
+    background-image:
+      radial-gradient(900px 480px at 12% -10%, rgba(99, 102, 241, 0.12), transparent 60%),
+      radial-gradient(760px 420px at 88% 8%, rgba(200, 133, 255, 0.14), transparent 60%),
+      radial-gradient(1000px 560px at 50% 112%, rgba(244, 167, 223, 0.10), transparent 60%);
     color: #1e293b;
   }
 
@@ -121,10 +143,104 @@
     background-color: #22c55e !important;
   }
 
+  /* Light mode body background */
+  .dark body {
+    background-color: #ffffff !important;
+  }
+
+  /* Light mode for semi-transparent white text (opacity variants) */
+  .dark .text-white\/50 {
+    color: #94a3b8 !important;
+  }
+
+  .dark .text-white\/60,
+  .dark .text-white\/70 {
+    color: #64748b !important;
+  }
+
+  .dark .text-white\/80 {
+    color: #475569 !important;
+  }
+
+  .dark .text-white\/90 {
+    color: #334155 !important;
+  }
+
+  /* Light mode for pure white text that must stay dark-ink */
+  .dark .text-black {
+    color: #1e293b !important;
+  }
+
+  /* Rescue: keep white text on colored/dark backgrounds in light mode.
+     Place after all .dark overrides so it wins on equal specificity. */
+  .dark .keep-white {
+    color: #ffffff !important;
+  }
+
+  /* Light mode: neutral subtle backgrounds (overlays, chips, icon tiles) */
+  .dark .bg-black\/60,
+  .dark .bg-black\/80,
+  .dark .bg-white\/5,
+  .dark .bg-white\/10 {
+    background-color: rgba(15, 23, 42, 0.55) !important;
+  }
+
+  /* Light mode: language dropdown panel stays dark-on-dark */
+  .dark .bg-gray-900\/95 {
+    background-color: #0f172a !important;
+    border-color: rgba(168, 85, 247, 0.35) !important;
+  }
+
+  /* Light mode: soft colored text chips used on cards */
+  .dark .text-purple-200 {
+    color: #7c3aed !important;
+  }
+  .dark .text-indigo-200 {
+    color: #4f46e5 !important;
+  }
+  .dark .bg-purple-900\/50,
+  .dark .bg-indigo-900\/50 {
+    background-color: #f3e8ff !important;
+  }
+
+  /* Light mode: solid blue accents (skills icons, linkedin) */
+  .dark .bg-blue-500 {
+    background-color: #2563eb !important;
+  }
+  .dark .bg-blue-600 {
+    background-color: #1d4ed8 !important;
+  }
+
+  /* Light mode: blue→purple gradient circles in services */
+  .dark .from-blue-400 {
+    --tw-gradient-stops: #9333ea, var(--tw-gradient-to) !important;
+  }
+  .dark .to-blue-600 {
+    --tw-gradient-to: #7e22ce !important;
+  }
+
+  /* Light mode scrollbar */
+  [class~="dark"] ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+
+  [class~="dark"] ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #c7d2fe, #e9d5ff, #f5d0fe);
+  }
+
+  [class~="dark"] * {
+    scrollbar-color: #a855f7 #e2e8f0;
+  }
+
   /* Light mode for shadows */
   .dark .shadow-xl,
   .dark .shadow-2xl {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+  }
+
+  /* Keep hover rows dark inside the dark language dropdown in light mode */
+  [class~="dark"] [role="listbox"] button:hover {
+    background-color: #1e293b !important;
   }
 
   /* Mobile-optimized typography for better readability */
@@ -142,8 +258,8 @@
 
   /* Serif fonts for larger screens */
   @media (min-width: 641px) {
-    .font-serif {
-      font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    html:not([dir="rtl"]) .font-serif {
+      font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
     }
   }
 

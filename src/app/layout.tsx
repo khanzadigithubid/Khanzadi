@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import {ThemeProvider} from './context/ThemeContext';
@@ -50,6 +50,10 @@ export const metadata: Metadata = {
   },
   };
 
+export const viewport: Viewport = {
+  themeColor: '#000000',
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -61,14 +65,14 @@ export default function RootLayout({
         <StructuredData />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body className={inter.className}>
         <LanguageProvider>
           <ThemeProvider>
             <ErrorBoundary>
               <NextTopLoader
-                color="#475569"
+                color="#a855f7"
                 initialPosition={0.08}
                 crawlSpeed={200}
                 height={3}
@@ -76,7 +80,7 @@ export default function RootLayout({
                 showSpinner={false}
                 easing="ease"
                 speed={200}
-                shadow="0 0 10px #475569,0 0 5px #475569"
+                shadow="0 0 10px #a855f7,0 0 5px #a855f7"
               />
               <Header />
               <main id="main-content" className="scroll-mt-24">{children}</main>

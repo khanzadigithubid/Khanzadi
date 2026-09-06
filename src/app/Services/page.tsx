@@ -82,7 +82,7 @@ export default function Services() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {/* Web Development Card */}
           <div className="group bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-blue-500" data-aos="fade-up" data-aos-duration="500">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white mb-4 sm:mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white keep-white mb-4 sm:mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
               <FaCode size={28} className="sm:w-8 sm:h-8 transform group-hover:scale-110 transition-transform duration-300" />
             </div>
             <div className="space-y-3 sm:space-y-3 sm:space-y-5">
@@ -111,7 +111,7 @@ export default function Services() {
 
           {/* Web Design Card */}
           <div className="group bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-pink-500" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-pink-400 to-pink-600 text-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-pink-400 to-pink-600 text-white keep-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
               <FaPaintBrush size={32} className="transform group-hover:scale-110 transition-transform duration-300" />
             </div>
             <div className="space-y-3 sm:space-y-5">
@@ -140,7 +140,7 @@ export default function Services() {
 
           {/* Responsive Web Design Card */}
           <div className="group bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-teal-500" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-teal-400 to-teal-600 text-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-teal-400 to-teal-600 text-white keep-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
               <FaMobileAlt size={32} className="transform group-hover:scale-110 transition-transform duration-300" />
             </div>
             <div className="space-y-3 sm:space-y-5">
@@ -169,7 +169,7 @@ export default function Services() {
 
           {/* Shopify Development Card */}
           <div className="group bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-green-500" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-green-400 to-green-600 text-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-green-400 to-green-600 text-white keep-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
               <FaShoppingCart size={32} className="transform group-hover:scale-110 transition-transform duration-300" />
             </div>
             <div className="space-y-3 sm:space-y-5">
@@ -198,7 +198,7 @@ export default function Services() {
 
           {/* AI Automation Card */}
           <div className="group bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-emerald-500" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 text-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 text-white keep-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
               <FaRobot size={32} className="transform group-hover:scale-110 transition-transform duration-300" />
             </div>
             <div className="space-y-3 sm:space-y-5">
@@ -227,7 +227,7 @@ export default function Services() {
 
           {/* Digital Marketing Card */}
           <div className="group bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-purple-500" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-purple-400 to-purple-600 text-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-purple-400 to-purple-600 text-white keep-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
               <FaBullhorn size={32} className="transform group-hover:scale-110 transition-transform duration-300" />
             </div>
             <div className="space-y-3 sm:space-y-5">
@@ -256,7 +256,7 @@ export default function Services() {
 
           {/* Canva Design Card */}
           <div className="group bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-blue-500" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white keep-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
               <FaPalette size={32} className="transform group-hover:scale-110 transition-transform duration-300" />
             </div>
             <div className="space-y-3 sm:space-y-5">

@@ -90,7 +90,7 @@ export default function ImageLightbox({
         className="absolute top-4 right-4 z-[110] p-3 bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 group"
         aria-label="Close lightbox"
       >
-        <FaTimes className="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" />
+        <FaTimes className="w-6 h-6 text-white keep-white group-hover:scale-110 transition-transform duration-300" />
       </button>
 
       {/* Navigation Buttons */}
@@ -104,7 +104,7 @@ export default function ImageLightbox({
             className="absolute left-4 z-[110] p-3 sm:p-4 bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 group"
             aria-label="Previous image"
           >
-            <FaChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-white group-hover:scale-110 transition-transform duration-300" />
+            <FaChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-white keep-white group-hover:scale-110 transition-transform duration-300" />
           </button>
 
           <button
@@ -115,7 +115,7 @@ export default function ImageLightbox({
             className="absolute right-4 z-[110] p-3 sm:p-4 bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 group"
             aria-label="Next image"
           >
-            <FaChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-white group-hover:scale-110 transition-transform duration-300" />
+            <FaChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-white keep-white group-hover:scale-110 transition-transform duration-300" />
           </button>
         </>
       )}
@@ -143,16 +143,16 @@ export default function ImageLightbox({
         <div className="mt-4 sm:mt-6 bg-gray-800/90 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-gray-700">
           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
             <div className="flex-1">
-              <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2">
+              <h3 className="text-xl sm:text-2xl font-semibold text-white keep-white mb-2">
                 {currentImage.title}
               </h3>
-              <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-300 keep-white leading-relaxed">
                 {currentImage.description}
               </p>
 
               {/* Counter */}
               {images.length > 1 && (
-                <p className="mt-3 text-xs sm:text-sm text-gray-400">
+                <p className="mt-3 text-xs sm:text-sm text-gray-400 keep-white">
                   {currentIndex + 1} / {images.length}
                 </p>
               )}
@@ -168,7 +168,7 @@ export default function ImageLightbox({
                 className="p-3 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 group"
                 onClick={(e) => e.stopPropagation()}
               >
-                <FaExternalLinkAlt className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" />
+                <FaExternalLinkAlt className="w-5 h-5 text-white keep-white group-hover:scale-110 transition-transform duration-300" />
               </a>
               <a
                 href={currentImage.link}
@@ -178,7 +178,7 @@ export default function ImageLightbox({
                 className="p-3 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 group"
                 onClick={(e) => e.stopPropagation()}
               >
-                <FaGithub className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" />
+                <FaGithub className="w-5 h-5 text-white keep-white group-hover:scale-110 transition-transform duration-300" />
               </a>
             </div>
           </div>

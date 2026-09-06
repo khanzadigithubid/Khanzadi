@@ -22,7 +22,7 @@ export default function WhatsAppButton() {
         <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-75 motion-reduce:animate-none"></div>
 
         {/* Button */}
-        <span className="relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110">
+        <span className="relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-green-500 hover:bg-green-600 text-white keep-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110">
           <FaWhatsapp className="w-7 h-7 sm:w-8 sm:h-8" />
         </span>
 

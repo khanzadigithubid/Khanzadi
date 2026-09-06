@@ -222,7 +222,7 @@ export default function Header() {
               <Link
                 key={item.label}
                 href={item.path}
-                className="group relative text-2xl sm:text-3xl font-bold text-white hover:text-gray-300 transition-all duration-300"
+                className="group relative text-2xl sm:text-3xl font-bold text-white keep-white hover:text-gray-300 transition-all duration-300"
                 onClick={closeMobileMenu}
                 style={{
                   transitionDelay: isMobileMenuOpen ? `${index * 60}ms` : '0ms',

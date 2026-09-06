@@ -48,7 +48,7 @@ function SkillCard({
           <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">{title}</h3>
           {level && (
             <div className="flex items-center space-x-2 text-xs sm:text-sm">
-              <div className={`px-2 py-1 rounded-full ${getLevelColor(level)} text-white text-[10px] sm:text-xs font-medium`}>
+              <div className={`px-2 py-1 rounded-full ${getLevelColor(level)} text-white keep-white text-[10px] sm:text-xs font-medium`}>
                 {level}
               </div>
             </div>
@@ -65,56 +65,56 @@ const skillsData = {
       key: "html",
       title: "HTML",
       colorClass: "bg-orange-500",
-      svgIcon: <FaHtml5 size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaHtml5 size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "css",
       title: "CSS",
       colorClass: "bg-blue-500",
-      svgIcon: <FaCss3Alt size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaCss3Alt size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "tailwind",
       title: "Tailwind CSS",
       colorClass: "bg-cyan-500",
-      svgIcon: <SiTailwindcss size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <SiTailwindcss size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Expert"
     },
     {
       key: "javascript",
       title: "JavaScript",
       colorClass: "bg-yellow-500",
-      svgIcon: <FaJsSquare size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaJsSquare size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "react",
       title: "React.js",
       colorClass: "bg-cyan-600",
-      svgIcon: <FaReact size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaReact size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "vuejs",
       title: "Vue.js",
       colorClass: "bg-green-500",
-      svgIcon: <FaVuejs size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaVuejs size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Intermediate"
     },
     {
       key: "redux",
       title: "Redux",
       colorClass: "bg-purple-600",
-      svgIcon: <SiRedux size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <SiRedux size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "framerMotion",
       title: "Framer Motion",
       colorClass: "bg-pink-500",
-      svgIcon: <SiFramer size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <SiFramer size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Intermediate"
     }
   ],
@@ -123,63 +123,63 @@ const skillsData = {
       key: "typescript",
       title: "TypeScript",
       colorClass: "bg-blue-600",
-      svgIcon: <SiTypescript size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <SiTypescript size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "nextjs",
       title: "Next.js",
       colorClass: "bg-slate-800",
-      svgIcon: <SiNextdotjs size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <SiNextdotjs size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "nodejs",
       title: "Node.js",
       colorClass: "bg-green-600",
-      svgIcon: <FaNodeJs size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaNodeJs size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "python",
       title: "Python",
       colorClass: "bg-blue-600",
-      svgIcon: <FaPython size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaPython size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "express",
       title: "Express.js",
       colorClass: "bg-slate-600",
-      svgIcon: <SiExpress size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <SiExpress size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Intermediate"
     },
     {
       key: "fastapi",
       title: "FastAPI",
       colorClass: "bg-teal-600",
-      svgIcon: <SiFastapi size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <SiFastapi size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Intermediate"
     },
     {
       key: "restApi",
       title: "REST API",
       colorClass: "bg-indigo-500",
-      svgIcon: <FaPlug size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaPlug size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "postgresql",
       title: "PostgreSQL",
       colorClass: "bg-cyan-700",
-      svgIcon: <SiPostgresql size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <SiPostgresql size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Intermediate"
     },
     {
       key: "mongodb",
       title: "MongoDB",
       colorClass: "bg-green-600",
-      svgIcon: <SiMongodb size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <SiMongodb size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Intermediate"
     }
   ],
@@ -188,14 +188,14 @@ const skillsData = {
       key: "canva",
       title: "Canva",
       colorClass: "bg-blue-400",
-      svgIcon: <FaPalette size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaPalette size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Expert"
     },
     {
       key: "figma",
       title: "Figma",
       colorClass: "bg-purple-500",
-      svgIcon: <SiFigma size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <SiFigma size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Intermediate"
     }
   ],
@@ -204,14 +204,14 @@ const skillsData = {
       key: "aiTools",
       title: "AI Tools",
       colorClass: "bg-indigo-600",
-      svgIcon: <FaRobot size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaRobot size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "shopify",
       title: "Shopify",
       colorClass: "bg-green-500",
-      svgIcon: <FaShopify size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaShopify size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Expert"
     }
   ],
@@ -220,28 +220,28 @@ const skillsData = {
       key: "openai",
       title: "OpenAI / LLMs",
       colorClass: "bg-emerald-600",
-      svgIcon: <FaBrain size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaBrain size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "langchain",
       title: "LangChain / RAG",
       colorClass: "bg-sky-600",
-      svgIcon: <FaLink size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaLink size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "n8n",
       title: "n8n",
       colorClass: "bg-orange-500",
-      svgIcon: <FaProjectDiagram size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaProjectDiagram size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "zapier",
       title: "Zapier",
       colorClass: "bg-blue-600",
-      svgIcon: <SiZapier size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <SiZapier size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     }
   ],
@@ -250,14 +250,14 @@ const skillsData = {
       key: "git",
       title: "Git",
       colorClass: "bg-orange-600",
-      svgIcon: <FaGitAlt size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaGitAlt size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
       key: "github",
       title: "GitHub",
       colorClass: "bg-slate-700",
-      svgIcon: <FaGithub size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaGithub size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     }
   ],
@@ -266,14 +266,14 @@ const skillsData = {
       key: "seo",
       title: "SEO",
       colorClass: "bg-teal-600",
-      svgIcon: <FaSearch size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaSearch size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Intermediate"
     },
     {
       key: "socialMedia",
       title: "Social Media Marketing",
       colorClass: "bg-pink-500",
-      svgIcon: <FaShareAlt size={32} className="sm:text-4xl text-white" />,
+      svgIcon: <FaShareAlt size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     }
   ]

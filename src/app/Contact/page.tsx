@@ -263,7 +263,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full bg-gradient-to-r from-indigo-500 via-violet-500 to-fuchsia-600 text-white py-2.5 sm:py-3 md:py-3.5 rounded-lg text-sm sm:text-base font-medium transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center ${
+                className={`w-full bg-gradient-to-r from-indigo-500 via-violet-500 to-fuchsia-600 text-white keep-white py-2.5 sm:py-3 md:py-3.5 rounded-lg text-sm sm:text-base font-medium transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center ${
                   isSubmitting
                     ? 'opacity-70 cursor-not-allowed'
                     : 'hover:from-indigo-400 hover:to-fuchsia-500'
