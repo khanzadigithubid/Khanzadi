@@ -96,8 +96,8 @@ export default function LanguageSwitcher() {
         aria-expanded={isOpen}
       >
         <FlagIcon code={currentLanguage.code} />
-        <span className="text-white text-sm font-semibold hidden sm:inline">
-          {currentLanguage.code.toUpperCase()}
+        <span className="text-white text-sm font-semibold hidden sm:inline max-w-[7rem] truncate">
+          {currentLanguage.name}
         </span>
         <FaChevronDown className={`w-3 h-3 text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
