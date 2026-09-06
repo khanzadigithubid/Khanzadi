@@ -20,7 +20,13 @@
     "nextjs": "Next.js",
     "nextjsSub": "حلول Full Stack",
     "aiEng": "هندسة الذكاء الاصطناعي",
-    "aiEngSub": "الذكاء الاصطناعي السحابي"
+    "aiEngSub": "الذكاء الاصطناعي السحابي",
+    "stats": {
+      "experience": "سنوات الخبرة",
+      "shopify": "متاجر Shopify المنشأة",
+      "automation": "تذاكر الدعم المؤتمتة",
+      "growth": "نمو إيرادات العملاء"
+    }
   },
   "about": {
     "title": "نبذة عني",
@@ -219,10 +225,7 @@
     "categories": {
       "all": "الكل",
       "webApps": "تطبيقات الويب",
-      "aiProjects": "مشاريع الذكاء الاصطناعي",
-      "apiIntegration": "تكامل API",
-      "nextjsProjects": "مشاريع Next.js",
-      "uiuxProjects": "مشاريع UI/UX"
+      "aiProjects": "مشاريع الذكاء الاصطناعي"
     },
     "items": {
       "tradingCopilot": {

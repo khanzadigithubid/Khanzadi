@@ -20,7 +20,13 @@
     "nextjs": "Next.js",
     "nextjsSub": "فل اسٹیک حل",
     "aiEng": "AI انجینئرنگ",
-    "aiEngSub": "کلاؤڈ اپلائیڈ AI"
+    "aiEngSub": "کلاؤڈ اپلائیڈ AI",
+    "stats": {
+      "experience": "سالوں کا تجربہ",
+      "shopify": "Shopify اسٹورز",
+      "automation": "سپورٹ ٹکٹس آٹومیٹڈ",
+      "growth": "کلائنٹ ریونیو گروتھ"
+    }
   },
   "about": {
     "title": "میرے بارے میں",
@@ -219,10 +225,7 @@
     "categories": {
       "all": "تمام",
       "webApps": "ویب ایپس",
-      "aiProjects": "AI پروجیکٹس",
-      "apiIntegration": "API انٹیگریشن",
-      "nextjsProjects": "Next.js پروجیکٹس",
-      "uiuxProjects": "UI/UX پروجیکٹس"
+      "aiProjects": "AI پروجیکٹس"
     },
     "items": {
       "tradingCopilot": {

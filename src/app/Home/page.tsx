@@ -142,6 +142,31 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Stats Band */}
+      <section className="bg-gradient-to-b from-gray-900 to-black border-y border-white/10" data-aos="fade-up" data-aos-duration="500">
+        <div className="container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl py-10 sm:py-12">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 text-center">
+            <div className="space-y-1.5">
+              <div className="text-3xl sm:text-4xl font-bold text-gradient">2+</div>
+              <div className="text-xs sm:text-sm text-gray-400">{t('home.stats.experience')}</div>
+            </div>
+            <div className="space-y-1.5">
+              <div className="text-3xl sm:text-4xl font-bold text-gradient">3-4</div>
+              <div className="text-xs sm:text-sm text-gray-400">{t('home.stats.shopify')}</div>
+            </div>
+            <div className="space-y-1.5">
+              <div className="text-3xl sm:text-4xl font-bold text-gradient">80%+</div>
+              <div className="text-xs sm:text-sm text-gray-400">{t('home.stats.automation')}</div>
+            </div>
+            <div className="space-y-1.5">
+              <div className="text-3xl sm:text-4xl font-bold text-gradient">40%</div>
+              <div className="text-xs sm:text-sm text-gray-400">{t('home.stats.growth')}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <TestimonialsSection />
     </>
   );

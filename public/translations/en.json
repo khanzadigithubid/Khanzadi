@@ -20,7 +20,13 @@
     "nextjs": "Next.js",
     "nextjsSub": "Full Stack Solutions",
     "aiEng": "AI Engineering",
-    "aiEngSub": "Cloud Applied AI"
+    "aiEngSub": "Cloud Applied AI",
+    "stats": {
+      "experience": "Years Experience",
+      "shopify": "Shopify Stores Built",
+      "automation": "Support Tickets Automated",
+      "growth": "Client Revenue Growth"
+    }
   },
   "about": {
     "title": "About Me",
@@ -221,10 +227,7 @@
     "categories": {
       "all": "All",
       "webApps": "Web Apps",
-      "aiProjects": "AI Projects",
-      "apiIntegration": "API Integration",
-      "nextjsProjects": "Next.js Projects",
-      "uiuxProjects": "UI/UX Projects"
+      "aiProjects": "AI Projects"
     },
     "items": {
       "tradingCopilot": {

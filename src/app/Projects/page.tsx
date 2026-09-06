@@ -76,7 +76,7 @@ const Project = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const categories = ["All", "Web Apps", "AI Projects", "API Integration", "Next.js Projects", "UI/UX Projects"];
+  const categories = ["All", "AI Projects", "Web Apps"];
 
   // Get translated project data
   const getProjectTranslation = (projectKey: string, field: 'title' | 'description') => {
@@ -86,11 +86,8 @@ const Project = () => {
   const getCategoryTranslation = (category: string) => {
     const categoryMap: { [key: string]: string } = {
       "All": t('projects.categories.all'),
-      "Web Apps": t('projects.categories.webApps'),
       "AI Projects": t('projects.categories.aiProjects'),
-      "API Integration": t('projects.categories.apiIntegration'),
-      "Next.js Projects": t('projects.categories.nextjsProjects'),
-      "UI/UX Projects": t('projects.categories.uiuxProjects')
+      "Web Apps": t('projects.categories.webApps')
     };
     return categoryMap[category] || category;
   };

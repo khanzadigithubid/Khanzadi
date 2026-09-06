@@ -20,7 +20,13 @@
     "nextjs": "Next.js",
     "nextjsSub": "Soluciones Full Stack",
     "aiEng": "Ingeniería de IA",
-    "aiEngSub": "IA Aplicada en la Nube"
+    "aiEngSub": "IA Aplicada en la Nube",
+    "stats": {
+      "experience": "Años de experiencia",
+      "shopify": "Tiendas Shopify creadas",
+      "automation": "Tickets automatizados",
+      "growth": "Crecimiento de ingresos"
+    }
   },
   "about": {
     "title": "Acerca de Mí",
@@ -219,10 +225,7 @@
     "categories": {
       "all": "Todos",
       "webApps": "Aplicaciones Web",
-      "aiProjects": "Proyectos de IA",
-      "apiIntegration": "Integración API",
-      "nextjsProjects": "Proyectos Next.js",
-      "uiuxProjects": "Proyectos UI/UX"
+      "aiProjects": "Proyectos de IA"
     },
     "items": {
       "tradingCopilot": {
