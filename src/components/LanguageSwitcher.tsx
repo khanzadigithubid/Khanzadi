@@ -90,13 +90,14 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 px-4 py-2.5 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-300 border border-gray-700 hover:border-purple-500/50 shadow-md hover:shadow-lg"
+        className="flex items-center gap-2 px-3 sm:px-4 py-2.5 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-300 border border-gray-700 hover:border-purple-500/50 shadow-md hover:shadow-lg"
         aria-label="Change language"
         aria-haspopup="listbox"
         aria-expanded={isOpen}
+        dir="ltr"
       >
         <FlagIcon code={currentLanguage.code} />
-        <span className="text-white text-sm font-semibold hidden sm:inline max-w-[7rem] truncate">
+        <span className="text-white text-sm font-semibold max-w-[6.5rem] sm:max-w-[8rem] truncate" dir="auto">
           {currentLanguage.name}
         </span>
         <FaChevronDown className={`w-3 h-3 text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
