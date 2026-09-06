@@ -1,7 +1,7 @@
 'use client';
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FaSun, FaMoon } from 'react-icons/fa';
 import dynamic from 'next/dynamic';
 import LanguageSwitcher from '../../components/LanguageSwitcher';
@@ -79,6 +79,7 @@ const DynamicThemeToggleMobile = dynamic(() => Promise.resolve(ThemeToggleMobile
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const mobileNavRef = useRef<HTMLDivElement>(null);
   const { t } = useLanguage();
 
   useEffect(() => {
@@ -88,6 +89,21 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        closeMobileMenu();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    if (mobileNavRef.current) {
+      const firstLink = mobileNavRef.current.querySelector<HTMLAnchorElement>('a');
+      firstLink?.focus();
+    }
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isMobileMenuOpen]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -158,6 +174,8 @@ export default function Header() {
             className="md:hidden absolute right-6 p-3 text-white hover:bg-white/5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-xl"
             onClick={toggleMobileMenu}
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-navigation"
           >
             <div className="relative w-7 h-7">
               <span
@@ -181,14 +199,25 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         <div
-          className={`md:hidden fixed inset-0 top-20 bg-black/98 backdrop-blur-md z-[45] transition-all duration-400 ease-in-out ${
+          className={`md:hidden fixed inset-0 top-20 z-[45] transition-all duration-400 ease-in-out ${
             isMobileMenuOpen
               ? 'opacity-100 visible'
-              : 'opacity-0 invisible'
+              : 'opacity-0 invisible pointer-events-none'
           }`}
-          onClick={closeMobileMenu}
         >
-          <nav className="flex flex-col items-center justify-center h-full space-y-8 px-6">
+          <div
+            className="absolute inset-0 bg-black/98 backdrop-blur-md"
+            onClick={closeMobileMenu}
+            aria-hidden="true"
+          />
+          <nav
+            id="mobile-navigation"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Navigation menu"
+            ref={mobileNavRef}
+            className="relative flex flex-col items-center justify-center h-full space-y-8 px-6"
+          >
             {navItems.map((item, index) => (
               <Link
                 key={item.label}

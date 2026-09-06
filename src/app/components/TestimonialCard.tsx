@@ -22,12 +22,16 @@ export default function TestimonialCard({
   date,
   avatarUrl
 }: TestimonialCardProps) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const [isExpanded, setIsExpanded] = useState(false);
   const shouldTruncate = content.length > 300;
   const displayContent = shouldTruncate && !isExpanded
-    ? content.slice(0, 300) + '...'
+    ? content.slice(0, 300) + '…'
     : content;
+  const formattedDate = new Intl.DateTimeFormat(locale, {
+    year: 'numeric',
+    month: 'long'
+  }).format(new Date(date));
 
   const getInitials = (fullName: string) => {
     return fullName
@@ -106,10 +110,7 @@ export default function TestimonialCard({
               {role}
             </p>
             <p className="text-xs sm:text-sm text-white/50 mt-1">
-              {new Date(date).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long'
-              })}
+              {formattedDate}
             </p>
           </div>
         </div>

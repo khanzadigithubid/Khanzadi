@@ -200,6 +200,7 @@ export default function Contact() {
                   id="name"
                   name="name"
                   required
+                  autoComplete="name"
                   className="w-full px-3 py-2 sm:px-4 sm:py-2.5 text-sm sm:text-base rounded-lg border-2 border-gray-600 bg-gray-700 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/25 transition-colors duration-200"
                   placeholder={t('contact.namePlaceholder')}
                 />
@@ -211,6 +212,8 @@ export default function Contact() {
                   id="email"
                   name="email"
                   required
+                  autoComplete="email"
+                  spellCheck={false}
                   className="w-full px-3 py-2 sm:px-4 sm:py-2.5 text-sm sm:text-base rounded-lg border-2 border-gray-600 bg-gray-700 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/25 transition-colors duration-200"
                   placeholder={t('contact.emailPlaceholder')}
                 />
@@ -228,7 +231,8 @@ export default function Contact() {
                     inputProps={{
                       name: 'phone',
                       required: true,
-                      id: 'phone'
+                      id: 'phone',
+                      autoComplete: 'tel'
                     }}
                     containerClass="phone-input-wrapper"
                     inputClass={`phone-input ${phoneError ? 'phone-input-error' : ''}`}
@@ -251,6 +255,7 @@ export default function Contact() {
                   name="message"
                   required
                   rows={4}
+                  autoComplete="off"
                   className="w-full px-3 py-2 sm:px-4 sm:py-2.5 text-sm sm:text-base rounded-lg border-2 border-gray-600 bg-gray-700 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/25 transition-colors duration-200"
                   placeholder={t('contact.messagePlaceholder')}
                 />

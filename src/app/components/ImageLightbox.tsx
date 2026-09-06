@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { FaTimes, FaChevronLeft, FaChevronRight, FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
@@ -26,15 +26,20 @@ export default function ImageLightbox({
   onNavigate,
 }: ImageLightboxProps) {
   const [isLoaded, setIsLoaded] = useState(false);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const previouslyFocusedRef = useRef<HTMLElement | null>(null);
 
   // Prevent body scroll when modal is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
       setIsLoaded(true);
+      previouslyFocusedRef.current = document.activeElement as HTMLElement;
+      closeButtonRef.current?.focus();
     } else {
       document.body.style.overflow = 'unset';
       setIsLoaded(false);
+      previouslyFocusedRef.current?.focus();
     }
 
     return () => {
@@ -70,13 +75,17 @@ export default function ImageLightbox({
 
   return (
     <div
-      className={`fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm transition-opacity duration-300 ${
+      className={`fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm transition-opacity duration-300 overscroll-contain ${
         isLoaded ? 'opacity-100' : 'opacity-0'
       }`}
+      role="dialog"
+      aria-modal="true"
+      aria-label={currentImage.title}
       onClick={onClose}
     >
       {/* Close Button */}
       <button
+        ref={closeButtonRef}
         onClick={onClose}
         className="absolute top-4 right-4 z-[110] p-3 bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 group"
         aria-label="Close lightbox"

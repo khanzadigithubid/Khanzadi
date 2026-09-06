@@ -79,7 +79,7 @@ export default function RootLayout({
                 shadow="0 0 10px #475569,0 0 5px #475569"
               />
               <Header />
-              <main id="main-content">{children}</main>
+              <main id="main-content" className="scroll-mt-24">{children}</main>
               <WhatsAppButton />
               <ToastContainer
                 position="top-right"

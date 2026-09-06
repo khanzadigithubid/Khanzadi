@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import { useClickOutside } from '../hooks/useClickOutside';
@@ -20,6 +20,17 @@ export default function LanguageSwitcher() {
   // Use custom hook to close dropdown when clicking outside
   useClickOutside(dropdownRef, () => setIsOpen(false));
 
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen]);
+
   const changeLanguage = (langCode: string) => {
     setLocale(langCode);
     setIsOpen(false);
@@ -33,6 +44,8 @@ export default function LanguageSwitcher() {
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center space-x-2 px-4 py-2.5 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-300 border border-gray-700 hover:border-purple-500/50 shadow-md hover:shadow-lg"
         aria-label="Change language"
+        aria-haspopup="listbox"
+        aria-expanded={isOpen}
       >
         <span className="text-2xl">{currentLanguage.flag}</span>
         <span className="text-white text-sm font-semibold hidden sm:inline">
@@ -42,11 +55,13 @@ export default function LanguageSwitcher() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full right-0 mt-2 w-56 bg-gray-900/95 backdrop-blur-md border border-purple-500/20 rounded-xl shadow-2xl overflow-hidden z-50">
+        <div className="absolute top-full right-0 mt-2 w-56 bg-gray-900/95 backdrop-blur-md border border-purple-500/20 rounded-xl shadow-2xl overflow-hidden z-50" role="listbox" aria-label="Languages">
           {languages.map((lang) => (
             <button
               key={lang.code}
               onClick={() => changeLanguage(lang.code)}
+              role="option"
+              aria-selected={locale === lang.code}
               className={`w-full flex items-center space-x-4 px-5 py-3.5 hover:bg-gray-700 transition-colors duration-200 ${
                 locale === lang.code ? 'bg-gray-750' : ''
               }`}
