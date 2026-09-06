@@ -56,7 +56,7 @@ const Home = () => {
 
               {/* Expertise Highlights */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700 hover:border-purple-500/40">
+                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-700 transition-all duration-300 border border-gray-700 hover:border-purple-500/40">
                   <div className="p-1.5 sm:p-2 bg-gray-700 rounded-lg group-hover:bg-gray-600 transition-colors duration-300">
                     <FaCode className="text-gray-200 text-base sm:text-lg" />
                   </div>
@@ -65,7 +65,7 @@ const Home = () => {
                     <p className="text-[10px] sm:text-xs text-gray-400">{t('home.webDevSub')}</p>
                   </div>
                 </div>
-                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700 hover:border-purple-500/40">
+                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-700 transition-all duration-300 border border-gray-700 hover:border-purple-500/40">
                   <div className="p-1.5 sm:p-2 bg-gray-700 rounded-lg group-hover:bg-gray-600 transition-colors duration-300">
                     <FaLaptopCode className="text-gray-200 text-base sm:text-lg" />
                   </div>
@@ -74,7 +74,7 @@ const Home = () => {
                     <p className="text-[10px] sm:text-xs text-gray-400">{t('home.nextjsSub')}</p>
                   </div>
                 </div>
-                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-750 transition-all duration-300 border border-gray-700 hover:border-purple-500/40">
+                <div className="group flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg sm:rounded-xl shadow-md hover:shadow-xl hover:bg-gray-700 transition-all duration-300 border border-gray-700 hover:border-purple-500/40">
                   <div className="p-1.5 sm:p-2 bg-gray-700 rounded-lg group-hover:bg-gray-600 transition-colors duration-300">
                     <FaRobot className="text-gray-200 text-base sm:text-lg" />
                   </div>

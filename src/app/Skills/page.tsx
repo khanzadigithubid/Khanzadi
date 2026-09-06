@@ -379,7 +379,7 @@ export default function Skills() {
               {/* Category Header */}
               <button
                 onClick={() => toggleCategory(category)}
-                className="w-full px-6 py-4 sm:px-8 sm:py-5 flex items-center justify-between hover:bg-gray-750 transition-colors duration-300"
+                className="w-full px-6 py-4 sm:px-8 sm:py-5 flex items-center justify-between hover:bg-gray-700 transition-colors duration-300"
               >
                 <div className="flex items-center space-x-3 sm:space-x-4 min-w-0">
                   <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white truncate">{getCategoryTranslation(category)}</h2>

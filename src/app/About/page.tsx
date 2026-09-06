@@ -64,15 +64,15 @@ const About = () => {
 
                 {/* Professional Badges */}
                 <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4 justify-center md:justify-start">
-                  <div className="flex items-center space-x-1.5 sm:space-x-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">
+                  <div className="flex items-center space-x-1.5 sm:space-x-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-700 transition-colors duration-300">
                     <FaAward className="text-gray-400 text-xs sm:text-sm" />
                     <span>{t('about.certified')}</span>
                   </div>
-                  <div className="flex items-center space-x-1.5 sm:space-x-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">
+                  <div className="flex items-center space-x-1.5 sm:space-x-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-700 transition-colors duration-300">
                     <FaStar className="text-gray-400 text-xs sm:text-sm" />
                     <span>{t('about.expert')}</span>
                   </div>
-                  <div className="flex items-center space-x-1.5 sm:space-x-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">
+                  <div className="flex items-center space-x-1.5 sm:space-x-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-700 transition-colors duration-300">
                     <FaCheckCircle className="text-gray-400 text-xs sm:text-sm" />
                     <span>ADC PAT 2</span>
                   </div>
@@ -80,9 +80,9 @@ const About = () => {
 
                 {/* Skills Tags */}
                 <div className="flex flex-wrap gap-2 sm:gap-3 justify-center md:justify-start">
-                  <span className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">{t('about.frontendDev')}</span>
-                  <span className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">Next.js</span>
-                  <span className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-750 transition-colors duration-300">{t('about.aiEng')}</span>
+                  <span className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-700 transition-colors duration-300">{t('about.frontendDev')}</span>
+                  <span className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-700 transition-colors duration-300">Next.js</span>
+                  <span className="px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-700 transition-colors duration-300">{t('about.aiEng')}</span>
                 </div>
 
                 {/* Download Resume Button */}
