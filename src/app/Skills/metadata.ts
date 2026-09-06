@@ -10,14 +10,6 @@ export const metadata: Metadata = {
     description: 'Comprehensive showcase of technical expertise across web development domains',
     url: 'https://khanzadi.vercel.app/Skills',
     siteName: 'Khanzadi Wazir Ali Portfolio',
-    images: [
-      {
-        url: '/skills-og.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Technical Skills - Khanzadi Wazir Ali'
-      }
-    ],
     locale: 'en_US',
     type: 'website',
   },
@@ -26,7 +18,6 @@ export const metadata: Metadata = {
     title: 'Skills - Khanzadi Wazir Ali',
     description: 'Frontend, Backend, Design, and Marketing expertise',
     creator: '@Khanzadi0099',
-    images: ['/skills-og.jpg'],
   },
   alternates: {
     canonical: 'https://khanzadi.vercel.app/Skills',

@@ -10,14 +10,6 @@ export const metadata: Metadata = {
     description: 'Professional profile and background of a Full Stack Developer specializing in Next.js and AI Engineering',
     url: 'https://khanzadi.vercel.app/About',
     siteName: 'Khanzadi Wazir Ali Portfolio',
-    images: [
-      {
-        url: '/about-og.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'About Khanzadi Wazir Ali'
-      }
-    ],
     locale: 'en_US',
     type: 'profile',
   },
@@ -26,7 +18,6 @@ export const metadata: Metadata = {
     title: 'About - Khanzadi Wazir Ali',
     description: 'Frontend Developer & AI Enthusiast | GIAIC Certified',
     creator: '@Khanzadi0099',
-    images: ['/about-og.jpg'],
   },
   alternates: {
     canonical: 'https://khanzadi.vercel.app/About',

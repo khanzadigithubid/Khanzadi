@@ -10,14 +10,6 @@ export const metadata: Metadata = {
     description: 'Connect for web development projects and professional opportunities',
     url: 'https://khanzadi.vercel.app/Contact',
     siteName: 'Khanzadi Wazir Ali Portfolio',
-    images: [
-      {
-        url: '/contact-og.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Contact Khanzadi Wazir Ali'
-      }
-    ],
     locale: 'en_US',
     type: 'website',
   },
@@ -26,7 +18,6 @@ export const metadata: Metadata = {
     title: 'Contact - Khanzadi Wazir Ali',
     description: 'Get in touch for web development projects in Karachi, Pakistan',
     creator: '@Khanzadi0099',
-    images: ['/contact-og.jpg'],
   },
   alternates: {
     canonical: 'https://khanzadi.vercel.app/Contact',

@@ -10,14 +10,6 @@ export const metadata: Metadata = {
     description: 'Portfolio of web development projects showcasing expertise in modern technologies',
     url: 'https://khanzadi.vercel.app/Projects',
     siteName: 'Khanzadi Wazir Ali Portfolio',
-    images: [
-      {
-        url: '/projects-og.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Khanzadi Wazir Ali Projects'
-      }
-    ],
     locale: 'en_US',
     type: 'website',
   },
@@ -26,7 +18,6 @@ export const metadata: Metadata = {
     title: 'Projects - Khanzadi Wazir Ali',
     description: 'Explore web development projects with Next.js, React, and modern tech stack',
     creator: '@Khanzadi0099',
-    images: ['/projects-og.jpg'],
   },
   alternates: {
     canonical: 'https://khanzadi.vercel.app/Projects',
