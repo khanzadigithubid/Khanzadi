@@ -269,7 +269,7 @@ const Project = () => {
                       {getProjectTranslation(project.key, 'title')}
                     </h2>
                   </Link>
-                  <p className="text-gray-300 text-xs sm:text-sm leading-relaxed line-clamp-3">
+                  <p className="text-gray-300 text-xs sm:text-sm leading-relaxed line-clamp-2">
                     {getProjectTranslation(project.key, 'description')}
                   </p>
                 </div>

@@ -148,11 +148,11 @@ const About = () => {
             <div className="relative max-w-4xl mx-auto">
               <div className="absolute left-4 sm:left-1/2 sm:-translate-x-px top-0 bottom-0 w-0.5 bg-gray-700"></div>
               {[
-                { key: "exp1", points: 6 },
-                { key: "exp2", points: 4 },
-                { key: "exp3", points: 4 },
-                { key: "exp4", points: 4 },
-                { key: "exp5", points: 4 }
+                { key: "exp1", points: 4 },
+                { key: "exp2", points: 3 },
+                { key: "exp3", points: 3 },
+                { key: "exp4", points: 3 },
+                { key: "exp5", points: 3 }
               ].map((exp, index) => (
                 <div key={exp.key} className={`relative flex flex-col sm:flex-row mb-10 sm:mb-12 pl-12 sm:pl-0 ${index % 2 === 0 ? 'sm:justify-start' : 'sm:justify-end'}`}>
                   <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 top-1 w-3 h-3 rounded-full bg-indigo-400 border-2 border-black shadow-[0_0_10px_rgba(129,140,248,0.9)] z-10"></div>

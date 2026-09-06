@@ -18,15 +18,12 @@ interface SkillCardProps {
 
 function SkillCard({
   title,
-  skillKey,
   colorClass,
   svgIcon,
   dataAos,
   dataAosDelay,
   level,
 }: SkillCardProps) {
-  const { t } = useLanguage();
-
   const getLevelColor = (level: string) => {
     switch (level?.toLowerCase()) {
       case 'expert': return 'bg-green-500';
@@ -49,9 +46,6 @@ function SkillCard({
             {svgIcon}
           </div>
           <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">{title}</h3>
-          <p className="text-xs sm:text-sm text-gray-300 text-center leading-relaxed mb-2 sm:mb-3">
-            {t(`skills.items.${skillKey}.description`)}
-          </p>
           {level && (
             <div className="flex items-center space-x-2 text-xs sm:text-sm">
               <div className={`px-2 py-1 rounded-full ${getLevelColor(level)} text-white text-[10px] sm:text-xs font-medium`}>
