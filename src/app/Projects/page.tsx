@@ -21,7 +21,7 @@ const projects = [
   },
   {
     key: "aiEmployeeWorkspace",
-    src: "/project11.jpg",
+    src: "/ai-employee.jpg",
     alt: "AI Employee Workspace Automation",
     demoLink: "",
     githubLink: "https://github.com/khanzadigithubid/ai-employee-workspace-public",
@@ -29,7 +29,7 @@ const projects = [
   },
   {
     key: "shopifyAutomation",
-    src: "/project11.jpg",
+    src: "/ai-shopify.jpg",
     alt: "Shopify Business Intelligence Automation",
     demoLink: "",
     githubLink: "https://github.com/khanzadigithubid/shopify-business-intelligence-automation",
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     key: "agenticAIOS",
-    src: "/project11.jpg",
+    src: "/agentic-ai.jpg",
     alt: "Agentic AI OS",
     demoLink: "https://agentic-ai-os.vercel.app/",
     githubLink: "https://github.com/khanzadigithubid/Agentic-AI-OS",
@@ -45,7 +45,7 @@ const projects = [
   },
   {
     key: "photoToSketch",
-    src: "/project11.jpg",
+    src: "/ai-sketch.avif",
     alt: "AI Photo to Sketch Converter",
     demoLink: "https://kw-photo-to-sketch-converter.streamlit.app/",
     githubLink: "https://github.com/khanzadigithubid/AI-Photo-to-Sketch-Converter-",
@@ -53,7 +53,7 @@ const projects = [
   },
   {
     key: "loopEngineering",
-    src: "/project11.jpg",
+    src: "/project2.jpg",
     alt: "Loop Engineering Hub",
     demoLink: "",
     githubLink: "https://github.com/khanzadigithubid/Loop_Engineering_Hub",
@@ -61,7 +61,7 @@ const projects = [
   },
   {
     key: "worldMap",
-    src: "/project11.jpg",
+    src: "/project5.jpg",
     alt: "World Map",
     demoLink: "https://kw-world-map.streamlit.app/",
     githubLink: "https://github.com/khanzadigithubid/World-Map",
