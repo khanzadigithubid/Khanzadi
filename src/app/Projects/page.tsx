@@ -53,7 +53,7 @@ const projects = [
   },
   {
     key: "loopEngineering",
-    src: "/project2.jpg",
+    src: "/loop-engineering.jpg",
     alt: "Loop Engineering Hub",
     demoLink: "",
     githubLink: "https://github.com/khanzadigithubid/Loop_Engineering_Hub",
@@ -61,7 +61,7 @@ const projects = [
   },
   {
     key: "worldMap",
-    src: "/project5.jpg",
+    src: "/world-map.jpg",
     alt: "World Map",
     demoLink: "https://kw-world-map.streamlit.app/",
     githubLink: "https://github.com/khanzadigithubid/World-Map",
