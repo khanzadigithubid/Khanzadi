@@ -20,7 +20,7 @@ const FlagIcon = ({ code }: { code: string }) => {
   };
 
   switch (code) {
-    case 'pk':
+    case 'ur':
       return (
         <svg {...svgProps}>
           <rect width="60" height="30" fill="#01411C" />
@@ -30,7 +30,7 @@ const FlagIcon = ({ code }: { code: string }) => {
           <path d="M47,11.5 L48.2,13.8 L50.8,13.9 L48.8,15.5 L49.6,18 L47,16.7 L44.4,18 L45.2,15.5 L43.2,13.9 L45.8,13.8 Z" fill="#ffffff" />
         </svg>
       );
-    case 'sa':
+    case 'ar':
       return (
         <svg {...svgProps}>
           <rect width="60" height="30" fill="#165d31" />
