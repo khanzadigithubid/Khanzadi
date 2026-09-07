@@ -122,6 +122,16 @@
     background-color: #f8fafc !important;
   }
 
+  /* Light mode for solid black surfaces (breadcrumbs, testimonial band) */
+  .dark .bg-black {
+    background-color: #f8fafc !important;
+    border-color: #e2e8f0 !important;
+  }
+
+  .dark .border-white\/10 {
+    border-color: #e2e8f0 !important;
+  }
+
   /* Light mode for borders */
   .dark .border-gray-700,
   .dark .border-gray-600 {
