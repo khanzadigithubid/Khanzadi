@@ -190,7 +190,7 @@ const Project = () => {
               }}
               className={`px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-300 ${
                 selectedCategory === category
-                  ? 'bg-white text-black shadow-lg'
+                  ? 'bg-purple-600 text-white keep-white shadow-lg hover:bg-purple-500'
                   : 'bg-gray-800 text-gray-200 hover:bg-gray-700 shadow-md border border-gray-700'
               }`}
             >
