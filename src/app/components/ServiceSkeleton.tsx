@@ -2,10 +2,10 @@ import Skeleton, { SkeletonCircle } from './Skeleton';
 
 export default function ServiceSkeleton() {
   return (
-    <div className="group bg-white dark:bg-gray-900 rounded-2xl shadow-md border border-black/20 dark:border-white/20 p-6 sm:p-8 md:p-10">
+    <div className="group bg-gray-800 rounded-2xl shadow-md border border-gray-700 p-6 sm:p-8 md:p-10">
       <div className="space-y-4 sm:space-y-5">
         {/* Icon Skeleton */}
-        <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-800">
+        <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gray-600">
           <SkeletonCircle size="w-6 h-6 sm:w-8 sm:h-8" />
         </div>
 

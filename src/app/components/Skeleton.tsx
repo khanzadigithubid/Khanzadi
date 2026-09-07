@@ -51,7 +51,7 @@ export default function Skeleton({
   className = "",
 }: SkeletonProps) {
   // Base classes for all skeleton variants
-  const baseClasses = "animate-pulse bg-slate-200 dark:bg-slate-700";
+  const baseClasses = "animate-pulse bg-gray-600";
 
   // Shape-specific classes
   const shapeClasses = {
@@ -127,7 +127,7 @@ export function SkeletonCircle({
  */
 export function SkeletonCard({ className = "" }: { className?: string }) {
   return (
-    <div className={`bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-black/10 dark:border-white/10 ${className}`}>
+    <div className={`bg-gray-800 rounded-2xl shadow-lg p-6 border border-gray-700 ${className}`}>
       <div className="space-y-4">
         {/* Icon/Image placeholder */}
         <Skeleton width="w-16" height="h-16" shape="circle" className="mx-auto" />
@@ -147,7 +147,7 @@ export function SkeletonCard({ className = "" }: { className?: string }) {
  */
 export function SkeletonProject({ className = "" }: { className?: string }) {
   return (
-    <div className={`bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-black/10 dark:border-white/10 ${className}`}>
+    <div className={`bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-700 ${className}`}>
       {/* Image placeholder */}
       <Skeleton width="w-full" height="h-48" shape="rectangle" className="rounded-t-xl" />
 

@@ -2,7 +2,7 @@ import Skeleton, { SkeletonCircle } from '../components/Skeleton';
 
 export default function Loading() {
   return (
-    <section className="bg-gradient-to-b from-white to-slate-50 dark:from-black dark:to-slate-900 py-8 sm:py-12 md:py-16 lg:py-24">
+    <section className="bg-gradient-to-b from-black to-gray-900 py-8 sm:py-12 md:py-16 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
@@ -20,7 +20,7 @@ export default function Loading() {
         {/* Two Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
           {/* Left Column - Contact Form */}
-          <div className="bg-white dark:bg-gray-900 rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 border border-black/10 dark:border-white/10">
+          <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 border border-gray-700">
             <Skeleton width="w-40 sm:w-48" height="h-6 sm:h-7" shape="text" className="mb-3 sm:mb-4 md:mb-6" />
 
             <div className="space-y-3 sm:space-y-4 md:space-y-6">
@@ -50,19 +50,19 @@ export default function Loading() {
           {/* Right Column - Contact Info */}
           <div className="space-y-4 sm:space-y-6 md:space-y-8">
             {/* Map Placeholder */}
-            <div className="bg-white dark:bg-gray-900 rounded-xl sm:rounded-2xl shadow-lg overflow-hidden border border-black/10 dark:border-white/10">
+            <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-lg overflow-hidden border border-gray-700">
               <Skeleton width="w-full" height="h-48 sm:h-52" shape="rectangle" className="rounded-xl" />
             </div>
 
             {/* Contact Details Card */}
-            <div className="bg-white dark:bg-gray-900 rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 border border-black/10 dark:border-white/10">
+            <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 border border-gray-700">
               <Skeleton width="w-48 sm:w-56" height="h-6 sm:h-7" shape="text" className="mb-3 sm:mb-4 md:mb-6" />
 
               {/* Contact Info Rows - 2 Items */}
               <div className="space-y-3 sm:space-y-4 md:space-y-6">
                 {Array.from({ length: 2 }).map((_, index) => (
                   <div key={index} className="flex items-center space-x-3 sm:space-x-4">
-                    <div className="p-2 sm:p-2.5 md:p-3 bg-slate-100 dark:bg-slate-800 rounded-lg">
+                    <div className="p-2 sm:p-2.5 md:p-3 bg-gray-600 rounded-lg">
                       <SkeletonCircle size="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                     </div>
                     <div className="flex-1 space-y-1">
@@ -74,7 +74,7 @@ export default function Loading() {
               </div>
 
               {/* Social Links Section */}
-              <div className="mt-4 sm:mt-6 md:mt-8 pt-4 sm:pt-6 md:pt-8 border-t border-slate-200 dark:border-slate-700">
+              <div className="mt-4 sm:mt-6 md:mt-8 pt-4 sm:pt-6 md:pt-8 border-t border-gray-700">
                 <Skeleton width="w-32 sm:w-40" height="h-5 sm:h-6" shape="text" className="mb-2 sm:mb-3 md:mb-4" />
 
                 {/* 3 Social Icon Circles */}
@@ -82,7 +82,7 @@ export default function Loading() {
                   {Array.from({ length: 3 }).map((_, index) => (
                     <div
                       key={index}
-                      className="p-2 sm:p-2.5 md:p-3 bg-slate-100 dark:bg-slate-800 rounded-lg"
+                      className="p-2 sm:p-2.5 md:p-3 bg-gray-600 rounded-lg"
                     >
                       <SkeletonCircle size="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                     </div>

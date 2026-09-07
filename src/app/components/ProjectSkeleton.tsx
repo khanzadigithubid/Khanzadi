@@ -2,7 +2,7 @@ import Skeleton from './Skeleton';
 
 export default function ProjectSkeleton() {
   return (
-    <div className="flex flex-col h-full bg-white dark:bg-gray-900 rounded-xl shadow-md overflow-hidden border border-black/20 dark:border-white/20">
+    <div className="flex flex-col h-full bg-gray-800 rounded-xl shadow-md overflow-hidden border border-gray-700">
       {/* Image Skeleton */}
       <Skeleton className="h-[180px] sm:h-[200px] w-full rounded-none" />
 

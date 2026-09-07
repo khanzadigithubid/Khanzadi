@@ -2,7 +2,7 @@ import Skeleton, { SkeletonCircle } from '../components/Skeleton';
 
 export default function Loading() {
   return (
-    <section className="text-slate-700 body-font py-12 sm:py-16 md:py-24 bg-gradient-to-b from-white to-slate-50 dark:from-black dark:to-slate-900">
+    <section className="text-gray-100 body-font py-12 sm:py-16 md:py-24 bg-gradient-to-b from-black to-gray-900">
       <div className="container mx-auto px-4 sm:px-5">
         {/* Header Section */}
         <div className="text-center mb-12 sm:mb-16 md:mb-20">
@@ -22,9 +22,9 @@ export default function Loading() {
           {Array.from({ length: 3 }).map((_, index) => (
             <div
               key={index}
-              className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 bg-white dark:bg-gray-900 rounded-xl shadow-sm border border-black/10 dark:border-white/10"
+              className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 bg-gray-800 rounded-xl shadow-sm border border-gray-700"
             >
-              <div className="p-2 sm:p-3 bg-slate-100 dark:bg-slate-800 rounded-lg">
+              <div className="p-2 sm:p-3 bg-gray-600 rounded-lg">
                 <SkeletonCircle size="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div className="flex-1 space-y-1">
@@ -40,11 +40,11 @@ export default function Loading() {
           {Array.from({ length: 6 }).map((_, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 border border-black/10 dark:border-white/10"
+              className="bg-gray-800 rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 border border-gray-700"
             >
               <div className="space-y-3 sm:space-y-4">
                 {/* Large Icon Circle */}
-                <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gray-600">
                   <SkeletonCircle size="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
 

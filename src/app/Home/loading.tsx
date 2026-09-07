@@ -2,7 +2,7 @@ import Skeleton, { SkeletonCircle, SkeletonText } from '../components/Skeleton';
 
 export default function Loading() {
   return (
-    <section className="bg-gradient-to-b from-white to-slate-50 dark:from-black dark:to-slate-900 min-h-screen flex items-center py-12 sm:py-16 md:py-20">
+    <section className="bg-gradient-to-b from-black to-gray-900 min-h-screen flex items-center py-12 sm:py-16 md:py-20">
       <div className="container mx-auto flex px-4 sm:px-5 md:flex-row flex-col items-center gap-8 sm:gap-12">
         {/* Left Column - Text Content */}
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-12 sm:mb-16 md:mb-0 items-center text-center">
@@ -41,8 +41,8 @@ export default function Loading() {
             {/* Skill tag pills - 3 cards */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
               {Array.from({ length: 3 }).map((_, i) => (
-                <div key={i} className="flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-white dark:bg-gray-900 rounded-lg shadow-sm border border-black/10 dark:border-white/10">
-                  <div className="p-1.5 sm:p-2 bg-slate-100 dark:bg-slate-800 rounded-lg">
+                <div key={i} className="flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-gray-800 rounded-lg shadow-sm border border-gray-700">
+                  <div className="p-1.5 sm:p-2 bg-gray-600 rounded-lg">
                     <Skeleton width="w-4 h-4 sm:w-5 sm:h-5" shape="circle" />
                   </div>
                   <div className="flex-1 space-y-1">
@@ -73,7 +73,7 @@ export default function Loading() {
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-4/5 sm:w-5/6">
           <div className="relative group">
             {/* Gradient glow effect placeholder */}
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-slate-400 to-slate-600 rounded-2xl blur opacity-30" />
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl blur opacity-30" />
             <div className="relative">
               <Skeleton
                 width="w-full"

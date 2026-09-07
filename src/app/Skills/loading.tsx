@@ -2,7 +2,7 @@ import Skeleton, { SkeletonCircle } from '../components/Skeleton';
 
 export default function Loading() {
   return (
-    <section className="bg-gradient-to-b from-white to-slate-50 dark:from-black dark:to-slate-900 py-12 sm:py-16 md:py-20">
+    <section className="bg-gradient-to-b from-black to-gray-900 py-12 sm:py-16 md:py-20">
       <div className="container px-4 sm:px-6 mx-auto max-w-7xl">
         {/* Header Section */}
         <div className="text-center mb-12 sm:mb-16">
@@ -27,7 +27,7 @@ export default function Loading() {
           {Array.from({ length: 3 }).map((_, categoryIndex) => (
             <div
               key={categoryIndex}
-              className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden border border-black/10 dark:border-white/10"
+              className="bg-gray-800 rounded-2xl shadow-lg overflow-hidden border border-gray-700"
             >
               {/* Accordion Header */}
               <div className="w-full px-6 py-4 flex items-center justify-between">
@@ -44,11 +44,11 @@ export default function Loading() {
                   {Array.from({ length: 4 }).map((_, skillIndex) => (
                     <div
                       key={skillIndex}
-                      className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-4 sm:p-6 border border-black/10 dark:border-white/10"
+                      className="bg-gray-800 rounded-xl shadow-md p-4 sm:p-6 border border-gray-700"
                     >
                       <div className="flex flex-col items-center space-y-3 sm:space-y-4">
                         {/* Icon Circle */}
-                        <div className="p-3 sm:p-4 rounded-lg bg-slate-100 dark:bg-slate-800">
+                        <div className="p-3 sm:p-4 rounded-lg bg-gray-600">
                           <SkeletonCircle size="w-8 h-8 sm:w-10 sm:h-10" />
                         </div>
 

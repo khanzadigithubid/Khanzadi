@@ -2,10 +2,10 @@ import Skeleton, { SkeletonCircle } from './Skeleton';
 
 export default function SkillSkeleton() {
   return (
-    <div className="group relative bg-white dark:bg-gray-900 rounded-2xl shadow-md overflow-hidden border border-black/20 dark:border-white/20 p-5 sm:p-7">
+    <div className="group relative bg-gray-800 rounded-2xl shadow-md overflow-hidden border border-gray-700 p-5 sm:p-7">
       <div className="flex flex-col items-center space-y-4">
         {/* Icon Skeleton */}
-        <div className="p-4 sm:p-5 bg-gray-200 dark:bg-gray-800 rounded-xl">
+        <div className="p-4 sm:p-5 bg-gray-600 rounded-xl">
           <SkeletonCircle size="w-8 h-8 sm:w-10 sm:h-10" />
         </div>
 

@@ -2,7 +2,7 @@ import Skeleton, { SkeletonCircle, SkeletonText } from '../components/Skeleton';
 
 export default function Loading() {
   return (
-    <section className="text-slate-700 body-font bg-gradient-to-b from-white to-slate-50 dark:from-black dark:to-slate-900 py-10 sm:py-16 md:py-20">
+    <section className="text-gray-100 body-font bg-gradient-to-b from-black to-gray-900 py-10 sm:py-16 md:py-20">
       <div className="container mx-auto px-4 sm:px-5">
         <div className="max-w-5xl mx-auto">
           {/* Header Section */}
@@ -23,7 +23,7 @@ export default function Loading() {
             {/* Circular Profile Image */}
             <div className="relative group">
               {/* Gradient glow effect */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-slate-400 to-slate-600 rounded-full blur opacity-30" />
+              <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full blur opacity-30" />
               <div className="relative">
                 <SkeletonCircle size="w-[280px] h-[280px] sm:w-[320px] sm:h-[320px]" />
               </div>
@@ -66,11 +66,11 @@ export default function Loading() {
             {Array.from({ length: 2 }).map((_, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 sm:p-8 border border-black/10 dark:border-white/10"
+                className="bg-gray-800 rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-700"
               >
                 {/* Card Header */}
                 <div className="flex items-center mb-4 sm:mb-6">
-                  <div className="p-3 bg-slate-100 dark:bg-slate-800 rounded-lg mr-4">
+                  <div className="p-3 bg-gray-600 rounded-lg mr-4">
                     <Skeleton width="w-5 h-5 sm:w-6 sm:h-6" shape="circle" />
                   </div>
                   <Skeleton width="w-40 sm:w-48" height="h-6" shape="text" />
@@ -83,10 +83,10 @@ export default function Loading() {
           </div>
 
           {/* Future Goals Section */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 sm:p-8 border border-black/10 dark:border-white/10">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-700">
             {/* Section Header */}
             <div className="flex items-center mb-4 sm:mb-6">
-              <div className="p-3 bg-slate-100 dark:bg-slate-800 rounded-lg mr-4">
+              <div className="p-3 bg-gray-600 rounded-lg mr-4">
                 <Skeleton width="w-5 h-5 sm:w-6 sm:h-6" shape="circle" />
               </div>
               <Skeleton width="w-32 sm:w-40" height="h-6" shape="text" />

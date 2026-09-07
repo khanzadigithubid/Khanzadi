@@ -2,7 +2,7 @@ import Skeleton, { SkeletonCircle } from '../components/Skeleton';
 
 export default function Loading() {
   return (
-    <section className="text-gray-900 body-font bg-gradient-to-b from-white to-slate-50 dark:from-black dark:to-slate-900">
+    <section className="text-gray-100 body-font bg-gradient-to-b from-black to-gray-900">
       <div className="container px-4 sm:px-5 py-12 sm:py-16 md:py-24 mx-auto">
         {/* Header Section */}
         <div className="flex flex-col text-center w-full mb-12 sm:mb-16 md:mb-20">
@@ -22,9 +22,9 @@ export default function Loading() {
           {Array.from({ length: 3 }).map((_, index) => (
             <div
               key={index}
-              className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 bg-white dark:bg-gray-900 rounded-xl shadow-sm border border-black/10 dark:border-white/10"
+              className="flex items-center space-x-3 sm:space-x-4 p-3 sm:p-4 bg-gray-800 rounded-xl shadow-sm border border-gray-700"
             >
-              <div className="p-2 sm:p-3 bg-slate-100 dark:bg-slate-800 rounded-lg">
+              <div className="p-2 sm:p-3 bg-gray-600 rounded-lg">
                 <SkeletonCircle size="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div className="flex-1 space-y-1">
@@ -55,7 +55,7 @@ export default function Loading() {
               key={index}
               className="p-2 sm:p-4 lg:w-1/4 md:w-1/2 w-full"
             >
-              <div className="flex flex-col h-full bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-black/10 dark:border-white/10">
+              <div className="flex flex-col h-full bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-700">
                 {/* Image Skeleton */}
                 <Skeleton
                   width="w-full"
@@ -65,7 +65,7 @@ export default function Loading() {
                 />
 
                 {/* Content Area */}
-                <div className="flex-1 p-4 sm:p-6 bg-white dark:bg-gray-900 space-y-3">
+                <div className="flex-1 p-4 sm:p-6 bg-gray-800 space-y-3">
                   {/* Category Badge */}
                   <Skeleton width="w-20 sm:w-24" height="h-5" shape="rectangle" className="rounded-full" />
 
