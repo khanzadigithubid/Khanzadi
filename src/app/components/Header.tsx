@@ -216,7 +216,7 @@ export default function Header() {
             aria-modal="true"
             aria-label="Navigation menu"
             ref={mobileNavRef}
-            className="relative flex flex-col items-center justify-center h-full space-y-8 px-6"
+            className="relative flex flex-col items-center justify-center h-full space-y-8 px-6 py-10 overflow-y-auto overscroll-contain min-h-[80svh]"
           >
             {navItems.map((item, index) => (
               <Link

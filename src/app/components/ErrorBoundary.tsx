@@ -68,7 +68,7 @@ class ErrorBoundary extends Component<Props, State> {
 
       // Default fallback UI
       return (
-        <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 flex items-center justify-center px-6 py-12">
+        <div className="min-h-svh bg-gradient-to-b from-black to-gray-900 flex items-center justify-center px-6 py-12">
           <div className="max-w-2xl w-full">
             <div className="bg-gray-800 rounded-2xl shadow-2xl p-8 sm:p-12 border border-gray-700">
               {/* Error Icon */}
