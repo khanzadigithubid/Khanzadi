@@ -43,7 +43,7 @@ export default function TestimonialCard({
   };
 
   return (
-    <div className="group relative bg-gray-800 border border-gray-700 rounded-2xl p-6 sm:p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-purple-500/50 hover:-translate-y-1">
+    <div className="group relative bg-gray-800 border border-gray-700 rounded-2xl p-6 sm:p-8 shadow-lg card-lift hover:border-purple-500/50">
       {/* Quote Icon */}
       <div className="absolute top-6 right-6 sm:top-8 sm:right-8 text-white/10 group-hover:text-white/20 transition-colors duration-300">
         <FaQuoteLeft className="w-8 h-8 sm:w-10 sm:h-10" />

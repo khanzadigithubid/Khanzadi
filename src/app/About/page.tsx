@@ -106,7 +106,7 @@ const About = () => {
 
           {/* Key Areas Section */}
           <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20 md:mb-24">
-            <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-purple-500/50" data-aos="fade-up" data-aos-duration="500">
+            <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 card-lift border border-gray-700 hover:border-purple-500/50" data-aos="fade-up" data-aos-duration="500">
               <div className="flex items-center mb-4 sm:mb-6">
                 <div className="p-2 sm:p-3 bg-gradient-to-br from-indigo-500/20 to-fuchsia-500/20 rounded-lg mr-3 sm:mr-4">
                   <FaCode className="text-purple-300 text-xl sm:text-2xl" />
@@ -118,7 +118,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-purple-500/50" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
+            <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 card-lift border border-gray-700 hover:border-purple-500/50" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
               <div className="flex items-center mb-4 sm:mb-6">
                 <div className="p-2 sm:p-3 bg-gradient-to-br from-indigo-500/20 to-fuchsia-500/20 rounded-lg mr-3 sm:mr-4">
                   <FaGraduationCap className="text-purple-300 text-xl sm:text-2xl" />
@@ -187,7 +187,7 @@ const About = () => {
           </div>
 
           {/* Goals Section */}
-          <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-purple-500/50" data-aos="fade-up" data-aos-duration="500">
+          <div className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 card-lift border border-gray-700 hover:border-purple-500/50" data-aos="fade-up" data-aos-duration="500">
             <div className="flex items-center mb-4 sm:mb-6">
               <div className="p-2 sm:p-3 bg-gradient-to-br from-indigo-500/20 to-fuchsia-500/20 rounded-lg mr-3 sm:mr-4">
                 <FaLightbulb className="text-purple-300 text-xl sm:text-2xl" />

@@ -150,7 +150,7 @@ const Project = () => {
 
         {/* Project Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-10 sm:mb-12 md:mb-16">
-          <div className="flex items-center space-x-3 sm:space-x-4 p-4 sm:p-5 bg-gray-800 rounded-lg sm:rounded-xl shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300">
+          <div className="flex items-center space-x-3 sm:space-x-4 p-4 sm:p-5 bg-gray-800 rounded-lg sm:rounded-xl shadow-lg border border-gray-700 card-lift">
             <div className="p-2 sm:p-3 bg-gray-700 rounded-lg flex-shrink-0">
               <FaCode className="text-gray-200 text-lg sm:text-xl" />
             </div>
@@ -159,7 +159,7 @@ const Project = () => {
               <p className="text-xs sm:text-sm text-gray-400 truncate">{t('projects.completed')}</p>
             </div>
           </div>
-          <div className="flex items-center space-x-3 sm:space-x-4 p-4 sm:p-5 bg-gray-800 rounded-lg sm:rounded-xl shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300">
+          <div className="flex items-center space-x-3 sm:space-x-4 p-4 sm:p-5 bg-gray-800 rounded-lg sm:rounded-xl shadow-lg border border-gray-700 card-lift">
             <div className="p-2 sm:p-3 bg-gray-700 rounded-lg flex-shrink-0">
               <FaStar className="text-gray-200 text-lg sm:text-xl" />
             </div>
@@ -168,7 +168,7 @@ const Project = () => {
               <p className="text-xs sm:text-sm text-gray-400 truncate">{t('projects.qualitySub')}</p>
             </div>
           </div>
-          <div className="flex items-center space-x-3 sm:space-x-4 p-4 sm:p-5 bg-gray-800 rounded-lg sm:rounded-xl shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300">
+          <div className="flex items-center space-x-3 sm:space-x-4 p-4 sm:p-5 bg-gray-800 rounded-lg sm:rounded-xl shadow-lg border border-gray-700 card-lift">
             <div className="p-2 sm:p-3 bg-gray-700 rounded-lg flex-shrink-0">
               <FaRegClock className="text-gray-200 text-lg sm:text-xl" />
             </div>
@@ -208,7 +208,7 @@ const Project = () => {
               data-aos="fade-up"
               data-aos-duration={400 + (index % 4) * 50}
             >
-              <div className="flex flex-col h-full bg-gray-800 rounded-lg sm:rounded-xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-purple-900/20 border border-gray-700 hover:border-purple-500/50">
+              <div className="flex flex-col h-full bg-gray-800 rounded-lg sm:rounded-xl shadow-xl card-lift overflow-hidden border border-gray-700 hover:border-purple-500/50">
                 <div
                   className="relative h-[220px] sm:h-[240px] w-full overflow-hidden cursor-pointer group"
                   onClick={() => openLightbox(index)}

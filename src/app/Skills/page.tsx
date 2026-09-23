@@ -1,6 +1,5 @@
 "use client";
-import 'aos/dist/aos.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaShopify, FaSearch, FaShareAlt, FaCode, FaChevronDown, FaPalette, FaRobot, FaPython, FaVuejs, FaPlug, FaBrain, FaLink, FaProjectDiagram, FaRoute, FaComments } from 'react-icons/fa';
 import { SiTailwindcss, SiTypescript, SiNextdotjs, SiFigma, SiRedux, SiFramer, SiExpress, SiFastapi, SiPostgresql, SiMongodb, SiZapier, SiPrisma, SiMeta } from 'react-icons/si';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -35,7 +34,7 @@ function SkillCard({
 
   return (
     <div
-      className="group relative bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-700 hover:border-purple-500/50"
+      className="group relative bg-gray-800 rounded-xl shadow-md card-lift overflow-hidden border border-gray-700 hover:border-purple-500/50"
       data-aos={dataAos}
       data-aos-delay={dataAosDelay}
     >
@@ -326,23 +325,6 @@ export default function Skills() {
     "AI & Automation": false
   });
 
-  useEffect(() => {
-    // Check if user prefers reduced motion
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    if (!prefersReducedMotion) {
-      // Dynamic import AOS only when needed (code-splitting benefit)
-      import('aos').then((AOS) => {
-        AOS.init({
-          duration: 500,
-          once: true,
-          offset: 100,
-          easing: 'ease-out-cubic'
-        });
-      });
-    }
-  }, []);
-
   const toggleCategory = (category: string) => {
     setExpandedCategories(prev => ({
       ...prev,
@@ -410,7 +392,7 @@ export default function Skills() {
         {/* Categorized Skills */}
         <div className="space-y-6 sm:space-y-8">
           {Object.entries(skillsData).map(([category, skills]) => (
-            <div key={category} className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl overflow-hidden border border-gray-700 hover:shadow-2xl transition-all duration-300">
+            <div key={category} className="bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl overflow-hidden border border-gray-700 card-lift">
               {/* Category Header */}
               <button
                 onClick={() => toggleCategory(category)}

@@ -102,7 +102,7 @@ export default function OpengraphImage() {
               marginTop: 26,
             }}
           >
-            <div>Full Stack Developer</div>
+            <div>AI Engineer &amp; Full Stack Developer</div>
             <div style={{ marginTop: 10, color: '#c4b5fd', fontSize: 26, fontWeight: 500 }}>
               Shopify · AI Automation
             </div>

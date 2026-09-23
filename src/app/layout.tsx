@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display, Noto_Nastaliq_Urdu, Noto_Naskh_Arabic } from "next/font/google";
 import "./globals.css";
 import {ThemeProvider} from './context/ThemeContext';
 import { LanguageProvider } from '../context/LanguageContext';
@@ -7,11 +7,38 @@ import Header from './components/Header';
 import WhatsAppButton from './components/WhatsAppButton';
 import StructuredData from './components/StructuredData';
 import ErrorBoundary from './components/ErrorBoundary';
+import AOSInit from './components/AOSInit';
+import SmoothScroll from './components/SmoothScroll';
+import PageTransition from './components/PageTransition';
 import NextTopLoader from 'nextjs-toploader';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-serif',
+  display: 'swap',
+});
+
+const nastaliq = Noto_Nastaliq_Urdu({
+  weight: ['400', '700'],
+  subsets: ['arabic'],
+  variable: '--font-nastaliq',
+  display: 'swap',
+});
+
+const naskh = Noto_Naskh_Arabic({
+  weight: ['400', '700'],
+  subsets: ['arabic'],
+  variable: '--font-naskh',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://khanzadi.vercel.app'),
@@ -60,14 +87,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.variable} ${playfair.variable} ${nastaliq.variable} ${naskh.variable}`}
+    >
       <head>
         <StructuredData />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet" />
       </head>
-      <body className={inter.className}>
+      <body className="antialiased font-sans">
         <LanguageProvider>
           <ThemeProvider>
             <ErrorBoundary>
@@ -82,9 +110,13 @@ export default function RootLayout({
                 speed={200}
                 shadow="0 0 10px #a855f7,0 0 5px #a855f7"
               />
+              <SmoothScroll />
               <Header />
-              <main id="main-content" className="scroll-mt-24">{children}</main>
+              <main id="main-content" className="scroll-mt-24">
+                <PageTransition>{children}</PageTransition>
+              </main>
               <WhatsAppButton />
+              <AOSInit />
               <ToastContainer
                 position="top-right"
                 autoClose={5000}

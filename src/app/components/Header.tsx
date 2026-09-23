@@ -130,10 +130,10 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-40 transition-all duration-500 ${
+      className={`sticky top-0 z-40 transition-all duration-500 border-b ${
         isScrolled
-          ? 'bg-black/95 backdrop-blur-lg shadow-lg border-b-2 border-white/20'
-          : 'bg-black border-b-2 border-white/20'
+          ? 'bg-black/80 backdrop-blur-xl shadow-lg border-b border-white/10'
+          : 'bg-black border-b border-white/10'
       }`}
     >
       {/* Skip to Main Content Link - Accessibility */}
@@ -145,7 +145,18 @@ export default function Header() {
       </a>
 
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between gap-4 h-20">
+          {/* Brand */}
+          <Link href="/" aria-label="Khanzadi Wazir Ali — Home" className="flex items-center gap-2.5 group shrink-0">
+            <span className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 via-purple-500 to-fuchsia-500 flex items-center justify-center text-white keep-white font-bold text-sm shadow-lg shadow-purple-500/30 transition-transform duration-300 group-hover:scale-105">
+              KW
+            </span>
+            <span className="hidden sm:flex flex-col leading-tight text-left">
+              <span className="text-sm font-bold text-white tracking-tight">Khanzadi</span>
+              <span className="text-[10px] text-gray-400 tracking-widest uppercase">Wazir Ali</span>
+            </span>
+          </Link>
+
           {/* Desktop Navigation - Centered */}
           <nav className="hidden md:flex items-center justify-center space-x-2 lg:space-x-4 flex-1">
             {navItems.map((item) => (
@@ -171,7 +182,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden absolute right-6 p-3 text-white hover:bg-white/5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-xl"
+            className="md:hidden ml-auto p-3 text-white hover:bg-white/5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-xl"
             onClick={toggleMobileMenu}
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}

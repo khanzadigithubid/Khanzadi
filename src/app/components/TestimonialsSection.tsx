@@ -1,31 +1,12 @@
 'use client';
 
-import { useEffect } from 'react';
 import { FaQuoteLeft, FaUsers } from 'react-icons/fa';
 import TestimonialCard from './TestimonialCard';
 import { testimonials } from '../data/testimonials';
 import { useLanguage } from '../../context/LanguageContext';
-import 'aos/dist/aos.css';
 
 export default function TestimonialsSection() {
   const { t } = useLanguage();
-
-  useEffect(() => {
-    // Check if user prefers reduced motion
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    if (!prefersReducedMotion) {
-      // Dynamic import AOS only when needed (code-splitting benefit)
-      import('aos').then((AOS) => {
-        AOS.init({
-          duration: 500,
-          once: true,
-          offset: 100,
-          easing: 'ease-out-cubic'
-        });
-      });
-    }
-  }, []);
 
   return (
     <section className="py-12 sm:py-16 md:py-24 bg-black transition-colors duration-300">
