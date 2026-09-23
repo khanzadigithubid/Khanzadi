@@ -1,8 +1,8 @@
 "use client";
 import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaShopify, FaSearch, FaShareAlt, FaCode, FaChevronDown, FaPalette, FaRobot, FaPython, FaVuejs, FaPlug, FaBrain, FaLink, FaProjectDiagram } from 'react-icons/fa';
-import { SiTailwindcss, SiTypescript, SiNextdotjs, SiFigma, SiRedux, SiFramer, SiExpress, SiFastapi, SiPostgresql, SiMongodb, SiZapier } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaShopify, FaSearch, FaShareAlt, FaCode, FaChevronDown, FaPalette, FaRobot, FaPython, FaVuejs, FaPlug, FaBrain, FaLink, FaProjectDiagram, FaRoute, FaComments } from 'react-icons/fa';
+import { SiTailwindcss, SiTypescript, SiNextdotjs, SiFigma, SiRedux, SiFramer, SiExpress, SiFastapi, SiPostgresql, SiMongodb, SiZapier, SiPrisma, SiMeta } from 'react-icons/si';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -176,6 +176,13 @@ const skillsData = {
       level: "Intermediate"
     },
     {
+      key: "prisma",
+      title: "Prisma",
+      colorClass: "bg-teal-700",
+      svgIcon: <SiPrisma size={32} className="sm:text-4xl text-white keep-white" />,
+      level: "Intermediate"
+    },
+    {
       key: "mongodb",
       title: "MongoDB",
       colorClass: "bg-green-600",
@@ -221,6 +228,27 @@ const skillsData = {
       title: "OpenAI / LLMs",
       colorClass: "bg-emerald-600",
       svgIcon: <FaBrain size={32} className="sm:text-4xl text-white keep-white" />,
+      level: "Advanced"
+    },
+    {
+      key: "openrouter",
+      title: "OpenRouter",
+      colorClass: "bg-purple-500",
+      svgIcon: <FaRoute size={32} className="sm:text-4xl text-white keep-white" />,
+      level: "Advanced"
+    },
+    {
+      key: "aiAgents",
+      title: "AI Agents",
+      colorClass: "bg-violet-600",
+      svgIcon: <FaRobot size={32} className="sm:text-4xl text-white keep-white" />,
+      level: "Advanced"
+    },
+    {
+      key: "chatbots",
+      title: "AI Chatbots",
+      colorClass: "bg-cyan-500",
+      svgIcon: <FaComments size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     },
     {
@@ -274,6 +302,13 @@ const skillsData = {
       title: "Social Media Marketing",
       colorClass: "bg-pink-500",
       svgIcon: <FaShareAlt size={32} className="sm:text-4xl text-white keep-white" />,
+      level: "Advanced"
+    },
+    {
+      key: "metaAds",
+      title: "Meta & Google Ads",
+      colorClass: "bg-indigo-600",
+      svgIcon: <SiMeta size={32} className="sm:text-4xl text-white keep-white" />,
       level: "Advanced"
     }
   ]

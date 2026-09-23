@@ -16,25 +16,25 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://khanzadi.vercel.app'),
   title: {
-    default: 'Khanzadi Wazir Ali - Full Stack Developer & AI Engineer',
+    default: 'Khanzadi Wazir Ali - AI Engineer & Full Stack Developer',
     template: '%s | Khanzadi Wazir Ali'
   },
-  description: 'Professional portfolio of Khanzadi Wazir Ali - Full Stack Developer specializing in Next.js, React, TypeScript, and Cloud Applied AI Engineering. GIAIC Certified developer with expertise in modern web development.',
-  keywords: ['Full Stack Developer', 'Next.js', 'React', 'TypeScript', 'Web Development', 'AI Engineering', 'Portfolio', 'Khanzadi Wazir Ali', 'GIAIC'],
+  description: 'Professional portfolio of Khanzadi Wazir Ali - AI Engineer and Full Stack Developer specializing in Next.js, React, TypeScript, Python, FastAPI, PostgreSQL, Shopify, and AI automation. GIAIC certified with expertise in building intelligent web applications, e-commerce stores, and automation workflows.',
+  keywords: ['AI Engineer', 'Full Stack Developer', 'Next.js', 'React', 'TypeScript', 'Python', 'FastAPI', 'Shopify', 'E-Commerce', 'AI Automation', 'LLM APIs', 'AI Agents', 'Web Development', 'Portfolio', 'Khanzadi Wazir Ali', 'GIAIC'],
   authors: [{ name: 'Khanzadi Wazir Ali' }],
   creator: 'Khanzadi Wazir Ali',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://khanzadi.vercel.app',
-    title: 'Khanzadi Wazir Ali - Full Stack Developer & AI Engineer',
-    description: 'Professional portfolio showcasing web development projects, technical skills, and professional services.',
+    title: 'Khanzadi Wazir Ali - AI Engineer & Full Stack Developer',
+    description: 'Professional portfolio showcasing AI automation, web development, Shopify e-commerce solutions, technical skills, and professional services.',
     siteName: 'Khanzadi Wazir Ali Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Khanzadi Wazir Ali - Full Stack Developer',
-    description: 'Professional portfolio showcasing web development expertise',
+    title: 'Khanzadi Wazir Ali - AI Engineer & Full Stack Developer',
+    description: 'Professional portfolio showcasing AI automation, web development, and Shopify e-commerce expertise',
     creator: '@Khanzadi0099',
   },
   robots: {

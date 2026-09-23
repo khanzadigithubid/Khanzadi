@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FaGraduationCap, FaCode, FaLightbulb, FaAward, FaCheckCircle, FaStar, FaRegClock, FaDownload, FaBriefcase, FaCalendarAlt, FaBuilding } from 'react-icons/fa';
+import { FaGraduationCap, FaCode, FaLightbulb, FaAward, FaCheckCircle, FaStar, FaRegClock, FaDownload, FaBriefcase, FaCalendarAlt, FaBuilding, FaCertificate } from 'react-icons/fa';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -76,6 +76,10 @@ const About = () => {
                     <FaCheckCircle className="text-gray-400 text-xs sm:text-sm" />
                     <span>ADC PAT 2</span>
                   </div>
+                  <div className="flex items-center space-x-1.5 sm:space-x-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-700 transition-colors duration-300">
+                    <FaCertificate className="text-gray-400 text-xs sm:text-sm" />
+                    <span>{t('about.flowmingo')}</span>
+                  </div>
                 </div>
 
                 {/* Skills Tags */}
@@ -148,11 +152,9 @@ const About = () => {
             <div className="relative max-w-4xl mx-auto">
               <div className="absolute left-4 sm:left-1/2 sm:-translate-x-px top-0 bottom-0 w-0.5 bg-gray-700"></div>
               {[
-                { key: "exp1", points: 4 },
+                { key: "exp1", points: 5 },
                 { key: "exp2", points: 3 },
-                { key: "exp3", points: 3 },
-                { key: "exp4", points: 3 },
-                { key: "exp5", points: 3 }
+                { key: "exp3", points: 3 }
               ].map((exp, index) => (
                 <div key={exp.key} className={`relative flex flex-col sm:flex-row mb-10 sm:mb-12 pl-12 sm:pl-0 ${index % 2 === 0 ? 'sm:justify-start' : 'sm:justify-end'}`}>
                   <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 top-1 w-3 h-3 rounded-full bg-indigo-400 border-2 border-black shadow-[0_0_10px_rgba(129,140,248,0.9)] z-10"></div>

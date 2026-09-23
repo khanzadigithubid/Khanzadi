@@ -9,8 +9,8 @@
   },
   "home": {
     "greeting": "Hola, soy Khanzadi Wazir Ali",
-    "title": "Desarrollador Full Stack",
-    "description": "Creo tiendas de e-commerce, aplicaciones web y automatizaciones con IA que ayudan a las empresas a crecer.",
+    "title": "Ingeniera de IA y Desarrolladora Full Stack",
+    "description": "Creo aplicaciones web impulsadas por IA, tiendas Shopify y flujos de automatización que ayudan a las empresas a crecer y escalar.",
     "cta": "Contáctame",
     "available": "Disponible para oportunidades",
     "certified": "Certificado GIAIC",
@@ -20,7 +20,7 @@
     "nextjs": "Next.js",
     "nextjsSub": "Soluciones Full Stack",
     "aiEng": "Ingeniería de IA",
-    "aiEngSub": "IA Aplicada en la Nube",
+    "aiEngSub": "Automatización y Agentes de IA",
     "stats": {
       "experience": "Años de experiencia",
       "shopify": "Tiendas Shopify creadas",
@@ -30,19 +30,20 @@
   },
   "about": {
     "title": "Acerca de Mí",
-    "subtitle": "Desarrolladora Full Stack, desarrolladora Shopify e ingeniera de automatización de IA con más de 2 años de experiencia remota.",
+"subtitle": "Ingeniera de IA y desarrolladora Full Stack y Shopify con más de 2 años de experiencia remota creando aplicaciones web inteligentes, automatizaciones y tiendas de e-commerce para clientes internacionales.",
     "profile": "Perfil Profesional",
-    "role": "Desarrolladora Full Stack y Shopify",
-    "intro": "Desarrolladora Full Stack y Shopify con más de 2 años de experiencia remota creando tiendas online, aplicaciones web y automatización con IA para clientes internacionales.",
-    "certified": "Certificado GIAIC",
+    "role": "Ingeniera de IA y Desarrolladora Full Stack",
+    "intro": "Ingeniera de IA y desarrolladora Full Stack enfocada en construir aplicaciones web inteligentes, flujos de automatización con IA y soluciones escalables de e-commerce para clientes internacionales, usando Next.js, React, TypeScript, Python, FastAPI, PostgreSQL, Prisma, LLM APIs, OpenRouter, n8n y Shopify.",
+    "certified": "Certificada GIAIC",
     "expert": "Experta en Shopify e IA",
+    "flowmingo": "Socia Certificada de Flowmingo",
     "frontendDev": "Desarrollo Frontend",
     "aiEng": "Ingeniería de IA",
     "downloadResume": "Descargar CV",
     "techExpertise": "Experiencia Técnica",
-    "techDesc": "Aplicaciones full-stack modernas con React, Next.js, TypeScript y Tailwind CSS, integradas con REST APIs y funciones de IA/LLM.",
+    "techDesc": "Aplicaciones full-stack modernas con React, Next.js, TypeScript y Tailwind CSS, impulsadas por REST APIs, FastAPI, PostgreSQL (Prisma) y funciones de IA/LLM mediante OpenRouter y n8n.",
     "education": "Educación",
-    "educationDesc": "Cursando un Grado Asociado de Comercio (ADC Part 2) para combinar mis habilidades técnicas con visión empresarial.",
+    "educationDesc": "Ingeniería de IA Generativa Aplicada en la Nube (Iniciativa del Gobernador de Sindh GIAIC), Grado Asociado de Comercio (ADC Parte 2) y ICom en Administración de Empresas.",
     "goals": "Objetivos Futuros",
     "shortTerm": "Corto Plazo",
     "longTerm": "Largo Plazo",
@@ -54,51 +55,30 @@
       "title": "Experiencia",
       "subtitle": "Un historial de resultados para clientes remotos e internacionales",
       "exp1": {
-        "title": "Desarrolladora Shopify y Estratega de E-Commerce",
-        "company": "Consultora independiente",
+        "title": "Ingeniera de IA Independiente",
+        "company": "Desarrolladora Full Stack y Shopify",
         "period": "Ene 2024 - Presente · Remoto · Clientes internacionales",
-        "p1": "Diseñé y entregué 3-4 tiendas Shopify completas con desarrollo Liquid personalizado, UX mobile-first, SEO y arquitectura de producto.",
-        "p2": "Aumenté los ingresos un 40% para una marca de moda D2C mediante rediseño, CRO, ventas adicionales, ventas cruzadas, optimización del checkout y Meta Ads.",
-        "p3": "Desarrollé un chatbot de soporte con tecnología OpenAI integrado con la Shopify REST API.",
-        "p4": "Automaticé más del 80% de los tickets de soporte, reduciendo la carga de trabajo un 60%.",
-        "p5": "Realicé auditorías SEO técnicas y optimización de Core Web Vitals.",
-        "p6": "Construí flujos de marketing automatizados conectando Shopify, Klaviyo, CRM, Zapier y n8n."
+        "p1": "Construir aplicaciones web full-stack modernas con Next.js, React, TypeScript, Python y REST APIs.",
+        "p2": "Desarrollar aplicaciones impulsadas por IA y flujos de automatización con LLM APIs, OpenRouter y n8n.",
+        "p3": "Diseñé y desarrollé 3-4 tiendas Shopify para clientes internacionales con interfaces responsivas y páginas de producto optimizadas.",
+        "p4": "Personalizar temas de Shopify, integrar apps de terceros y pasarelas de pago, y agilizar las operaciones de la tienda con automatización.",
+        "p5": "Mejoras de e-commerce: ventas adicionales y cruzadas, optimización del flujo de pago, SEO y soporte de marketing digital."
       },
       "exp2": {
-        "title": "Desarrolladora Web",
-        "company": "Consultora independiente",
-        "period": "2024 - Presente · Remoto · Clientes internacionales",
-        "p1": "Desarrollé sitios web empresariales, portafolios y aplicaciones con React.js, Next.js, TypeScript y Tailwind CSS.",
-        "p2": "Integré REST APIs y servicios externos para añadir funcionalidad dinámica.",
-        "p3": "Construí funciones interactivas y componentes reutilizables para aplicaciones frontend escalables.",
-        "p4": "Desplegué proyectos en Vercel y gestioné el código con Git y GitHub."
-      },
-      "exp3": {
-        "title": "Desarrolladora Frontend (Prácticas)",
-        "company": "SOFTIQTECH",
-        "period": "2026 · Prácticas de 30 días",
-        "p1": "Desarrollé módulos frontend para el sistema CRM Softiq.",
-        "p2": "Trabajé en Clientes, Contactos, Tiempos, Actividades, Notas, Seguimientos, Plantillas de email, Panel de reportes y Ajustes de perfil.",
-        "p3": "Construí interfaces de ajustes de proyecto y empresa y componentes UI responsivos.",
-        "p4": "Colaboré con el equipo frontend usando Git y flujo de trabajo con ramas."
-      },
-      "exp4": {
         "title": "Gerente de Marketing en Redes Sociales",
         "company": "DEVVYS",
-        "period": "Oct 2025 - 2026 · Remoto · Estados Unidos",
-        "p1": "Creé y publiqué contenido de redes sociales en plataformas relevantes.",
-        "p2": "Diseñé publicaciones promocionales y contenido visual con Canva.",
-        "p3": "Gestioné la programación, planificación de contenido y participación de la audiencia.",
-        "p4": "Monitoreé el rendimiento para mejorar el contenido futuro."
+        "period": "Oct 2025 - Jul 2026 · Remoto · Estados Unidos",
+        "p1": "Gestioné contenido de Instagram y Facebook, incluyendo destacados de productos, publicaciones, historias, promociones y planificación de contenido.",
+        "p2": "Manejé comentarios y mensajes de clientes y apoyé la visibilidad de la marca y el engagement.",
+        "p3": "Creé contenido visual consistente y mantuve un calendario estructurado de contenido social."
       },
-      "exp5": {
+      "exp3": {
         "title": "Gerente de Redes Sociales",
         "company": "EYEFINITYZONE",
-        "period": "Dic 2025 - 2026 · Remoto",
-        "p1": "Creé y diseñé publicaciones para Instagram y Facebook.",
-        "p2": "Gestioné actualizaciones de página, publicación de contenido y participación.",
-        "p3": "Planifiqué contenido de marca constante en todas las plataformas.",
-        "p4": "Respondí comentarios y apoyé la gestión comunitaria diaria."
+        "period": "Dic 2024 - May 2026 · Remoto · Pakistán",
+        "p1": "Gestioné contenido de Instagram y Facebook, incluyendo destacados de productos, publicaciones, historias, promociones y planificación de contenido.",
+        "p2": "Manejé comentarios y mensajes de clientes y apoyé la visibilidad de la marca y el engagement.",
+        "p3": "Creé contenido visual consistente y mantuve un calendario estructurado de contenido social."
       }
     }
   },
@@ -167,6 +147,9 @@
       "socialMedia": {
         "description": "Estrategia de redes sociales, Meta Ads, creación de contenido y participación de la comunidad."
       },
+      "metaAds": {
+        "description": "Ejecutar y optimizar campañas publicitarias de Meta y Google para el crecimiento del e-commerce."
+      },
       "python": {
         "description": "Escritura de Python en producción para automatización, APIs REST y flujos IA/LLM."
       },
@@ -191,11 +174,23 @@
       "postgresql": {
         "description": "Bases de datos relacionales y SQL eficiente con PostgreSQL."
       },
+      "prisma": {
+        "description": "Crear modelos y consultas de base de datos seguros por tipos con Prisma ORM."
+      },
       "mongodb": {
         "description": "MongoDB para modelos de datos flexibles basados en documentos."
       },
       "openai": {
         "description": "Funciones de IA con APIs de OpenAI, Gemini y Claude e ingeniería de prompts."
+      },
+      "openrouter": {
+        "description": "Integrar múltiples proveedores de LLM a través de una sola API de OpenRouter con una interfaz."
+      },
+      "aiAgents": {
+        "description": "Diseñar agentes de IA autónomos y flujos agénticos para tareas del mundo real."
+      },
+      "chatbots": {
+        "description": "Crear chatbots de IA con LLM APIs, RAG y plataformas de automatización como n8n."
       },
       "langchain": {
         "description": "Flujos LLM con LangChain, RAG y bases de datos vectoriales."

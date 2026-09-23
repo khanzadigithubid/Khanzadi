@@ -10,7 +10,7 @@ export default function StructuredData() {
       'https://www.linkedin.com/in/khanzadi-wazir-ali-7a97832b6/',
       'https://x.com/Khanzadi0099'
     ],
-    jobTitle: 'Full Stack Developer & AI Engineer',
+    jobTitle: 'AI Engineer & Full Stack Developer',
     worksFor: {
       '@type': 'Organization',
       name: 'Freelance'
@@ -24,24 +24,35 @@ export default function StructuredData() {
       addressLocality: 'Karachi',
       addressCountry: 'PK'
     },
-    email: 'khanzadiwazirali9@gmail.com',
+    email: 'memonbisma22@gmail.com',
     knowsAbout: [
       'Web Development',
       'Next.js',
       'React',
       'TypeScript',
       'JavaScript',
+      'Python',
+      'FastAPI',
+      'PostgreSQL',
+      'Prisma',
       'Node.js',
       'Tailwind CSS',
       'Frontend Development',
       'Backend Development',
+      'AI Engineering',
+      'AI Automation',
+      'LLM APIs',
+      'OpenRouter',
+      'AI Agents',
+      'Chatbots',
+      'n8n',
       'Cloud Applied AI Engineering',
-      'UI/UX Design',
-      'Responsive Web Design',
+      'Shopify',
+      'E-Commerce Development',
       'SEO',
       'Digital Marketing'
     ],
-    description: 'Full Stack Developer and AI Engineer specializing in Next.js, React, TypeScript, and Cloud Applied Generative AI Engineering. GIAIC certified professional with expertise in modern web development.',
+    description: 'AI Engineer and Full Stack Developer specializing in Next.js, React, TypeScript, Python, FastAPI, PostgreSQL, Shopify, and AI automation with LLM APIs, OpenRouter, and n8n for international clients.',
     hasCredential: [
       {
         '@type': 'EducationalOccupationalCredential',
@@ -50,6 +61,15 @@ export default function StructuredData() {
         recognizedBy: {
           '@type': 'Organization',
           name: 'Governor Sindh IT Initiative'
+        }
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'certification',
+        name: 'Flowmingo Certified Partner',
+        recognizedBy: {
+          '@type': 'Organization',
+          name: 'Flowmingo'
         }
       }
     ]

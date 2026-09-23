@@ -9,8 +9,8 @@
   },
   "home": {
     "greeting": "Hello, I am Khanzadi Wazir Ali",
-    "title": "Full Stack Developer",
-    "description": "I build e-commerce stores, web apps, and AI-powered automations that help businesses grow and scale.",
+    "title": "AI Engineer & Full Stack Developer",
+    "description": "I build AI-powered web applications, Shopify stores, and automation workflows that help businesses grow and scale.",
     "cta": "Get in Touch",
     "available": "Available for opportunities",
     "certified": "GIAIC Certified",
@@ -20,7 +20,7 @@
     "nextjs": "Next.js",
     "nextjsSub": "Full Stack Solutions",
     "aiEng": "AI Engineering",
-    "aiEngSub": "Cloud Applied AI",
+    "aiEngSub": "AI Automation & Agents",
     "stats": {
       "experience": "Years Experience",
       "shopify": "Shopify Stores Built",
@@ -30,19 +30,20 @@
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Full Stack Developer, Shopify Developer, and AI Automation Engineer with 2+ years of remote experience.",
+    "subtitle": "AI Engineer, Full Stack & Shopify Developer with 2+ years of remote experience building intelligent web apps, automations, and e-commerce stores for international clients.",
     "profile": "Professional Profile",
-    "role": "Full Stack & Shopify Developer",
-    "intro": "Full Stack & Shopify developer with 2+ years of remote experience building online stores, web apps, and AI automation for international clients.",
+    "role": "AI Engineer & Full Stack Developer",
+    "intro": "AI Engineer and Full Stack Developer focused on building intelligent web applications, AI automation workflows, and scalable e-commerce solutions for international clients using Next.js, React, Python, FastAPI, PostgreSQL, Prisma, LLM APIs, OpenRouter, n8n, and Shopify.",
     "certified": "GIAIC Certified",
     "expert": "Shopify & AI Expert",
+    "flowmingo": "Flowmingo Certified Partner",
     "frontendDev": "Frontend Development",
     "aiEng": "AI Engineering",
     "downloadResume": "Download Resume",
     "techExpertise": "Technical Expertise",
-    "techDesc": "Modern full-stack apps with React, Next.js, TypeScript, and Tailwind CSS, wired to REST APIs and AI/LLM features.",
+    "techDesc": "Modern full-stack apps with React, Next.js, TypeScript, and Tailwind CSS, powered by REST APIs, FastAPI, PostgreSQL (Prisma), and AI/LLM features using OpenRouter and n8n.",
     "education": "Education",
-    "educationDesc": "Pursuing an Associate Degree of Commerce (ADC Part 2) to pair technical skills with business acumen.",
+    "educationDesc": "Cloud Applied Generative AI Engineering (Governor Sindh Initiative GIAIC), Associate Degree of Commerce (ADC Part 2), and ICom in Business Administration.",
     "goals": "Future Goals",
     "shortTerm": "Short Term",
     "longTerm": "Long Term",
@@ -54,51 +55,30 @@
       "title": "Experience",
       "subtitle": "A track record of delivering results for remote and international clients",
       "exp1": {
-        "title": "Shopify Developer & E-Commerce Strategist",
-        "company": "Independent Consultant",
+        "title": "Freelance AI Engineer",
+        "company": "Full Stack & Shopify Developer",
         "period": "Jan 2024 - Present · Remote · International Clients",
-        "p1": "Designed and delivered 3-4 full-scale Shopify stores with custom Liquid development, mobile-first UX, SEO, and product architecture.",
-        "p2": "Increased revenue by 40% for a D2C fashion brand through storefront redesign, CRO, upsells, cross-sells, checkout optimization, and Meta Ads.",
-        "p3": "Developed an OpenAI-powered customer support chatbot integrated with Shopify REST API.",
-        "p4": "Automated 80%+ of inbound support tickets, reducing support workload by 60%.",
-        "p5": "Performed technical SEO audits and Core Web Vitals optimization.",
-        "p6": "Built automated marketing workflows connecting Shopify, Klaviyo, CRM tools, Zapier, and n8n."
+        "p1": "Build modern full-stack web applications using Next.js, React, TypeScript, Python, and REST APIs.",
+        "p2": "Develop AI-powered applications and automation workflows using LLM APIs, OpenRouter, and n8n.",
+        "p3": "Designed and developed 3-4 Shopify stores for international clients with responsive interfaces and optimized product pages.",
+        "p4": "Customize Shopify themes, integrate third-party apps and payment gateways, and streamline store operations with automation.",
+        "p5": "Implement e-commerce improvements including upsells, cross-sells, checkout-flow optimization, SEO, and digital marketing support."
       },
       "exp2": {
-        "title": "Web Developer",
-        "company": "Independent Consultant",
-        "period": "2024 - Present · Remote · International Clients",
-        "p1": "Developed responsive business websites, portfolios, and web applications using React.js, Next.js, TypeScript, and Tailwind CSS.",
-        "p2": "Integrated REST APIs and third-party services to add dynamic functionality.",
-        "p3": "Built interactive features and reusable components for scalable frontend applications.",
-        "p4": "Deployed projects on Vercel and managed source code with Git and GitHub."
-      },
-      "exp3": {
-        "title": "Frontend Developer Intern",
-        "company": "SOFTIQTECH",
-        "period": "2026 · 30-Day Internship",
-        "p1": "Developed frontend modules for the Softiq CRM System.",
-        "p2": "Worked on Customers, Contacts, Leads, Opportunities, Activity Scheduler, Notes, Follow-ups, Email Templates, Reports Dashboard, and Profile Settings.",
-        "p3": "Built project and company settings interfaces and responsive UI components.",
-        "p4": "Collaborated with the frontend team using Git and feature-branch workflow."
-      },
-      "exp4": {
         "title": "Social Media Marketing Manager",
         "company": "DEVVYS",
-        "period": "Oct 2025 - 2026 · Remote · United States",
-        "p1": "Created and published social media content across relevant platforms.",
-        "p2": "Designed promotional posts and visual content using Canva.",
-        "p3": "Managed page scheduling, content planning, and audience engagement.",
-        "p4": "Monitored social media performance to improve future content."
+        "period": "Oct 2025 - Jul 2026 · Remote · United States",
+        "p1": "Managed Instagram and Facebook content, including product highlights, posts, stories, promotions, and content planning.",
+        "p2": "Handled comments and customer messages and supported brand visibility and customer engagement.",
+        "p3": "Created consistent visual content and maintained a structured social media content calendar."
       },
-      "exp5": {
+      "exp3": {
         "title": "Social Media Manager",
         "company": "EYEFINITYZONE",
-        "period": "Dec 2025 - 2026 · Remote",
-        "p1": "Created and designed social media posts for Instagram and Facebook.",
-        "p2": "Managed page updates, content posting, and audience engagement.",
-        "p3": "Planned consistent brand content across social platforms.",
-        "p4": "Responded to comments and supported day-to-day community management."
+        "period": "Dec 2024 - May 2026 · Remote · Pakistan",
+        "p1": "Managed Instagram and Facebook content, including product highlights, posts, stories, promotions, and content planning.",
+        "p2": "Handled comments and customer messages and supported brand visibility and customer engagement.",
+        "p3": "Created consistent visual content and maintained a structured social media content calendar."
       }
     }
   },
@@ -167,6 +147,9 @@
       "socialMedia": {
         "description": "Skilled in social media strategy, Meta Ads, content creation, and community engagement."
       },
+      "metaAds": {
+        "description": "Running and optimizing Meta and Google ad campaigns for e-commerce growth."
+      },
       "python": {
         "description": "Writing production Python for automation, REST APIs, and AI/LLM-powered workflows."
       },
@@ -191,11 +174,23 @@
       "postgresql": {
         "description": "Designing relational databases and writing efficient SQL with PostgreSQL."
       },
+      "prisma": {
+        "description": "Building type-safe database models and queries with Prisma ORM."
+      },
       "mongodb": {
         "description": "Working with MongoDB for flexible document-based data models."
       },
       "openai": {
         "description": "Building AI features with OpenAI, Gemini, and Claude APIs with prompt engineering."
+      },
+      "openrouter": {
+        "description": "Integrating multiple LLM providers through a single OpenRouter API with one interface."
+      },
+      "aiAgents": {
+        "description": "Designing autonomous AI agents and agentic workflows for real-world tasks."
+      },
+      "chatbots": {
+        "description": "Building AI chatbots with LLM APIs, RAG, and automation platforms like n8n."
       },
       "langchain": {
         "description": "Composing LLM workflows with LangChain, RAG, and vector databases."

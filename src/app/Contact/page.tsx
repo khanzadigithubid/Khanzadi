@@ -16,7 +16,7 @@ export default function Contact() {
   const [formMessage, setFormMessage] = useState('');
   const [phone, setPhone] = useState('');
   const [phoneError, setPhoneError] = useState('');
-  const emailAddress = "khanzadiwazirali9@gmail.com";
+  const emailAddress = "memonbisma22@gmail.com";
 
   const notify = () =>
     toast.success("Message sent successfully!", {
@@ -307,10 +307,10 @@ export default function Contact() {
                   <div className="min-w-0">
                     <p className="text-xs sm:text-sm font-medium text-gray-400">{t('contact.email')}</p>
                     <a
-                      href="mailto:khanzadiwazirali9@gmail.com"
+                      href="mailto:memonbisma22@gmail.com"
                       className="text-xs sm:text-sm md:text-base text-white hover:text-purple-400 transition-colors duration-200 break-all"
                     >
-                      khanzadiwazirali9@gmail.com
+                      memonbisma22@gmail.com
                     </a>
                   </div>
                 </div>
