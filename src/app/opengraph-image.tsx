@@ -1,8 +1,8 @@
 import { ImageResponse } from 'next/og';
+import PORTRAIT_B64 from './og-photo';
 
 export const runtime = 'edge';
-
-export const alt = 'Khanzadi Wazir Ali - Full Stack Developer & AI Engineer';
+export const alt = 'Khanzadi Wazir Ali - AI Engineer & Full Stack Developer';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -14,12 +14,13 @@ export default function OpengraphImage() {
           width: '100%',
           height: '100%',
           display: 'flex',
-          flexDirection: 'column',
           alignItems: 'center',
-          justifyContent: 'center',
+          justifyContent: 'space-between',
           backgroundColor: '#000000',
           position: 'relative',
+          padding: '0 80px',
           fontFamily: 'sans-serif',
+          overflow: 'hidden',
         }}
       >
         <div
@@ -44,36 +45,23 @@ export default function OpengraphImage() {
             background: 'radial-gradient(circle, #d946ef 0%, rgba(217,70,239,0.0) 70%)',
           }}
         />
+
         <div
           style={{
-            position: 'absolute',
-            top: 90,
-            left: '50%',
-            transform: 'translateX(-50%)',
-            width: 720,
-            height: 3,
-            background: 'linear-gradient(to right, #6366f1, #a855f7, #d946ef)',
-            borderRadius: 9999,
-          }}
-        />
-        <div
-          style={{
-            position: 'relative',
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center',
-            textAlign: 'center',
-            padding: '0 80px',
+            alignItems: 'flex-start',
+            maxWidth: 640,
           }}
         >
           <div
             style={{
               display: 'flex',
-              padding: '10px 26px',
+              padding: '10px 24px',
               border: '2px solid rgba(216,180,254,0.6)',
               borderRadius: 9999,
               color: '#d8b4fe',
-              fontSize: 26,
+              fontSize: 24,
               fontWeight: 600,
               letterSpacing: 6,
             }}
@@ -82,10 +70,10 @@ export default function OpengraphImage() {
           </div>
           <div
             style={{
-              fontSize: 74,
+              fontSize: 62,
               fontWeight: 800,
               color: '#ffffff',
-              marginTop: 34,
+              marginTop: 30,
               lineHeight: 1.1,
             }}
           >
@@ -93,20 +81,48 @@ export default function OpengraphImage() {
           </div>
           <div
             style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
               color: '#a78bfa',
-              fontSize: 34,
-              fontWeight: 600,
-              marginTop: 26,
+              fontSize: 30,
+              fontWeight: 700,
+              marginTop: 22,
             }}
           >
-            <div>AI Engineer &amp; Full Stack Developer</div>
-            <div style={{ marginTop: 10, color: '#c4b5fd', fontSize: 26, fontWeight: 500 }}>
-              Shopify · AI Automation
-            </div>
+            AI Engineer &amp; Full Stack Developer
           </div>
+          <div style={{ marginTop: 10, color: '#c4b5fd', fontSize: 24, fontWeight: 500 }}>
+            Shopify · AI Automation
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            position: 'relative',
+            width: 330,
+            height: 330,
+          }}
+        >
+          <div
+            style={{
+              position: 'absolute',
+              inset: -6,
+              borderRadius: '9999px',
+              background: 'linear-gradient(135deg, #6366f1, #a855f7, #d946ef)',
+            }}
+          />
+          <img
+            src={PORTRAIT_B64}
+            alt=""
+            width={318}
+            height={318}
+            style={{
+              borderRadius: '9999px',
+              objectFit: 'cover',
+              border: '6px solid #000000',
+            }}
+          />
         </div>
       </div>
     ),

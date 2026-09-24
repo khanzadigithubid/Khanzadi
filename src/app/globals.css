@@ -122,7 +122,7 @@
 
   .dark .text-gray-300,
   .dark .text-gray-400 {
-    color: #64748b !important;
+    color: #475569 !important;
   }
 
   .dark .text-gray-100,
@@ -179,12 +179,12 @@
 
   /* Light mode for semi-transparent white text (opacity variants) */
   .dark .text-white\/50 {
-    color: #94a3b8 !important;
+    color: #475569 !important;
   }
 
   .dark .text-white\/60,
   .dark .text-white\/70 {
-    color: #64748b !important;
+    color: #475569 !important;
   }
 
   .dark .text-white\/80 {
@@ -742,4 +742,36 @@ df-messenger {
   --df-messenger-input-box-color: #f5f5f5;
   --df-messenger-input-box-border-color: #000000;
   --df-messenger-send-icon: #000000;
+}
+
+/* Unlayered light-mode text overrides.
+   Declared OUTSIDE any @layer so they outrank Tailwind utilities
+   (unlayered declarations beat ALL layered declarations). */
+.dark .text-white {
+  color: #1e293b !important;
+}
+.dark .text-gray-300,
+.dark .text-gray-400 {
+  color: #475569 !important;
+}
+.dark .text-gray-100,
+.dark .text-gray-200 {
+  color: #334155 !important;
+}
+.dark .text-white\/50,
+.dark .text-white\/60,
+.dark .text-white\/70,
+.dark .text-white\/80 {
+  color: #475569 !important;
+}
+.dark .text-white\/90 {
+  color: #334155 !important;
+}
+.dark .text-black {
+  color: #1e293b !important;
+}
+/* keep-white must come last: white text on colored/keep-white surfaces
+   beats the dark-ink .text-white override at equal specificity. */
+.dark .keep-white {
+  color: #ffffff !important;
 }

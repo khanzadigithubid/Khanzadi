@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import { FaQuoteLeft, FaUsers } from 'react-icons/fa';
 import TestimonialCard from './TestimonialCard';
 import { testimonials } from '../data/testimonials';
@@ -7,6 +8,11 @@ import { useLanguage } from '../../context/LanguageContext';
 
 export default function TestimonialsSection() {
   const { t } = useLanguage();
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    import('aos').then((AOS) => AOS.refresh());
+  }, []);
 
   return (
     <section className="py-12 sm:py-16 md:py-24 bg-black transition-colors duration-300">

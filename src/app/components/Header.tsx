@@ -158,7 +158,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation - Centered */}
-          <nav className="hidden md:flex items-center justify-center space-x-2 lg:space-x-4 flex-1">
+          <nav aria-label="Primary" className="hidden md:flex items-center justify-center space-x-2 lg:space-x-4 flex-1">
             {navItems.map((item) => (
               <Link
                 key={item.label}

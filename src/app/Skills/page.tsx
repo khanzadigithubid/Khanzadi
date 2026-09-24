@@ -25,10 +25,10 @@ function SkillCard({
 }: SkillCardProps) {
   const getLevelColor = (level: string) => {
     switch (level?.toLowerCase()) {
-      case 'expert': return 'bg-green-500';
-      case 'advanced': return 'bg-blue-500';
-      case 'intermediate': return 'bg-yellow-500';
-      default: return 'bg-gray-500';
+      case 'expert': return 'bg-green-700';
+      case 'advanced': return 'bg-blue-700';
+      case 'intermediate': return 'bg-yellow-700';
+      default: return 'bg-gray-600';
     }
   };
 
@@ -41,7 +41,7 @@ function SkillCard({
       <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       <div className="relative p-4 sm:p-6">
         <div className="flex flex-col items-center">
-          <div className={`p-3 sm:p-4 rounded-lg ${colorClass} mb-3 sm:mb-4 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3`}>
+          <div aria-hidden="true" className={`p-3 sm:p-4 rounded-lg ${colorClass} mb-3 sm:mb-4 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3`}>
             {svgIcon}
           </div>
           <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">{title}</h3>

@@ -45,7 +45,7 @@ export default function Breadcrumbs() {
   }
 
   return (
-    <nav className="bg-black border-b border-white/10 py-3 sm:py-4 transition-colors duration-300">
+    <nav aria-label="Breadcrumb" className="bg-black border-b border-white/10 py-3 sm:py-4 transition-colors duration-300">
       <div className="container mx-auto px-4 sm:px-6">
         <ol className="flex items-center space-x-2 text-sm overflow-x-auto scrollbar-hide">
           {breadcrumbs.map((breadcrumb, index) => {

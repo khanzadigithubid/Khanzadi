@@ -37,7 +37,7 @@ export default function Services() {
               <FaStar className="text-blue-400 text-lg sm:text-xl" />
             </div>
             <div className="min-w-0">
-              <h3 className="text-sm sm:text-base font-semibold text-white truncate">{t('services.quality')}</h3>
+              <h2 className="text-sm sm:text-base font-semibold text-white truncate">{t('services.quality')}</h2>
               <p className="text-xs sm:text-sm text-gray-400 truncate">{t('services.qualitySub')}</p>
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function Services() {
               <FaAward className="text-purple-400 text-lg sm:text-xl" />
             </div>
             <div className="min-w-0">
-              <h3 className="text-sm sm:text-base font-semibold text-white truncate">{t('services.certified')}</h3>
+              <h2 className="text-sm sm:text-base font-semibold text-white truncate">{t('services.certified')}</h2>
               <p className="text-xs sm:text-sm text-gray-400 truncate">{t('services.certifiedSub')}</p>
             </div>
           </div>
@@ -55,7 +55,7 @@ export default function Services() {
               <FaRegLightbulb className="text-green-400 text-lg sm:text-xl" />
             </div>
             <div className="min-w-0">
-              <h3 className="text-sm sm:text-base font-semibold text-white truncate">{t('services.innovative')}</h3>
+              <h2 className="text-sm sm:text-base font-semibold text-white truncate">{t('services.innovative')}</h2>
               <p className="text-xs sm:text-sm text-gray-400 truncate">{t('services.innovativeSub')}</p>
             </div>
           </div>

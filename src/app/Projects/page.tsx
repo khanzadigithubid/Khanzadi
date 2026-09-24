@@ -155,7 +155,7 @@ const Project = () => {
               <FaCode className="text-gray-200 text-lg sm:text-xl" />
             </div>
             <div className="min-w-0">
-              <h3 className="text-sm sm:text-base font-semibold text-white truncate">{projects.length} {t('projects.projectsCount')}</h3>
+              <h2 className="text-sm sm:text-base font-semibold text-white truncate">{projects.length} {t('projects.projectsCount')}</h2>
               <p className="text-xs sm:text-sm text-gray-400 truncate">{t('projects.completed')}</p>
             </div>
           </div>
@@ -164,7 +164,7 @@ const Project = () => {
               <FaStar className="text-gray-200 text-lg sm:text-xl" />
             </div>
             <div className="min-w-0">
-              <h3 className="text-sm sm:text-base font-semibold text-white truncate">{t('projects.quality')}</h3>
+              <h2 className="text-sm sm:text-base font-semibold text-white truncate">{t('projects.quality')}</h2>
               <p className="text-xs sm:text-sm text-gray-400 truncate">{t('projects.qualitySub')}</p>
             </div>
           </div>
@@ -173,7 +173,7 @@ const Project = () => {
               <FaRegClock className="text-gray-200 text-lg sm:text-xl" />
             </div>
             <div className="min-w-0">
-              <h3 className="text-sm sm:text-base font-semibold text-white truncate">{t('projects.latest')}</h3>
+              <h2 className="text-sm sm:text-base font-semibold text-white truncate">{t('projects.latest')}</h2>
               <p className="text-xs sm:text-sm text-gray-400 truncate">{t('projects.latestSub')}</p>
             </div>
           </div>

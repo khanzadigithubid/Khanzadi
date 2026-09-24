@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub, FaTwitter, FaSpinner, FaCheckCircle, FaExclamationCircle } from 'react-icons/fa';
 import 'react-toastify/dist/ReactToastify.css';
@@ -14,6 +14,11 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [formMessage, setFormMessage] = useState('');
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    import('aos').then((AOS) => AOS.refresh());
+  }, []);
   const [phone, setPhone] = useState('');
   const [phoneError, setPhoneError] = useState('');
   const emailAddress = "memonbisma22@gmail.com";
@@ -333,6 +338,7 @@ export default function Contact() {
                     href="https://www.linkedin.com/in/khanzadi-wazir-ali-7a97832b6/"
                     className="p-2 sm:p-2.5 md:p-3 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors duration-200"
                     target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"
                   >
                     <FaLinkedin className="text-gray-200 w-4 h-4 sm:w-5 sm:h-5 md:text-lg" />
                   </a>
@@ -340,6 +346,7 @@ export default function Contact() {
                     href="https://github.com/khanzadigithubid/"
                     className="p-2 sm:p-2.5 md:p-3 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors duration-200"
                     target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub"
                   >
                     <FaGithub className="text-gray-200 w-4 h-4 sm:w-5 sm:h-5 md:text-lg" />
                   </a>
@@ -347,6 +354,7 @@ export default function Contact() {
                     href="https://x.com/Khanzadi0099"
                     className="p-2 sm:p-2.5 md:p-3 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors duration-200"
                     target="_blank" rel="noopener noreferrer"
+                    aria-label="X (Twitter)"
                   >
                     <FaTwitter className="text-gray-200 w-4 h-4 sm:w-5 sm:h-5 md:text-lg" />
                   </a>
