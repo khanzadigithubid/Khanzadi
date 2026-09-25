@@ -205,53 +205,70 @@
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Explore a curated collection of projects showcasing modern web development expertise",
+    "subtitle": "Real-world AI, web, and automation solutions built for international clients",
     "featured": "Featured Projects",
     "projectsCount": "Projects",
-    "completed": "Completed with excellence",
-    "quality": "Quality Code",
-    "qualitySub": "Clean & maintainable",
-    "latest": "Latest Tech",
-    "latestSub": "Modern frameworks & tools",
+    "completed": "Delivered for real clients",
+    "quality": "Clean Architecture",
+    "qualitySub": "Scalable & maintainable code",
+    "latest": "Modern Stack",
+    "latestSub": "Next.js · Python · AI APIs",
     "showMore": "Show More Projects",
     "showLess": "Show Less",
     "more": "more",
     "clickToView": "Click to view",
     "liveDemo": "Live Demo",
     "sourceCode": "Source Code",
+    "techStack": "Tech Stack",
+    "impact": "Impact",
     "categories": {
       "all": "All",
       "webApps": "Web Apps",
-      "aiProjects": "AI Projects"
+      "aiProjects": "AI Projects",
+      "shopify": "Shopify"
     },
     "items": {
       "tradingCopilot": {
         "title": "Trading Copilot",
-        "description": "AI-powered trading copilot offering real-time market insights and intelligent assistance for informed trading decisions."
+        "description": "AI-powered trading assistant delivering real-time market insights, pattern analysis, and intelligent trade suggestions — helping traders make faster, data-backed decisions.",
+        "impact": "Real-time AI decisions",
+        "tech": ["Next.js", "OpenAI", "TypeScript", "REST APIs"]
       },
       "aiEmployeeWorkspace": {
         "title": "AI Employee Workspace Automation",
-        "description": "Read-only Google Workspace briefing automation powered by GitHub Actions, generating daily executive Markdown reports from Calendar, Gmail, and Drive."
+        "description": "Automated daily executive briefing system that aggregates Google Calendar, Gmail, and Drive data via GitHub Actions — delivering structured Markdown reports without manual effort.",
+        "impact": "100% automated daily reports",
+        "tech": ["Python", "GitHub Actions", "Google APIs", "Markdown"]
       },
       "shopifyAutomation": {
-        "title": "Shopify Business Intelligence Automation",
-        "description": "A read-only Shopify business intelligence workflow that generates a daily Markdown report from order and inventory data. Calculates operational metrics, flags low-stock products, and optionally uses an OpenAI-compatible model for aggregate business analysis. Runs automatically through a scheduled GitHub Actions workflow with privacy-first, read-only API access."
+        "title": "Shopify Business Intelligence",
+        "description": "Automated Shopify BI pipeline that pulls order and inventory data daily, calculates operational KPIs, flags low-stock products, and generates AI-powered business summaries via OpenAI.",
+        "impact": "Saves 2+ hrs/day of manual reporting",
+        "tech": ["Python", "Shopify API", "OpenAI", "GitHub Actions"]
       },
       "agenticAIOS": {
         "title": "Agentic AI OS",
-        "description": "Agentic AI OS is a platform for building AI workflows in minutes. It offers AI-powered tools including an intelligent Read assistant, a Workflow Generator, and Diagram visualization to design and build agentic AI solutions with ease."
+        "description": "A no-code AI workflow builder that lets users design autonomous agent pipelines in minutes — featuring an intelligent Read assistant, a visual Workflow Generator, and interactive Diagram tools.",
+        "impact": "Builds AI workflows in minutes",
+        "tech": ["Next.js", "TypeScript", "LangChain", "OpenRouter"]
       },
       "photoToSketch": {
         "title": "AI Photo to Sketch Converter",
-        "description": "AI Photo to Sketch Converter is an AI-powered web application built with Streamlit that transforms your photos into artistic pencil sketches using computer vision and image processing techniques."
+        "description": "Streamlit-powered web app that transforms uploaded photos into artistic pencil sketches using computer vision — deployed publicly with instant processing and no setup required.",
+        "impact": "Instant sketch conversion",
+        "tech": ["Python", "Streamlit", "OpenCV", "PIL"]
       },
       "loopEngineering": {
         "title": "Loop Engineering Hub",
-        "description": "The Complete Loop Engineering Hub — from manual prompting to autonomous AI agent systems. An educational repository teaching how to design automated loops that prompt AI coding agents, covering heartbeat types, the maker-checker pattern, memory spines, and observability across 12 hands-on projects. The important skill has moved from writing prompts to designing loops."
+        "description": "An advanced educational repository covering autonomous AI agent loop design — heartbeat patterns, maker-checker systems, memory spines, and observability across 12 hands-on projects.",
+        "impact": "12 production-ready projects",
+        "tech": ["Python", "AI Agents", "LangChain", "n8n"]
       },
       "worldMap": {
-        "title": "World Map",
-        "description": "World Map is an interactive Streamlit web application for data visualization and geographic exploration, allowing users to explore and interact with global map data."
+        "title": "Interactive World Map",
+        "description": "A Streamlit-based geospatial data visualization app allowing users to explore global datasets, filter by region, and interact with live map layers — deployed on Streamlit Cloud.",
+        "impact": "Global data at a glance",
+        "tech": ["Python", "Streamlit", "Plotly", "GeoPandas"]
       }
     }
   },

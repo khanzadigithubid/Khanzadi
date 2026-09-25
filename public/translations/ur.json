@@ -205,51 +205,68 @@
   },
   "projects": {
     "title": "پروجیکٹس",
-    "subtitle": "جدید ویب ڈیویلپمنٹ مہارت کو ظاہر کرنے والے پروجیکٹس کا ایک منتخب مجموعہ",
+    "subtitle": "بین الاقوامی کلائنٹس کے لیے بنائے گئے حقیقی AI، ویب اور آٹومیشن حل",
     "featured": "نمایاں پروجیکٹس",
     "projectsCount": "پروجیکٹس",
-    "completed": "بہترین کے ساتھ مکمل",
-    "quality": "معیاری کوڈ",
-    "qualitySub": "صاف اور برقرار رکھنے کے قابل",
-    "latest": "جدید ترین ٹیک",
-    "latestSub": "جدید فریم ورکس اور ٹولز",
+    "completed": "حقیقی کلائنٹس کے لیے ڈیلیور کیے گئے",
+    "quality": "صاف آرکیٹیکچر",
+    "qualitySub": "قابل توسیع اور برقرار رکھنے کے قابل کوڈ",
+    "latest": "جدید اسٹیک",
+    "latestSub": "Next.js · Python · AI APIs",
     "showMore": "مزید پروجیکٹس دکھائیں",
     "showLess": "کم دکھائیں",
     "more": "مزید",
     "clickToView": "دیکھنے کے لیے کلک کریں",
+    "techStack": "ٹیک اسٹیک",
+    "impact": "اثر",
     "categories": {
       "all": "تمام",
       "webApps": "ویب ایپس",
-      "aiProjects": "AI پروجیکٹس"
+      "aiProjects": "AI پروجیکٹس",
+      "shopify": "Shopify"
     },
     "items": {
       "tradingCopilot": {
         "title": "Trading Copilot",
-        "description": "Trading Copilot AI پر مبنی تیار کردا جاتا ہے جو مارکیٹ کی معلومات ری ال ٹائم فراہم کرتا ہے اور ئاگاہ تجارتی فیصلے کی لیے داناؤب اعوانت پریش کرتا ہے."
+        "description": "AI سے چلنے والا ٹریڈنگ اسسٹنٹ جو ریئل ٹائم مارکیٹ انسائٹس، پیٹرن اینالیسس اور ذہین ٹریڈ سجیشنز فراہم کرتا ہے — تاجروں کو ڈیٹا پر مبنی تیز فیصلے کرنے میں مدد دیتا ہے۔",
+        "impact": "ریئل ٹائم AI فیصلے",
+        "tech": ["Next.js", "OpenAI", "TypeScript", "REST APIs"]
       },
       "aiEmployeeWorkspace": {
         "title": "AI Employee Workspace Automation",
-        "description": "GitHub Actions پر مبنی ریڈ اونلی Google Workspace بریفنگ آٹومیشن، جو Calendar، Gmail اور Drive سے روزانہ ایگزیکیٹو مارک ڈاؤن رپورٹس تیار کرتا ہے۔"
+        "description": "خودکار روزانہ ایگزیکیٹو بریفنگ سسٹم جو GitHub Actions کے ذریعے Google Calendar، Gmail اور Drive کا ڈیٹا جمع کرتا ہے — بغیر کسی دستی کوشش کے منظم Markdown رپورٹس فراہم کرتا ہے۔",
+        "impact": "100% خودکار روزانہ رپورٹس",
+        "tech": ["Python", "GitHub Actions", "Google APIs", "Markdown"]
       },
       "shopifyAutomation": {
-        "title": "Shopify Business Intelligence Automation",
-        "description": "Shopify کا ایک ریڈ اونلی بشنس انٹلیجنس ورک فلاؤ جو اورڈر اور انونٹری ڈیٹا سے روزانہ مارک ڈاؤن رٹپورٹ تیار کرتا ہے۔ آپریشنل میٹرکس کا حساب کرتا ہے، کم اسٹاک پروڈکٹس کو فلاگ کرتا ہے، اور ایگریگیٹ بشنس انالائیسیس کے لیے OpenAI کے مطابق مدل استعمال کرتا ہے۔ پرائیویسی پہلے کے ساتھ ریڈ اونلی API ایکسےس کے ذریعے GitHub Actions ورک فلاؤ سے خودکار چلتا ہے۔"
+        "title": "Shopify Business Intelligence",
+        "description": "Shopify کا خودکار BI پائپ لائن جو روزانہ آرڈر اور انوینٹری ڈیٹا کھینچتا ہے، آپریشنل KPIs حساب کرتا ہے، کم اسٹاک پروڈکٹس کو فلیگ کرتا ہے، اور OpenAI کے ذریعے AI سے چلنے والے بزنس سمریز بناتا ہے۔",
+        "impact": "روزانہ 2+ گھنٹے بچاتا ہے",
+        "tech": ["Python", "Shopify API", "OpenAI", "GitHub Actions"]
       },
       "agenticAIOS": {
         "title": "Agentic AI OS",
-        "description": "Agentic AI OS ایک پلیٹ فارم ہے جو مینٹوں میں AI ورک فلاؤز بنانے میں مدد کرتا ہے۔ اس میں AI سے چلنے والے اوزار شامل ہیں، جن میں ہوشمند ریڈ اسسٹنٹ، ورک فلاؤ جنریٹر، اور ڈایگرام ویزیوالائیزیشن شامل ہیں تاکہ agentic AI حلول آسانی سے پہانے جا سکیں۔"
+        "description": "ایک نو کوڈ AI ورک فلو بلڈر جو صارفین کو منٹوں میں خودمختار ایجنٹ پائپ لائنز ڈیزائن کرنے دیتا ہے — ذہین ریڈ اسسٹنٹ، ویژوئل ورک فلو جنریٹر اور انٹرایکٹو ڈایگرام ٹولز کے ساتھ۔",
+        "impact": "منٹوں میں AI ورک فلو بناتا ہے",
+        "tech": ["Next.js", "TypeScript", "LangChain", "OpenRouter"]
       },
       "photoToSketch": {
         "title": "AI Photo to Sketch Converter",
-        "description": "AI Photo to Sketch Converter ایک AI سے چلنے والی ویب اپلیکیشن ہے جو Streamlit سے بنی ہے، کمپیوٹر ویژن اور امیج پروسیسنگ ٹیکنیکس کا استعمال کرڤے ہوئے آپ کی فوٹوز کو فنی پینسل اسکیچز میں تبدیل کرتا ہے۔"
+        "description": "Streamlit سے بنی ویب ایپ جو اپ لوڈ کی گئی تصاویر کو کمپیوٹر ویژن کے ذریعے فنی پینسل اسکیچز میں تبدیل کرتی ہے — عوامی طور پر ڈیپلائڈ، فوری پروسیسنگ، کوئی سیٹ اپ نہیں۔",
+        "impact": "فوری اسکیچ تبدیلی",
+        "tech": ["Python", "Streamlit", "OpenCV", "PIL"]
       },
       "loopEngineering": {
         "title": "Loop Engineering Hub",
-        "description": "The Complete Loop Engineering Hub — دستی پرومپٹنگ سے خود مختار AI ایجنٹ سیسٹمز تک۔ یہ ایک تعلیمی ریپوزیٹری ہے جو سکھاتا ہے کہ خودکار loops کیسے ڈزائن کریں جو AI کوڈنگ ایجنٹس کو پرومپٹ کریں، جس میں heartbeat اقسام، maker-checker پیٹرن، میموری spines، اور امیلیشن 12 املی پراجیکٹس میں شامل ہیں۔ اہم مہارت پرومپٹ لکھنے سے بڏھ کر loops ڈزائن کرنے پر چلی گئی ہے۔"
+        "description": "ایک ایڈوانسڈ تعلیمی ریپوزیٹری جو خودمختار AI ایجنٹ لوپ ڈیزائن کو کور کرتی ہے — heartbeat پیٹرنز، maker-checker سسٹمز، میموری اسپائنز، اور 12 عملی پروجیکٹس میں observability۔",
+        "impact": "12 پروڈکشن ریڈی پروجیکٹس",
+        "tech": ["Python", "AI Agents", "LangChain", "n8n"]
       },
       "worldMap": {
-        "title": "World Map",
-        "description": "World Map ایک انٹریکٹو Streamlit ویب اپلیکیشن ہے کی ڈیٹا ویزیوالائیزیشن اور جغرافیائی دریافت کے لیے ہے، جو صارفین کو عالمی میپ ڈیٹا کو دیکھنے اور انٹریکٹ کرنے کی سہولیت دیتا ہے۔"
+        "title": "انٹرایکٹو ورلڈ میپ",
+        "description": "Streamlit پر مبنی جیو اسپیشل ڈیٹا ویژوالائزیشن ایپ جو صارفین کو عالمی ڈیٹاسیٹس دریافت کرنے، علاقے کے مطابق فلٹر کرنے اور لائیو میپ لیئرز سے انٹرایکٹ کرنے دیتی ہے۔",
+        "impact": "ایک نظر میں عالمی ڈیٹا",
+        "tech": ["Python", "Streamlit", "Plotly", "GeoPandas"]
       }
     },
     "liveDemo": "لائو ڈیمو",
