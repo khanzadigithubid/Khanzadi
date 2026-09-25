@@ -96,8 +96,8 @@ const Project = () => {
     ? projects
     : projects.filter(project => project.category === selectedCategory);
 
-  const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 8);
-  const hasMore = filteredProjects.length > 8;
+  const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 4);
+  const hasMore = filteredProjects.length > 4;
 
   const openLightbox = (index: number) => {
     const projectIndex = projects.findIndex(p => p === filteredProjects[index]);
@@ -285,7 +285,7 @@ const Project = () => {
               onClick={() => setShowAll(!showAll)}
               className="inline-flex items-center px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-3.5 bg-white text-black rounded-lg hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl text-xs sm:text-sm md:text-base font-medium"
             >
-              {showAll ? t('projects.showLess') : `${t('projects.showMore')} (${filteredProjects.length - 8} ${t('projects.more')})`}
+              {showAll ? t('projects.showLess') : `${t('projects.showMore')} (${filteredProjects.length - 4} ${t('projects.more')})`}
               <FaChevronDown className={`ml-1.5 sm:ml-2 w-3 h-3 sm:w-4 sm:h-4 transition-transform duration-300 ${showAll ? 'rotate-180' : ''}`} />
             </button>
           </div>

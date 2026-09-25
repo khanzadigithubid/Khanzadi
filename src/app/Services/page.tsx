@@ -65,14 +65,14 @@ export default function Services() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {/* Web Development Card */}
           <div className="group bg-gray-800 rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 card-lift border border-gray-700 hover:border-blue-500" data-aos="fade-up" data-aos-duration="500">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white keep-white mb-4 sm:mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white keep-white mb-4 sm:mb-6 shadow-lg transform transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
               <FaCode size={28} className="sm:w-8 sm:h-8 transform group-hover:scale-110 transition-transform duration-300" />
             </div>
-            <div className="space-y-3 sm:space-y-3 sm:space-y-5">
+            <div className="space-y-3 sm:space-y-5">
               <h2 className="text-white text-lg sm:text-xl md:text-2xl font-semibold text-center">
                 {t('services.webDev')}
               </h2>
-              <p className="leading-relaxed text-gray-300 text-sm sm:text-sm sm:text-base text-center">
+              <p className="leading-relaxed text-gray-300 text-sm sm:text-base text-center">
                 {t('services.webDevDesc')}
               </p>
               <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-gray-300">

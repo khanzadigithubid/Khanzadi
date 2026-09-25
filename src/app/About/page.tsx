@@ -74,7 +74,7 @@ const About = () => {
                   </div>
                   <div className="flex items-center space-x-1.5 sm:space-x-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-700 transition-colors duration-300">
                     <FaCheckCircle className="text-gray-400 text-xs sm:text-sm" />
-                    <span>ADC PAT 2</span>
+                    <span>ADC PART 2</span>
                   </div>
                   <div className="flex items-center space-x-1.5 sm:space-x-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 bg-gray-800 text-gray-200 rounded-full text-xs sm:text-sm font-semibold border border-gray-700 hover:bg-gray-700 transition-colors duration-300">
                     <FaCertificate className="text-gray-400 text-xs sm:text-sm" />
@@ -92,8 +92,8 @@ const About = () => {
                 {/* Download Resume Button */}
                 <div className="flex justify-center md:justify-start mt-6 sm:mt-8">
                   <a
-                    href="/Khanzadi-Resume.pdf"
-                    download="Khanzadi-Resume.pdf"
+                    href="/Khanzadi_Wazir_Ali_Resume.pdf"
+                    download="Khanzadi_Wazir_Ali_Resume.pdf"
                     className="inline-flex items-center space-x-2 px-6 py-2.5 sm:px-8 sm:py-3.5 bg-white text-black rounded-lg text-sm sm:text-base font-semibold shadow-lg hover:shadow-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
                   >
                     <FaDownload className="text-base sm:text-lg" />

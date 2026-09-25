@@ -83,7 +83,7 @@ export default function TestimonialsSection() {
               <FaQuoteLeft className="w-6 h-6 sm:w-8 sm:h-8 text-white/30" />
             </div>
             <p className="text-white/60 text-base sm:text-lg">
-              No testimonials available yet.
+              {t('testimonials.noTestimonials')}
             </p>
           </div>
         )}

@@ -11,6 +11,19 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
+/**
+ * IMPORTANT — Inverted naming convention:
+ *
+ * This site is dark-by-default. The CSS class "dark" on <html> means LIGHT MODE visually
+ * (white background, dark text). Without the class = dark theme (black background, light text).
+ *
+ * In code:  theme === 'dark'  → html.classList has "dark"  → user sees: light/white UI
+ *           theme === 'light' → html.classList has no "dark" → user sees: dark/black UI
+ *
+ * This is intentional to keep the Tailwind "dark:" prefix convention working while the
+ * site defaults to dark visuals. Keep this in mind when reading theme conditionals.
+ */
+
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>('light');
   const [mounted, setMounted] = useState(false);
