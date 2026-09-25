@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import { FaSun, FaMoon } from 'react-icons/fa';
 import dynamic from 'next/dynamic';
 import LanguageSwitcher from '../../components/LanguageSwitcher';
@@ -81,6 +82,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const mobileNavRef = useRef<HTMLDivElement>(null);
   const { t } = useLanguage();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -159,17 +161,21 @@ export default function Header() {
 
           {/* Desktop Navigation - Centered */}
           <nav aria-label="Primary" className="hidden md:flex items-center justify-center space-x-2 lg:space-x-4 flex-1">
-            {navItems.map((item) => (
+            {navItems.map((item) => {
+              const isActive = pathname === item.path;
+              return (
               <Link
                 key={item.label}
                 href={item.path}
-                className="group relative px-5 py-2.5 text-base lg:text-lg font-semibold text-white hover:text-gray-300 transition-all duration-300"
+                aria-current={isActive ? 'page' : undefined}
+                className={`group relative px-5 py-2.5 text-base lg:text-lg font-semibold transition-all duration-300 ${isActive ? 'text-white' : 'text-white hover:text-gray-300'}`}
               >
                 <span className="relative z-10">{item.label}</span>
                 <span className="absolute inset-0 bg-white/5 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 origin-center"></span>
-                <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-indigo-400 via-purple-400 to-fuchsia-400 group-hover:w-3/4 transition-all duration-300"></span>
+                <span className={`absolute bottom-1 left-1/2 -translate-x-1/2 h-0.5 bg-gradient-to-r from-indigo-400 via-purple-400 to-fuchsia-400 transition-all duration-300 ${isActive ? 'w-3/4' : 'w-0 group-hover:w-3/4'}`}></span>
               </Link>
-            ))}
+              );
+            })}
           </nav>
 
           {/* Theme Toggle & Language Switcher - Desktop */}
@@ -184,7 +190,7 @@ export default function Header() {
           <button
             className="md:hidden ml-auto p-3 text-white hover:bg-white/5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 rounded-xl"
             onClick={toggleMobileMenu}
-            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-label={isMobileMenuOpen ? t('nav.closeMenu') : t('nav.openMenu')}
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-navigation"
           >
@@ -210,7 +216,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         <div
-          className={`md:hidden fixed inset-0 top-20 z-[45] transition-all duration-400 ease-in-out ${
+          className={`md:hidden fixed inset-0 top-20 z-[45] transition-all duration-300 ease-in-out ${
             isMobileMenuOpen
               ? 'opacity-100 visible'
               : 'opacity-0 invisible pointer-events-none'
@@ -229,10 +235,13 @@ export default function Header() {
             ref={mobileNavRef}
             className="relative flex flex-col items-center justify-center h-full space-y-8 px-6 py-10 overflow-y-auto overscroll-contain min-h-[80svh]"
           >
-            {navItems.map((item, index) => (
+            {navItems.map((item, index) => {
+              const isActive = pathname === item.path;
+              return (
               <Link
                 key={item.label}
                 href={item.path}
+                aria-current={isActive ? 'page' : undefined}
                 className="group relative text-2xl sm:text-3xl font-bold text-white keep-white hover:text-gray-300 transition-all duration-300"
                 onClick={closeMobileMenu}
                 style={{
@@ -243,10 +252,11 @@ export default function Header() {
               >
                 <span className="relative">
                   {item.label}
-                  <span className="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-indigo-400 via-purple-400 to-fuchsia-400 group-hover:w-full transition-all duration-300"></span>
+                  <span className={`absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-indigo-400 via-purple-400 to-fuchsia-400 transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                 </span>
               </Link>
-            ))}
+              );
+            })}
 
             {/* Theme Toggle & Language Switcher - Mobile */}
             <div className="pt-8 flex flex-col items-center space-y-4">

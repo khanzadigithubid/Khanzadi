@@ -24,7 +24,7 @@ export default function Contact() {
   const emailAddress = "memonbisma22@gmail.com";
 
   const notify = () =>
-    toast.success("Message sent successfully!", {
+    toast.success(t('contact.toastSuccess'), {
       position: "top-right",
       autoClose: 3000,
       hideProgressBar: false,
@@ -36,12 +36,12 @@ export default function Contact() {
   const showErrorWithFallback = () => {
     toast.error(
       <div>
-        <p>Failed to send message through the form.</p>
+        <p>{t('contact.toastErrorMsg')}</p>
         <a
           href={`mailto:${emailAddress}`}
           className="text-purple-500 hover:text-purple-600 underline font-medium mt-2 inline-block"
         >
-          Click here to email directly
+          {t('contact.toastEmailLink')}
         </a>
       </div>,
       {
@@ -119,7 +119,7 @@ export default function Contact() {
       if (result.success) {
         notify();
         setFormStatus('success');
-        setFormMessage('Message sent successfully! I\'ll get back to you soon.');
+        setFormMessage(t('contact.successMsg'));
         event.currentTarget.reset();
         setPhone('');
         setPhoneError('');
@@ -132,13 +132,13 @@ export default function Contact() {
       } else {
         showErrorWithFallback();
         setFormStatus('error');
-        setFormMessage('Failed to send message. Please try the email link below or try again later.');
+        setFormMessage(t('contact.errorMsg'));
       }
     } catch (error) {
       console.error("Form submission error:", error);
       showErrorWithFallback();
       setFormStatus('error');
-      setFormMessage('Network error occurred. Please check your connection and try again.');
+      setFormMessage(t('contact.networkError'));
     } finally {
       setIsSubmitting(false);
     }
@@ -245,7 +245,7 @@ export default function Contact() {
                     dropdownClass="phone-dropdown"
                     searchClass="phone-search"
                     enableSearch={true}
-                    searchPlaceholder="Search country"
+                    searchPlaceholder={t('contact.searchCountry')}
                     placeholder={t('contact.phonePlaceholder')}
                   />
                   {phoneError && (

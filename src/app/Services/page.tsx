@@ -269,11 +269,12 @@ export default function Services() {
 
         {/* CTA Section */}
         <div className="text-center mt-12 sm:mt-16">
-          <Link href="../Contact">
-            <button className="group inline-flex items-center px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-3 bg-gradient-to-r from-white to-gray-200 text-black text-xs sm:text-sm md:text-base rounded-lg hover:from-gray-200 hover:to-gray-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-              {t('services.getStarted')}
-              <FaArrowRight className="ml-1.5 sm:ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform duration-300" />
-            </button>
+          <Link
+            href="/Contact"
+            className="group inline-flex items-center px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-3 bg-gradient-to-r from-white to-gray-200 text-black text-xs sm:text-sm md:text-base rounded-lg hover:from-gray-200 hover:to-gray-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+          >
+            {t('services.getStarted')}
+            <FaArrowRight className="ml-1.5 sm:ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform duration-300" />
           </Link>
         </div>
       </div>

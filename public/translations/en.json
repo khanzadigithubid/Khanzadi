@@ -5,7 +5,9 @@
     "skills": "Skills",
     "projects": "Projects",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "home": {
     "greeting": "Hello, I am Khanzadi Wazir Ali",
@@ -55,9 +57,9 @@
       "title": "Experience",
       "subtitle": "A track record of delivering results for remote and international clients",
       "exp1": {
-        "title": "Freelance AI Engineer",
-        "company": "Full Stack & Shopify Developer",
-        "period": "Jan 2024 - Present · Remote · International Clients",
+        "title": "Freelance AI Engineer & Full Stack Developer",
+        "company": "Self-employed · Remote",
+        "period": "Jan 2024 – Present · Remote · International Clients",
         "p1": "Build modern full-stack web applications using Next.js, React, TypeScript, Python, and REST APIs.",
         "p2": "Develop AI-powered applications and automation workflows using LLM APIs, OpenRouter, and n8n.",
         "p3": "Designed and developed 3-4 Shopify stores for international clients with responsive interfaces and optimized product pages.",
@@ -67,7 +69,7 @@
       "exp2": {
         "title": "Social Media Marketing Manager",
         "company": "DEVVYS",
-        "period": "Oct 2025 - Jul 2026 · Remote · United States",
+        "period": "Oct 2025 – Present · Remote · United States",
         "p1": "Managed Instagram and Facebook content, including product highlights, posts, stories, promotions, and content planning.",
         "p2": "Handled comments and customer messages and supported brand visibility and customer engagement.",
         "p3": "Created consistent visual content and maintained a structured social media content calendar."
@@ -75,7 +77,7 @@
       "exp3": {
         "title": "Social Media Manager",
         "company": "EYEFINITYZONE",
-        "period": "Dec 2024 - May 2026 · Remote · Pakistan",
+        "period": "Dec 2024 – Present · Remote · Pakistan",
         "p1": "Managed Instagram and Facebook content, including product highlights, posts, stories, promotions, and content planning.",
         "p2": "Handled comments and customer messages and supported brand visibility and customer engagement.",
         "p3": "Created consistent visual content and maintained a structured social media content calendar."
@@ -344,7 +346,14 @@
     "validationEmail": "Please enter a valid email address",
     "validationPhone": "Please enter a valid phone number",
     "validationMessageMin": "Please enter a message (at least 10 characters)",
-    "configError": "Configuration error. Please contact the site administrator."
+    "configError": "Configuration error. Please contact the site administrator.",
+    "toastSuccess": "Message sent successfully!",
+    "toastErrorMsg": "Failed to send message through the form.",
+    "toastEmailLink": "Click here to email directly",
+    "successMsg": "Message sent successfully! I'll get back to you soon.",
+    "errorMsg": "Failed to send message. Please try the email link below or try again later.",
+    "networkError": "Network error occurred. Please check your connection and try again.",
+    "searchCountry": "Search country"
   },
   "testimonials": {
     "subtitle": "Client Testimonials",

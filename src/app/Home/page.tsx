@@ -139,7 +139,7 @@ const Home = () => {
               <div className="relative animate-float">
                 <Image
                   src="/About.jpg"
-                  alt="Professional portrait"
+                  alt="Khanzadi Wazir Ali — AI Engineer & Full Stack Developer"
                   width={600}
                   height={600}
                   className="rounded-[1.75rem] shadow-2xl w-full h-auto border border-gray-700/70"

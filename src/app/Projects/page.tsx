@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import Image from "next/image";
-import { FaGithub, FaExternalLinkAlt, FaCode, FaStar, FaRegClock, FaChevronDown, FaBolt, FaShopify } from 'react-icons/fa';
-import { SiNextdotjs, SiPython, SiTypescript, SiOpenid, SiStreamlit, SiGithubactions, SiLangchain, SiPlotly } from 'react-icons/si';
+import { FaGithub, FaExternalLinkAlt, FaCode, FaStar, FaRegClock, FaChevronDown, FaBolt, FaShopify, FaRobot } from 'react-icons/fa';
+import { SiNextdotjs, SiPython, SiTypescript, SiStreamlit, SiGithubactions, SiLangchain, SiPlotly } from 'react-icons/si';
 import Link from "next/link";
 import Breadcrumbs from '../components/Breadcrumbs';
 import ImageLightbox from '../components/ImageLightbox';
@@ -14,7 +14,7 @@ const techIconMap: Record<string, React.ReactNode> = {
   "Next.js":        <SiNextdotjs className="w-3 h-3" />,
   "Python":         <SiPython className="w-3 h-3" />,
   "TypeScript":     <SiTypescript className="w-3 h-3" />,
-  "OpenAI":         <SiOpenid className="w-3 h-3" />,
+  "OpenAI":         <FaRobot className="w-3 h-3" />,
   "Streamlit":      <SiStreamlit className="w-3 h-3" />,
   "GitHub Actions": <SiGithubactions className="w-3 h-3" />,
   "LangChain":      <SiLangchain className="w-3 h-3" />,
@@ -119,8 +119,7 @@ const Project = () => {
   const hasMore = filteredProjects.length > 4;
 
   const openLightbox = (index: number) => {
-    const projectIndex = projects.findIndex(p => p === filteredProjects[index]);
-    setCurrentImageIndex(projectIndex);
+    setCurrentImageIndex(index);
     setLightboxOpen(true);
   };
 
@@ -128,13 +127,13 @@ const Project = () => {
 
   const navigateLightbox = (direction: 'prev' | 'next') => {
     if (direction === 'prev') {
-      setCurrentImageIndex(prev => prev === 0 ? projects.length - 1 : prev - 1);
+      setCurrentImageIndex(prev => prev === 0 ? displayedProjects.length - 1 : prev - 1);
     } else {
-      setCurrentImageIndex(prev => prev === projects.length - 1 ? 0 : prev + 1);
+      setCurrentImageIndex(prev => prev === displayedProjects.length - 1 ? 0 : prev + 1);
     }
   };
 
-  const projectsWithTranslations = projects.map(project => ({
+  const projectsWithTranslations = displayedProjects.map(project => ({
     src: project.src,
     alt: project.alt,
     title: getProjectTranslation(project.key, 'title'),
@@ -240,6 +239,10 @@ const Project = () => {
                     <div
                       className="relative h-[200px] sm:h-[220px] w-full overflow-hidden cursor-pointer"
                       onClick={() => openLightbox(index)}
+                      role="button"
+                      tabIndex={0}
+                      aria-label={`View ${getProjectTranslation(project.key, 'title')} — ${t('projects.clickToView')}`}
+                      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') openLightbox(index); }}
                     >
                       <Image
                         src={project.src}

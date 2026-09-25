@@ -5,13 +5,15 @@ import {ThemeProvider} from './context/ThemeContext';
 import { LanguageProvider } from '../context/LanguageContext';
 import Header from './components/Header';
 import WhatsAppButton from './components/WhatsAppButton';
+import BackToTop from './components/BackToTop';
 import StructuredData from './components/StructuredData';
 import ErrorBoundary from './components/ErrorBoundary';
 import AOSInit from './components/AOSInit';
 import SmoothScroll from './components/SmoothScroll';
 import PageTransition from './components/PageTransition';
+import ToastWrapper from './components/ToastWrapper';
+import Footer from './components/Footer';
 import NextTopLoader from 'nextjs-toploader';
-import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({
@@ -57,12 +59,21 @@ export const metadata: Metadata = {
     title: 'Khanzadi Wazir Ali - AI Engineer & Full Stack Developer',
     description: 'Professional portfolio showcasing AI automation, web development, Shopify e-commerce solutions, technical skills, and professional services.',
     siteName: 'Khanzadi Wazir Ali Portfolio',
+    images: [
+      {
+        url: 'https://khanzadi.vercel.app/About.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Khanzadi Wazir Ali - AI Engineer & Full Stack Developer',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Khanzadi Wazir Ali - AI Engineer & Full Stack Developer',
     description: 'Professional portfolio showcasing AI automation, web development, and Shopify e-commerce expertise',
     creator: '@Khanzadi0099',
+    images: ['https://khanzadi.vercel.app/About.jpg'],
   },
   robots: {
     index: true,
@@ -115,20 +126,11 @@ export default function RootLayout({
               <main id="main-content" className="scroll-mt-24">
                 <PageTransition>{children}</PageTransition>
               </main>
+              <Footer />
               <WhatsAppButton />
+              <BackToTop />
               <AOSInit />
-              <ToastContainer
-                position="top-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="dark"
-              />
+              <ToastWrapper />
             </ErrorBoundary>
           </ThemeProvider>
         </LanguageProvider>

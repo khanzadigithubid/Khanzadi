@@ -39,7 +39,7 @@ const About = () => {
               <div className="relative">
                 <Image
                   src="/About.jpg"
-                  alt="Professional portrait"
+                  alt="Khanzadi Wazir Ali — AI Engineer & Full Stack Developer"
                   height={320}
                   width={320}
                   className="rounded-full shadow-2xl transition-all duration-500 ease-in-out hover:shadow-3xl w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] object-cover border-4 border-gray-700"
